@@ -14,3 +14,7 @@ try:
     print(f"{"\033[38;5;46m"} Succesfully loaded students_raw.csv")
 except FileNotFoundError:
     print(f"{Fore.RED} ERROR: file not found. Make sure you have run python \"student_data.py\" ")
+
+# Print the info of the dataframe
+print("\n--- Initial DataFrame Info ---\n")
+df.info()
