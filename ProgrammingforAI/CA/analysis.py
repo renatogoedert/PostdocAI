@@ -95,7 +95,7 @@ else:
 assert df['StudentID'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: StudentIDs missing values not solved! X X X"
 print(f"{Fore.GREEN}!!! Missing IDS solved !!!")
 
-# Solving Missing ID
+# Solving Missing StudyHours
 print("--- Adding mean to Study Hours ---")
 if df['StudyHours'].isnull().sum() > 0:
 
@@ -104,7 +104,7 @@ if df['StudyHours'].isnull().sum() > 0:
 else:
     print("--- No Missing Value Found! ---")
 
-# Test for missing ID solved
+# Test for missing StudyHours solved
 assert df['StudyHours'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: StudyHours missing values not solved! X X X"
 print(f"{Fore.GREEN}!!! Missing StudyHours solved !!!")
 
