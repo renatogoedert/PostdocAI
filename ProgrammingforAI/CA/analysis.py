@@ -69,7 +69,7 @@ if 'CourseCompletition' in df.columns:
     if set_uniques != {'False', 'True'}:
         print(f" - Unique Values in CourseCompletition: {unique_values}")
 
-print("\n\n--- Solving Dataset Issues ---")
+print(f"\n\n{Fore.YELLOW}--- Solving Dataset Issues ---")
 
 # Solving Missing ID
 print("--- Adding missing IDs ---")
