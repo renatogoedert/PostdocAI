@@ -67,3 +67,16 @@ if 'CourseCompletition' in df.columns:
                    }
     if set_uniques != {'False', 'True'}:
         print(f" - Unique Values in CourseCompletition: {unique_values}")
+
+# Solving Missing ID
+
+# Save the cleaned data to a new file
+output_filename = 'students_clean.csv'
+df.to_csv(output_filename, index=False)
+print(f"\n✅ Cleaned data saved as '{output_filename}'.")
+
+# Display final info to confirm the data is clean
+print("\n--- Final Cleaned DataFrame Info ---")
+df.info()
+print("\nFirst 5 rows of the clean data:")
+print(df.head())
