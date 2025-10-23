@@ -69,7 +69,31 @@ if 'CourseCompletition' in df.columns:
     if set_uniques != {'False', 'True'}:
         print(f" - Unique Values in CourseCompletition: {unique_values}")
 
+print("\n\n--- Solving Dataset Issues ---")
+
 # Solving Missing ID
+print("--- Adding missing IDs ---")
+if df['StudentID'].isnull().sum() > 0:
+    #Find the highest ID number
+    last_id = df['StudentID'].dropna().str[1:].astype(int).max()
+
+    # Rows with missing ID
+    missing_id = df[df['StudentID'].isnull()].index
+
+    #Loop to give the ID
+    for i in range(len(missing_id)):
+
+        index = missing_id[i]
+        new = last_id + i + 1
+        new_id = f"S{str(new).zfill(3)}"
+
+        df.loc[index, 'StudentID'] = new_id
+else:
+    print("--- No Missing Value Found! ---")
+
+# Test for missing ID solved
+assert df['StudentID'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: StudentIDs missing values not solved! X X X"
+print(f"{Fore.GREEN}!!! Missing IDS solved !!!")
 
 
 # Save the cleaned data to a new file
@@ -78,4 +102,4 @@ df.to_csv(output_filename, index=False)
 
 # Chech file is created
 assert os.path.exists('students_clean.csv'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"{"\033[38;5;46m"}!!! CSV File Created !!!")
+print(f"\n\n{"\033[38;5;46m"}!!! CSV File Created !!!")
