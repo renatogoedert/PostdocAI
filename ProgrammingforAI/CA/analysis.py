@@ -17,11 +17,10 @@ except FileNotFoundError:
     print(f"{Fore.RED} ERROR: file not found. Make sure you have run python \"student_data.py\" ")
 
 # Print the info of the dataframe
-print("\n--- Initial DataFrame Info ---")
+print("\n Initial DataFrame Info: ")
 df.info()
 
 # Print the missing values
-print("\n--- Handling Missing Values ---")
 print(f"Initial missing values before cleaning:\n{df.isnull().sum()}")
 
 # Print the inconsistencies
@@ -72,7 +71,7 @@ if 'CourseCompletition' in df.columns:
 print(f"\n\n{Fore.YELLOW}--- Solving Dataset Issues ---")
 
 # Solving Missing ID
-print("--- Adding missing IDs ---")
+print(f"{Fore.YELLOW}--- Adding missing IDs ---")
 if df['StudentID'].isnull().sum() > 0:
     #Find the highest ID number
     last_id = df['StudentID'].dropna().str[1:].astype(int).max()
@@ -96,7 +95,7 @@ assert df['StudentID'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: StudentIDs 
 print(f"{Fore.GREEN}!!! Missing IDS solved !!!")
 
 # Solving Missing StudyHours
-print("--- Adding mean to Study Hours ---")
+print(f"{Fore.YELLOW}--- Adding mean to Study Hours ---")
 if df['StudyHours'].isnull().sum() > 0:
 
     missing_index = df['StudyHours'].isnull().index
