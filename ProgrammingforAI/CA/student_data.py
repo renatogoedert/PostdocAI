@@ -91,8 +91,8 @@ print(f"{Fore.LIGHTGREEN_EX}!!! Inconsistent Data Type Added !!!")
 
 # Save dataset on csv
 print("--- Exporting to CSV ---")
-
 df.to_csv('students_raw.csv', index=False)
+
 # Chech file is created
 assert os.path.exists('students_raw.csv'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
 print(f"{"\033[38;5;46m"}!!! CSV File Created !!!")

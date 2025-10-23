@@ -70,6 +70,7 @@ if 'CourseCompletition' in df.columns:
 
 # Solving Missing ID
 
+
 # Save the cleaned data to a new file
 output_filename = 'students_clean.csv'
 df.to_csv(output_filename, index=False)
