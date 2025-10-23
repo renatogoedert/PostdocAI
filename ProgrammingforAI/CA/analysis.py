@@ -4,6 +4,7 @@
 import pandas as pd
 import numpy as np
 from colorama import Fore, Style, init
+import os 
 
 # Initialising Colorama, I like Colors, dont judge me!
 init(autoreset=True)
@@ -74,7 +75,10 @@ if 'CourseCompletition' in df.columns:
 # Save the cleaned data to a new file
 output_filename = 'students_clean.csv'
 df.to_csv(output_filename, index=False)
-print(f"\n✅ Cleaned data saved as '{output_filename}'.")
+
+# Chech file is created
+assert os.path.exists('students_clean.csv'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
+print(f"{"\033[38;5;46m"}!!! CSV File Created !!!")
 
 # Display final info to confirm the data is clean
 print("\n--- Final Cleaned DataFrame Info ---")
