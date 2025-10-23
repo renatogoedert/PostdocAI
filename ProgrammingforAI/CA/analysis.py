@@ -79,9 +79,3 @@ df.to_csv(output_filename, index=False)
 # Chech file is created
 assert os.path.exists('students_clean.csv'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
 print(f"{"\033[38;5;46m"}!!! CSV File Created !!!")
-
-# Display final info to confirm the data is clean
-print("\n--- Final Cleaned DataFrame Info ---")
-df.info()
-print("\nFirst 5 rows of the clean data:")
-print(df.head())
