@@ -95,6 +95,18 @@ else:
 assert df['StudentID'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: StudentIDs missing values not solved! X X X"
 print(f"{Fore.GREEN}!!! Missing IDS solved !!!")
 
+# Solving Missing ID
+print("--- Adding mean to Study Hours ---")
+if df['StudyHours'].isnull().sum() > 0:
+
+    missing_index = df['StudyHours'].isnull().index
+    df.loc[missing_index, 'StudyHours'] = df['StudyHours'].mean()
+else:
+    print("--- No Missing Value Found! ---")
+
+# Test for missing ID solved
+assert df['StudyHours'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: StudyHours missing values not solved! X X X"
+print(f"{Fore.GREEN}!!! Missing StudyHours solved !!!")
 
 # Save the cleaned data to a new file
 output_filename = 'students_clean.csv'
