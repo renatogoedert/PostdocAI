@@ -36,14 +36,14 @@ df = pd.DataFrame(data)
 print(f"{Fore.LIGHTGREEN_EX}!!! Clean DataFrame Created !!!")
 
 # Row lenght test
-print("--- Running Row Lenght Checks ---")
+print(f"{Fore.YELLOW}--- Running Row Lenght Checks ---")
 
 # Chech right num of entries
 assert len(df) == num_of_values, f"X X X ERROR: Expected {num_of_values} entries, got {len(df)} X X X"
 print(f"{Fore.LIGHTGREEN_EX}!!! Row count correct - {len(df)} Rows !!!")
 
 # Adding the missing values
-print("--- Adding missing Values ---")
+print(f"{Fore.YELLOW}--- Adding missing Values ---")
 
 # Choose 5% of the rows to have mising hours and 3% for missing quiz
 missing_hours = df.sample(frac=0.05).index
@@ -66,7 +66,7 @@ assert (df['StudentID'] == "").sum() > 0, f"{Fore.RED}X X X ERROR: No Empty Stri
 print(f"{Fore.LIGHTGREEN_EX}!!! Empty Strings Added !!!")
 
 # Adding inconsistent values
-print("--- Adding inconsistet Values ---")
+print(f"{Fore.YELLOW}--- Adding inconsistet Values ---")
 
 # Choose 3% of the rows to have inconsistent participation and 4% for inconsistent performance and 2% for course completion
 inconsistent_participation = df.sample(frac=0.03).index
@@ -90,7 +90,7 @@ assert df['CourseCompletition'].dtype == 'object', f"{Fore.RED}X X X ERROR: No D
 print(f"{Fore.LIGHTGREEN_EX}!!! Inconsistent Data Type Added !!!")
 
 # Save dataset on csv
-print("--- Exporting to CSV ---")
+print(f"{Fore.YELLOW}--- Exporting to CSV ---")
 df.to_csv('students_raw.csv', index=False)
 
 # Chech file is created
