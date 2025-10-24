@@ -69,12 +69,6 @@ if 'CourseCompletion' in df.columns:
         print(f" - Unique Values in CourseCompletion: {unique_values}")
 
 
-
-
-
-
-
-
 print(f"\n\n{Fore.YELLOW}--- Solving Dataset Issues ---")
 
 # Solving Inconsistecies on Study Hours
@@ -308,6 +302,16 @@ if 'CourseCompletion' in df.columns:
     if set_uniques != {'False', 'True'}:
         print(f" - Unique Values in CourseCompletion: {unique_values}")
 
+#Creating The Engagement Column
+print(f"{Fore.YELLOW}\n--- Creating Engagement Derived Column ---")
+
+#Define weights
+weight_study = 0.3
+weight_quiz = 0.7
+
+df['Engagement'] = (weight_study * df['StudyHours']) + (weight_quiz * df['QuizParticipation']/100)
+assert 'Engagement' in df.columns, f"{Fore.RED}X X X ERROR: Engagement Derived Column not Created! X X X"
+print(f"{Fore.YELLOW}!!! Created Engagement Derived Column !!!")
 
 # Save the cleaned data to a new file
 output_filename = 'students_clean.csv'
