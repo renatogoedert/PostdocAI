@@ -236,7 +236,7 @@ print(f"{Fore.GREEN}!!! Missing Past Performance and Quiz Participation solved !
 
 
 # Print the missing values
-print(f"Initial missing values before cleaning:\n{df.isnull().sum()}")
+print(f"missing values after cleaning:\n{df.isnull().sum()}")
 
 # Print the inconsistencies
 print("\nOther Inconsistencies:")
