@@ -45,15 +45,19 @@ print(f"{Fore.LIGHTGREEN_EX}!!! Row count correct - {len(df)} Rows !!!")
 # Adding the missing values
 print(f"{Fore.YELLOW}--- Adding missing Values ---")
 
-# Choose 5% of the rows to have mising hours and 3% for missing quiz
-missing_hours = df.sample(frac=0.05).index
-missing_quiz = df.sample(frac=0.03).index
+# Choose 3% of the rows to have mising hours and 5% for missing quiz participation and past participation
+missing_hours = df.sample(frac=0.03).index
+missing_quiz = df.sample(frac=0.05).index
+missing_past = df.sample(frac=0.05).index
 
 # Changes the values on the Dataframe
 df.loc[missing_hours, 'StudyHours'] = np.nan
 df.loc[missing_quiz, 'QuizParticipation'] = np.nan
+df.loc[missing_past, 'PastPerformance'] = np.nan
 
 assert df['StudyHours'].isnull().sum() > 0, f"{Fore.RED}X X X ERROR: No NaN Values added X X X"
+assert df['QuizParticipation'].isnull().sum() > 0, f"{Fore.RED}X X X ERROR: No NaN Values added X X X"
+assert df['PastPerformance'].isnull().sum() > 0, f"{Fore.RED}X X X ERROR: No NaN Values added X X X"
 print(f"{Fore.LIGHTGREEN_EX}!!! NaN Values Added !!!")
 
 # Choose 1% of the rows of ID to have empty strings
