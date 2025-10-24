@@ -167,6 +167,10 @@ if df['CourseCompletion'].isnull().sum() > 0:
         df.drop(index_to_drop, inplace=True)
         print(f"{Fore.GREEN}!!! Deleted {len(index_to_drop)} Values missing Course Completition !!!")
 
+# Test for Inconsistecies CourseCompletion solved
+assert set(df['CourseCompletion'].unique()) == {False, True}, f"{Fore.RED}X X X ERROR: CourseCompletion Inconsistecies not solved! X X X"
+print(f"{Fore.GREEN}!!! Inconsistecies Course Completion solved !!!")
+
 # Solving Missing ID
 print(f"{Fore.YELLOW}--- Adding missing IDs ---")
 if df['StudentID'].isnull().sum() > 0:
@@ -237,9 +241,7 @@ if df['QuizParticipation'].isnull().sum() > 0 or df['PastPerformance'].isnull().
     if not missing_performance_index.empty:
         result = df.loc[missing_performance_index, 'QuizParticipation'] * performance_mean / participation_mean
         #Make sure doesnt go over the limit
-        df.loc[missing_performance_index, 'PastPerformance'] = result.clip(upper=100)
-
-    
+        df.loc[missing_performance_index, 'PastPerformance'] = result.clip(upper=100)    
 else:
     print("--- No Missing Values Found! ---")
 
@@ -251,10 +253,10 @@ print(f"{Fore.GREEN}!!! Missing Past Performance and Quiz Participation solved !
 
 
 # Print the missing values
-print(f"missing values after cleaning:\n{df.isnull().sum()}")
+print(f"\nMissing values after cleaning:\n{df.isnull().sum()}")
 
 # Print the inconsistencies
-print("\nOther Inconsistencies:")
+print("Other Inconsistencies:")
 
 # Inconsistecies on Study Hours 
 if 'StudyHours' in df.columns:
