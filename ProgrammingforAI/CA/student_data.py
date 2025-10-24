@@ -18,7 +18,7 @@ data = {
     'StudyHours': [],
     'QuizParticipation': [],
     'PastPerformance': [],
-    'CourseCompletition': [],
+    'CourseCompletion': [],
 }
 
 # Loop num_of_values time and add to data dictionary 
@@ -28,7 +28,7 @@ for  i in range(1, num_of_values+1):
         data['StudyHours'].append(np.random.uniform(1, 40)),
         data['QuizParticipation'].append(np.random.randint(0, 101)),
         data['PastPerformance'].append(np.random.randint(0, 101)),
-        data['CourseCompletition'].append(np.random.choice([True, False]))
+        data['CourseCompletion'].append(np.random.choice([True, False]))
     }
 
 # After values added, create DataFrame with data
@@ -88,9 +88,9 @@ print(f"{Fore.LIGHTGREEN_EX}!!! Inconsistent Values Added !!!")
 inconsistent_completition = df.sample(frac=0.02).index
 
 # Changes the values on the Dataframe
-df.loc[inconsistent_completition, 'CourseCompletition'] = np.random.choice([0,1], size=len(inconsistent_completition))
+df.loc[inconsistent_completition, 'CourseCompletion'] = np.random.choice([0,1], size=len(inconsistent_completition))
 
-assert df['CourseCompletition'].dtype == 'object', f"{Fore.RED}X X X ERROR: No Data Type Changed X X X"
+assert df['CourseCompletion'].dtype == 'object', f"{Fore.RED}X X X ERROR: No Data Type Changed X X X"
 print(f"{Fore.LIGHTGREEN_EX}!!! Inconsistent Data Type Added !!!")
 
 # Save dataset on csv

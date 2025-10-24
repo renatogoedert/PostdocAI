@@ -60,13 +60,13 @@ if 'PastPerformance' in df.columns:
         print(f" - Found {neg_values} negative values on PastPerformance")
 
 # Inconsistecies on Course Completition:
-if 'CourseCompletition' in df.columns:
-    unique_values = df['CourseCompletition'].unique()
+if 'CourseCompletion' in df.columns:
+    unique_values = df['CourseCompletion'].unique()
 
     set_uniques = {str(val) for val in unique_values
                    }
     if set_uniques != {'False', 'True'}:
-        print(f" - Unique Values in CourseCompletition: {unique_values}")
+        print(f" - Unique Values in CourseCompletion: {unique_values}")
 
 
 
@@ -102,7 +102,7 @@ assert (df['StudyHours'] < 0).sum() == 0 or (df['StudyHours'] > 168).sum() == 0,
 print(f"{Fore.GREEN}!!! Inconsistecies StudyHours solved !!!")
 
 # Solving Inconsistecies on QuizParticipation
-print(f"{Fore.YELLOW}--- Solving Inconsistecies on QuizParticipation ---")
+print(f"{Fore.YELLOW}--- Solving Inconsistecies on Quiz Participation ---")
 if 'QuizParticipation' in df.columns:
     # Ensuring Numeric QuizParticipation
     df['QuizParticipation'] = pd.to_numeric(df['QuizParticipation'], errors='coerce')
@@ -126,7 +126,7 @@ assert (df['QuizParticipation'] < 0).sum() == 0 or (df['QuizParticipation'] > 10
 print(f"{Fore.GREEN}!!! Inconsistecies QuizParticipation solved !!!")
 
 # Solving Inconsistecies on PastPerformance
-print(f"{Fore.YELLOW}--- Solving Inconsistecies on PastPerformance ---")
+print(f"{Fore.YELLOW}--- Solving Inconsistecies on Past Performance ---")
 if 'PastPerformance' in df.columns:
     # Ensuring Numeric PastPerformance
     df['PastPerformance'] = pd.to_numeric(df['PastPerformance'], errors='coerce')
@@ -148,6 +148,24 @@ if 'PastPerformance' in df.columns:
 # Test for Inconsistecies PastPerformance solved
 assert (df['PastPerformance'] < 0).sum() == 0 or (df['PastPerformance'] > 100).sum() == 0, f"{Fore.RED}X X X ERROR: PastPerformance Inconsistecies not solved! X X X"
 print(f"{Fore.GREEN}!!! Inconsistecies PastPerformance solved !!!")
+
+# Solving Inconsistecies on CourseCompletion
+print(f"{Fore.YELLOW}--- Solving Inconsistecies on Course Completition ---")
+
+mapping = {
+    'Yes': True, 'yes': True, 1: True, '1': True, True: True, 'true': True,'True': True,
+    'No': False, 'no': False, 0: False, '0': False, False: False, 'false': False, 'False': False
+}
+
+df['CourseCompletion'] = df['CourseCompletion'].map(mapping)
+
+if df['CourseCompletion'].isnull().sum() > 0:
+    index_to_drop = df[df['CourseCompletion'].isnull()].index
+
+    #Check if there is any values to be deelted and print the info
+    if not index_to_drop.empty:
+        df.drop(index_to_drop, inplace=True)
+        print(f"{Fore.GREEN}!!! Deleted {len(index_to_drop)} Values missing Course Completition !!!")
 
 # Solving Missing ID
 print(f"{Fore.YELLOW}--- Adding missing IDs ---")
@@ -232,9 +250,6 @@ print(f"{Fore.GREEN}!!! Missing Past Performance and Quiz Participation solved !
 
 
 
-
-
-
 # Print the missing values
 print(f"missing values after cleaning:\n{df.isnull().sum()}")
 
@@ -275,13 +290,13 @@ if 'PastPerformance' in df.columns:
         print(f" - Found {neg_values} negative values on PastPerformance")
 
 # Inconsistecies on Course Completition:
-if 'CourseCompletition' in df.columns:
-    unique_values = df['CourseCompletition'].unique()
+if 'CourseCompletion' in df.columns:
+    unique_values = df['CourseCompletion'].unique()
 
     set_uniques = {str(val) for val in unique_values
                    }
     if set_uniques != {'False', 'True'}:
-        print(f" - Unique Values in CourseCompletition: {unique_values}")
+        print(f" - Unique Values in CourseCompletion: {unique_values}")
 
 
 
