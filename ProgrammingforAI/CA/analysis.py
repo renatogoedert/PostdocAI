@@ -77,6 +77,32 @@ if 'CourseCompletition' in df.columns:
 
 print(f"\n\n{Fore.YELLOW}--- Solving Dataset Issues ---")
 
+# Solving Inconsistecies on Study Hours
+print(f"{Fore.YELLOW}--- Solving Inconsistecies on Study Hours ---")
+if 'StudyHours' in df.columns:
+    # Ensuring Numeric Study Hours
+    df['StudyHours'] = pd.to_numeric(df['StudyHours'], errors='coerce')
+
+    # Finding Neg StudyHours
+    neg_index = df['StudyHours'] < 0
+
+    # If negative StudyHours change it to nan
+    if neg_index.sum() > 0 :
+        df.loc[neg_index, 'StudyHours'] = np.nan
+
+    # Finding StudyHours over the limit
+    over_index = df['StudyHours'] > 168
+
+    # IF over the limit values, change them to limit
+    if over_index.sum() > 0:
+        df.loc[over_index] = 168
+
+# Test for Inconsistecies StudyHours solved
+assert (df['StudyHours'] < 0).sum() > 0 or (df['StudyHours'] > 168).sum() > 0, f"{Fore.RED}X X X ERROR: StudyHours Inconsistecies not solved! X X X"
+print(f"{Fore.GREEN}!!! Inconsistecies StudyHours solved !!!")
+
+
+
 # Solving Missing ID
 print(f"{Fore.YELLOW}--- Adding missing IDs ---")
 if df['StudentID'].isnull().sum() > 0:
@@ -124,7 +150,7 @@ if df['QuizParticipation'].isnull().sum() > 0 or df['PastPerformance'].isnull().
     #Check if there is any values to be deelted and print the info
     if not index_to_drop.empty:
         df.drop(index_to_drop, inplace=True)
-        print(f"{Fore.YELLOW}--- Deleted {len(index_to_drop)} Values missing Quiz Participation and Past Performance ---")
+        print(f"{Fore.GREEN}!!! Deleted {len(index_to_drop)} Values missing Quiz Participation and Past Performance !!!")
     else:
         print(f"{Fore.YELLOW}--- No values deleted for missing Quiz Participation and Past Performance ---")
 
@@ -149,12 +175,63 @@ if df['QuizParticipation'].isnull().sum() > 0 or df['PastPerformance'].isnull().
 else:
     print("--- No Missing Values Found! ---")
 
-# Test for missing StudyHours solved
+# Test for missing QuizParticipation and PastPerformance solved
 assert df['QuizParticipation'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: Quiz Participation missing values not solved! X X X"
 assert df['PastPerformance'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: Past Performance missing values not solved! X X X"
 print(f"{Fore.GREEN}!!! Missing Past Performance and Quiz Participation solved !!!")
 
 
+
+
+
+
+# Print the missing values
+print(f"Initial missing values before cleaning:\n{df.isnull().sum()}")
+
+# Print the inconsistencies
+print("\nOther Inconsistencies:")
+
+# Inconsistecies on Study Hours 
+if 'StudyHours' in df.columns:
+    num_perf = pd.to_numeric(df['StudyHours'], errors='coerce')
+    over_values = (num_perf > 168).sum()
+    if over_values > 0:
+        print(f" - Found {over_values} over the limit on StudyHours")
+        over_values = (num_perf > 100).sum()
+    neg_values = (num_perf < 0).sum()
+    if neg_values > 0:
+        print(f" - Found {neg_values} negative values on StudyHours")
+
+# Inconsistecies on Quiz Participation 
+if 'QuizParticipation' in df.columns:
+    num_perf = pd.to_numeric(df['QuizParticipation'], errors='coerce')
+    over_values = (num_perf > 100).sum()
+    if over_values > 0:
+        print(f" - Found {over_values} over the limit on QuizParticipation")
+        over_values = (num_perf > 100).sum()
+    neg_values = (num_perf < 0).sum()
+    if neg_values > 0:
+        print(f" - Found {neg_values} negative values on QuizParticipation")
+
+# Inconsistecies on Quiz Past Performance:
+if 'PastPerformance' in df.columns:
+    num_perf = pd.to_numeric(df['PastPerformance'], errors='coerce')
+    over_values = (num_perf > 100).sum()
+    if over_values > 0:
+        print(f" - Found {over_values} over the limit on PastPerformance")
+        over_values = (num_perf > 100).sum()
+    neg_values = (num_perf < 0).sum()
+    if neg_values > 0:
+        print(f" - Found {neg_values} negative values on PastPerformance")
+
+# Inconsistecies on Course Completition:
+if 'CourseCompletition' in df.columns:
+    unique_values = df['CourseCompletition'].unique()
+
+    set_uniques = {str(val) for val in unique_values
+                   }
+    if set_uniques != {'False', 'True'}:
+        print(f" - Unique Values in CourseCompletition: {unique_values}")
 
 
 
