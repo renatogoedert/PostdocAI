@@ -68,6 +68,13 @@ if 'CourseCompletition' in df.columns:
     if set_uniques != {'False', 'True'}:
         print(f" - Unique Values in CourseCompletition: {unique_values}")
 
+
+
+
+
+
+
+
 print(f"\n\n{Fore.YELLOW}--- Solving Dataset Issues ---")
 
 # Solving Missing ID
@@ -98,7 +105,7 @@ print(f"{Fore.GREEN}!!! Missing IDS solved !!!")
 print(f"{Fore.YELLOW}--- Adding mean to Study Hours ---")
 if df['StudyHours'].isnull().sum() > 0:
 
-    missing_index = df['StudyHours'].isnull().index
+    missing_index = df[df['StudyHours'].isnull()].index
     df.loc[missing_index, 'StudyHours'] = df['StudyHours'].mean()
 else:
     print("--- No Missing Value Found! ---")
@@ -106,6 +113,50 @@ else:
 # Test for missing StudyHours solved
 assert df['StudyHours'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: StudyHours missing values not solved! X X X"
 print(f"{Fore.GREEN}!!! Missing StudyHours solved !!!")
+
+# Solving Missing QuizParticipation and PastPerformance
+print(f"{Fore.YELLOW}--- Solving Past Performance and Quiz Participation ---")
+if df['QuizParticipation'].isnull().sum() > 0 or df['PastPerformance'].isnull().sum() > 0 :
+
+    # Delete rows missing both past participaiton and quiz participation
+    index_to_drop = df[ df['QuizParticipation'].isnull() & df['PastPerformance'].isnull()].index
+
+    #Check if there is any values to be deelted and print the info
+    if not index_to_drop.empty:
+        df.drop(index_to_drop, inplace=True)
+        print(f"{Fore.YELLOW}--- Deleted {len(index_to_drop)} Values missing Quiz Participation and Past Performance ---")
+    else:
+        print(f"{Fore.YELLOW}--- No values deleted for missing Quiz Participation and Past Performance ---")
+
+    # Now calculate a value based on Quiz Participation/Past Performance and replace it
+    missing_participation_index = df[df['QuizParticipation'].isnull()].index
+
+    participation_mean = df['QuizParticipation'].mean()
+
+    missing_performance_index = df[df['PastPerformance'].isnull()].index
+    
+    performance_mean = df['PastPerformance'].mean()
+
+    print(performance_mean, participation_mean)
+
+    df.loc[missing_participation_index, 'QuizParticipation'] = df.loc[missing_participation_index, 'PastPerformance'] * participation_mean / performance_mean
+
+    df.loc[missing_performance_index, 'PastPerformance'] = df.loc[missing_performance_index, 'QuizParticipation'] * performance_mean / participation_mean
+
+    
+else:
+    print("--- No Missing Values Found! ---")
+
+# Test for missing StudyHours solved
+assert df['QuizParticipation'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: Quiz Participation missing values not solved! X X X"
+assert df['PastPerformance'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: Past Performance missing values not solved! X X X"
+print(f"{Fore.GREEN}!!! Missing Past Performance and Quiz Participation solved !!!")
+
+
+
+
+
+
 
 # Save the cleaned data to a new file
 output_filename = 'students_clean.csv'
