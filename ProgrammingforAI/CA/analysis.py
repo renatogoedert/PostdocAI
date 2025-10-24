@@ -95,13 +95,59 @@ if 'StudyHours' in df.columns:
 
     # IF over the limit values, change them to limit
     if over_index.sum() > 0:
-        df.loc[over_index] = 168
+        df.loc[over_index, 'StudyHours'] = 168
 
 # Test for Inconsistecies StudyHours solved
-assert (df['StudyHours'] < 0).sum() > 0 or (df['StudyHours'] > 168).sum() > 0, f"{Fore.RED}X X X ERROR: StudyHours Inconsistecies not solved! X X X"
+assert (df['StudyHours'] < 0).sum() == 0 or (df['StudyHours'] > 168).sum() == 0, f"{Fore.RED}X X X ERROR: StudyHours Inconsistecies not solved! X X X"
 print(f"{Fore.GREEN}!!! Inconsistecies StudyHours solved !!!")
 
+# Solving Inconsistecies on QuizParticipation
+print(f"{Fore.YELLOW}--- Solving Inconsistecies on QuizParticipation ---")
+if 'QuizParticipation' in df.columns:
+    # Ensuring Numeric QuizParticipation
+    df['QuizParticipation'] = pd.to_numeric(df['QuizParticipation'], errors='coerce')
 
+    # Finding Neg QuizParticipation
+    neg_index = df['QuizParticipation'] < 0
+
+    # If negative QuizParticipation change it to nan
+    if neg_index.sum() > 0 :
+        df.loc[neg_index, 'QuizParticipation'] = np.nan
+
+    # Finding QuizParticipation over the limit
+    over_index = df['QuizParticipation'] > 100
+
+    # IF over the limit values, change them to limit
+    if over_index.sum() > 0:
+        df.loc[over_index, 'QuizParticipation'] = 100
+
+# Test for Inconsistecies QuizParticipation solved
+assert (df['QuizParticipation'] < 0).sum() == 0 or (df['QuizParticipation'] > 100).sum() == 0, f"{Fore.RED}X X X ERROR: QuizParticipation Inconsistecies not solved! X X X"
+print(f"{Fore.GREEN}!!! Inconsistecies QuizParticipation solved !!!")
+
+# Solving Inconsistecies on PastPerformance
+print(f"{Fore.YELLOW}--- Solving Inconsistecies on PastPerformance ---")
+if 'PastPerformance' in df.columns:
+    # Ensuring Numeric PastPerformance
+    df['PastPerformance'] = pd.to_numeric(df['PastPerformance'], errors='coerce')
+
+    # Finding Neg PastPerformance
+    neg_index = df['PastPerformance'] < 0
+
+    # If negative PastPerformance change it to nan
+    if neg_index.sum() > 0 :
+        df.loc[neg_index, 'PastPerformance'] = np.nan
+
+    # Finding PastPerformance over the limit
+    over_index = df['PastPerformance'] > 100
+
+    # IF over the limit values, change them to limit
+    if over_index.sum() > 0:
+        df.loc[over_index, 'PastPerformance'] = 100
+
+# Test for Inconsistecies PastPerformance solved
+assert (df['PastPerformance'] < 0).sum() == 0 or (df['PastPerformance'] > 100).sum() == 0, f"{Fore.RED}X X X ERROR: PastPerformance Inconsistecies not solved! X X X"
+print(f"{Fore.GREEN}!!! Inconsistecies PastPerformance solved !!!")
 
 # Solving Missing ID
 print(f"{Fore.YELLOW}--- Adding missing IDs ---")
