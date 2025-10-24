@@ -211,11 +211,15 @@ if df['QuizParticipation'].isnull().sum() > 0 or df['PastPerformance'].isnull().
 
     #Check is there is Quiz Participation values to be added and calculate them
     if not missing_participation_index.empty:
-        df.loc[missing_participation_index, 'QuizParticipation'] = df.loc[missing_participation_index, 'PastPerformance'] * participation_mean / performance_mean
+        result = df.loc[missing_participation_index, 'PastPerformance'] * participation_mean / performance_mean
+        #Make sure doesnt go over the limit
+        df.loc[missing_participation_index, 'QuizParticipation'] = result.clip(upper=100)
     
     #Check is there is PastPerformance values to be added and calculate them
     if not missing_performance_index.empty:
-        df.loc[missing_performance_index, 'PastPerformance'] = df.loc[missing_performance_index, 'QuizParticipation'] * performance_mean / participation_mean
+        result = df.loc[missing_performance_index, 'QuizParticipation'] * performance_mean / participation_mean
+        #Make sure doesnt go over the limit
+        df.loc[missing_performance_index, 'PastPerformance'] = result.clip(upper=100)
 
     
 else:
