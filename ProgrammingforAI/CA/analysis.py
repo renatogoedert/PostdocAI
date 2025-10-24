@@ -250,7 +250,15 @@ assert df['QuizParticipation'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: Qui
 assert df['PastPerformance'].isnull().sum() == 0, f"{Fore.RED}X X X ERROR: Past Performance missing values not solved! X X X"
 print(f"{Fore.GREEN}!!! Missing Past Performance and Quiz Participation solved !!!")
 
+#Normalising StudyHours
+print(f"{Fore.YELLOW}--- Normalising Study Hours ---")
+if 'StudyHours' in df.columns:
+    a=0
+    df['StudyHours'] = df['StudyHours']/168
 
+# Test for Normalised StudyHours
+assert (df['StudyHours']>1).sum() == 0, f"{Fore.RED}X X X ERROR: Study Hours values not Normalised! X X X"
+print(f"{Fore.GREEN}!!! Study Hours values Normalised !!!")
 
 # Print the missing values
 print(f"\nMissing values after cleaning:\n{df.isnull().sum()}")
@@ -299,9 +307,6 @@ if 'CourseCompletion' in df.columns:
                    }
     if set_uniques != {'False', 'True'}:
         print(f" - Unique Values in CourseCompletion: {unique_values}")
-
-
-
 
 
 # Save the cleaned data to a new file
