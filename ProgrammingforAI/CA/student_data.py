@@ -4,7 +4,7 @@
 import pandas as pd
 import numpy as np
 import os
-from colorama import Fore, Style, init
+from colorama import Fore, init
 
 # Initialising Colorama, I like Colors, dont judge me!
 init(autoreset=True)

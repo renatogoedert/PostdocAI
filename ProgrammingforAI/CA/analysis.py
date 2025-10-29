@@ -3,7 +3,7 @@
 
 import pandas as pd
 import numpy as np
-from colorama import Fore, Style, init
+from colorama import Fore, init
 import os 
 
 # Initialising Colorama, I like Colors, dont judge me!
