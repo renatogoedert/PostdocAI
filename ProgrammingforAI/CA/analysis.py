@@ -32,7 +32,6 @@ if 'StudyHours' in df.columns:
     over_values = (num_perf > 168).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on StudyHours")
-        over_values = (num_perf > 100).sum()
     neg_values = (num_perf < 0).sum()
     if neg_values > 0:
         print(f" - Found {neg_values} negative values on StudyHours")
@@ -43,7 +42,6 @@ if 'QuizParticipation' in df.columns:
     over_values = (num_perf > 100).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on QuizParticipation")
-        over_values = (num_perf > 100).sum()
     neg_values = (num_perf < 0).sum()
     if neg_values > 0:
         print(f" - Found {neg_values} negative values on QuizParticipation")
@@ -54,7 +52,6 @@ if 'PastPerformance' in df.columns:
     over_values = (num_perf > 100).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on PastPerformance")
-        over_values = (num_perf > 100).sum()
     neg_values = (num_perf < 0).sum()
     if neg_values > 0:
         print(f" - Found {neg_values} negative values on PastPerformance")
@@ -266,7 +263,6 @@ if 'StudyHours' in df.columns:
     over_values = (num_perf > 168).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on StudyHours")
-        over_values = (num_perf > 100).sum()
     neg_values = (num_perf < 0).sum()
     if neg_values > 0:
         print(f" - Found {neg_values} negative values on StudyHours")
@@ -277,7 +273,6 @@ if 'QuizParticipation' in df.columns:
     over_values = (num_perf > 100).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on QuizParticipation")
-        over_values = (num_perf > 100).sum()
     neg_values = (num_perf < 0).sum()
     if neg_values > 0:
         print(f" - Found {neg_values} negative values on QuizParticipation")
@@ -288,7 +283,6 @@ if 'PastPerformance' in df.columns:
     over_values = (num_perf > 100).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on PastPerformance")
-        over_values = (num_perf > 100).sum()
     neg_values = (num_perf < 0).sum()
     if neg_values > 0:
         print(f" - Found {neg_values} negative values on PastPerformance")
@@ -311,7 +305,7 @@ weight_quiz = 0.7
 
 df['Engagement'] = (weight_study * df['StudyHours']) + (weight_quiz * df['QuizParticipation']/100)
 assert 'Engagement' in df.columns, f"{Fore.RED}X X X ERROR: Engagement Derived Column not Created! X X X"
-print(f"{Fore.YELLOW}!!! Created Engagement Derived Column !!!")
+print(f"{Fore.GREEN}!!! Created Engagement Derived Column !!!")
 
 # Save the cleaned data to a new file
 output_filename = 'students_clean.csv'
