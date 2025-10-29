@@ -32,3 +32,17 @@ print(f"\n{Fore.YELLOW}---Filtering Data ---\n")
 print(f"{Fore.YELLOW}---Filtering Students with High Score (Score > 0.7)  ---\n")
 high_score = df[df['QuizParticipation'] > 0.75]
 print(f"Found {len(high_score)} students with an Quiz Participation above 0.75.")
+
+# Functional Programming
+print(f"\n{Fore.YELLOW}--- Classifying using Functional Programming ---")
+
+# Classification using a lambda function
+performance_classifier = lambda score: 'High' if score >= 70 else ('Medium' if 40 <= score < 70 else 'Low')
+
+# Apply the lambda function
+df['PerformanceCategory'] = df['PastPerformance'].apply(performance_classifier)
+
+print("New 'PerformanceCategory' column created. Showing value counts:")
+print(df['PerformanceCategory'].value_counts())
+print("\nDataFrame head with the new category:")
+print(df.head())
