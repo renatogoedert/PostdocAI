@@ -32,21 +32,21 @@ print(f"\n{Fore.YELLOW}---Filtering Data ---\n")
 print(f"{Fore.YELLOW}--- Filtering Students with High Score (Score > 0.7) ---\n")
 
 # Filtering Completed Course
-high_score_c = df[((df['QuizParticipation'] + df['PastPerformance'])/2 > 75) & (df['CourseCompletion'] == True)]
-print(f"Found {len(high_score_c)} students who ended course with an Score above 75.")
+high_score_c = df[((df['QuizParticipation'] + df['PastPerformance'])/2 > 70) & (df['CourseCompletion'] == True)]
+print(f"Found {len(high_score_c)} students who ended course with an Score above 70.")
 
 # Filtering Incompleted Course
-high_score_i = df[((df['QuizParticipation'] + df['PastPerformance'])/2 > 75) & (df['CourseCompletion'] == False)]
-print(f"Found {len(high_score_i)} students who still on course with an Score above 75.")
+high_score_i = df[((df['QuizParticipation'] + df['PastPerformance'])/2 > 70) & (df['CourseCompletion'] == False)]
+print(f"Found {len(high_score_i)} students who still on course with an Score above 70.")
 
 # Functional Programming
 print(f"\n{Fore.YELLOW}--- Classifying using Functional Programming ---")
 
 # Classification using a lambda function
-performance_classifier = lambda score: 'High' if score >= 70 else ('Medium' if 40 <= score < 70 else 'Low')
+performance_classifier = lambda score: 'High' if score >= 0.7 else ('Medium' if 0.4 <= score else 'Low')
 
 # Apply the lambda function
-df['PerformanceCategory'] = df['PastPerformance'].apply(performance_classifier)
+df['PerformanceCategory'] = df['StudyHours'].apply(performance_classifier)
 
 print("New 'PerformanceCategory' column created. Showing value counts:")
 print(df['PerformanceCategory'].value_counts())
