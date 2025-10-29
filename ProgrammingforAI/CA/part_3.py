@@ -24,3 +24,11 @@ print(f"\n{Fore.YELLOW}--- Getting Grouped Analysis ---\n")
 group_stats = df.groupby('CourseCompletion').agg(NumberOfStudents=('StudentID', 'count'), AverageEngagement=('Engagement', 'mean')).reset_index()
 print("Descriptive Statistics for Average Engagement by Course Completion:")
 print(group_stats)
+
+# Filtering Operations
+print(f"\n{Fore.YELLOW}---Filtering Data ---\n")
+
+# Filtering By high Score
+print(f"{Fore.YELLOW}---Filtering Students with High Score (Score > 0.7)  ---\n")
+high_score = df[df['QuizParticipation'] > 0.75]
+print(f"Found {len(high_score)} students with an Quiz Participation above 0.75.")
