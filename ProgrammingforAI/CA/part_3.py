@@ -47,7 +47,7 @@ print(f"\n{Fore.YELLOW}--- Classifying using Functional Programming ---")
 performance_classifier = lambda score: 'High' if score >= 0.7 else ('Medium' if 0.4 <= score else 'Low')
 
 # Apply the lambda function
-df['PerformanceCategory'] = df['PastPerformance'].apply(performance_classifier)
+df['PerformanceCategory'] = df['Engagement'].apply(performance_classifier)
 
 print("New 'PerformanceCategory' column created. Showing value counts:")
 print(df['PerformanceCategory'].value_counts())
