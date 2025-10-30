@@ -97,11 +97,15 @@ plt.pie(
     colors=['#4CAF50', '#FFC107', '#F44336'] # Green, Amber, Red colors
 )
 
-# 3. Add a title and ensure the pie is a circle
+# Add labels and title
 plt.title('Distribution of Student Performance Categories', fontsize=16)
 plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-# 4. Save and show the plot
+# Save file as PNG
+print(f"{Fore.YELLOW}--- Saving Pie Chart to pie_chart_performance_category.png ---")
 plt.savefig('pie_chart_performance_category.png')
-print(f"{Fore.GREEN}--- Pie chart saved to pie_chart_performance_category.png ---")
+
+# Chech file is created
+assert os.path.exists('pie_chart_performance_category.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
+print(f"{"\033[38;5;46m"}!!! Pie Chart PNG Created !!!")
 plt.show()
