@@ -20,7 +20,7 @@ except FileNotFoundError:
 print(f"\n{Fore.YELLOW}--- Start the Ploting Code ---\n")
 
 # Make a Scatter Plot (Study Hours vs Past Performance)
-print(f"\n{Fore.YELLOW}--- Generating Scatter Plot (Study Hours vs Past Performance) ---\n")
+print(f"{Fore.YELLOW}--- Generating Scatter Plot (Study Hours vs Past Performance) ---")
 
 plt.figure(figsize=(10, 6))
 scatter_graph = sns.scatterplot(
@@ -36,6 +36,8 @@ scatter_graph = sns.scatterplot(
 scatter_graph.set_title('Study Hours vs Past Performance', fontsize = 16)
 scatter_graph.set_xlabel('Study Hours (Normalized)', fontsize=12)
 scatter_graph.set_ylabel('Past Performance Score (%)', fontsize=12)
+plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0.)
+plt.tight_layout()
 
 # Save file as PNG
 plt.savefig('scatter_performance_hours.png')
