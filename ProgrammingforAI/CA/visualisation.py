@@ -84,6 +84,45 @@ assert os.path.exists('histogram_quiz_participation.png'), f"{Fore.RED}X X X ERR
 print(f"{"\033[38;5;46m"}!!! Histogram PNG Created !!!")
 plt.show()
 
+
+
+
+
+# Make a Bar Chart (Performance Category Distribution)
+print(f"{Fore.YELLOW}--- Generating Bar Chart (Average Engagement by Course Completion ---")
+
+group_stats = df.groupby('Completed')['Engagement'].mean().reset_index()
+plt.figure(figsize=(8, 6))
+bar_graph = sns.barplot(
+    data=group_stats,
+    x='Completed',
+    y='Engagement'
+)
+
+# Add labels and title
+bar_graph.set_title('Average Engagement by Course Completion Status', fontsize=16)
+bar_graph.set_xlabel('Course Completion Status', fontsize=12)
+bar_graph.set_ylabel('Average Engagement Score', fontsize=12)
+
+plt.ylim(0, 1) 
+plt.tight_layout()
+
+# Save file as PNG
+print(f"{Fore.YELLOW}--- Saving Bar Chart to bar_chart_avg_engagement.png ---")
+plt.savefig('bar_chart_avg_engagement.png')
+
+# Chech file is created
+assert os.path.exists('bar_chart_avg_engagement.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
+print(f"{"\033[38;5;46m"}!!! Bar Chart PNG Created !!!")
+plt.show()
+
+
+
+
+
+
+
+
 # Make a Pie Chart (Performance Category Distribution)
 print(f"{Fore.YELLOW}--- Generating Pie Chart (Performance Category Distribution) ---")
 
