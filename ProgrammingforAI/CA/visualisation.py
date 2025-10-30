@@ -69,3 +69,25 @@ plt.tight_layout()
 plt.savefig('histogram_quiz_participation.png')
 print(f"{Fore.GREEN}--- Histogram saved to histogram_quiz_participation.png ---")
 plt.show()
+
+# Make a Pie Chart (Performance Category Distribution)
+print(f"{Fore.YELLOW}--- Generating Pie Chart (Performance Category Distribution) ---")
+
+category_counts = df['PerformanceCategory'].value_counts()
+plt.figure(figsize=(8, 8))
+plt.pie(
+    category_counts,
+    labels=category_counts.index,
+    autopct='%1.1f%%', # Adds percentage labels with one decimal place
+    startangle=140,      # Rotates the chart for better label placement
+    colors=['#4CAF50', '#FFC107', '#F44336'] # Green, Amber, Red colors
+)
+
+# 3. Add a title and ensure the pie is a circle
+plt.title('Distribution of Student Performance Categories', fontsize=16)
+plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+# 4. Save and show the plot
+plt.savefig('pie_chart_performance_category.png')
+print(f"{Fore.GREEN}--- Pie chart saved to pie_chart_performance_category.png ---")
+plt.show()
