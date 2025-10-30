@@ -1,6 +1,8 @@
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
 from colorama import Fore, init
 
 # Initialising Colorama, I like Colors, dont judge me!
@@ -36,12 +38,20 @@ scatter_graph = sns.scatterplot(
 scatter_graph.set_title('Study Hours vs Past Performance', fontsize = 16)
 scatter_graph.set_xlabel('Study Hours (Normalized)', fontsize=12)
 scatter_graph.set_ylabel('Past Performance Score (%)', fontsize=12)
+
+# Fixing plot area and legend out of chart
+plt.xlim(left=0, right=1)
+plt.ylim(bottom=0, top=100)
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0.)
 plt.tight_layout()
 
 # Save file as PNG
+print(f"{Fore.YELLOW}--- Saving Scatter plot to scatter_performance_hours.png ---")
 plt.savefig('scatter_performance_hours.png')
-print(f"{Fore.GREEN}--- Scatter plot saved to scatter_performance_hours.png ---")
+
+# Chech file is created
+assert os.path.exists('scatter_performance_hours.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
+print(f"{"\033[38;5;46m"}!!! Scatter Plot PNG Created !!!")
 plt.show()
 
 # Make a Histogram (Distribution of Quiz Participation)
@@ -60,14 +70,18 @@ hist_graph.set_title('Distribution of Quiz Participation', fontsize=16)
 hist_graph.set_xlabel('Quiz Participation Score (%)', fontsize=12)
 hist_graph.set_ylabel('Number of Students', fontsize=12)
 
-# Fixing plot to start in (0,0)
-plt.xlim(left=0)
-plt.ylim(bottom=0)
+# Fixing plot area
+plt.ylim(bottom=0, top=100)
+plt.xlim(left=np.floor(min(df['QuizParticipation'])/10)*10, right=100)
 plt.tight_layout()
 
 # Save file as PNG
+print(f"{Fore.YELLOW}--- Saving Histogram to histogram_quiz_participation.png ---")
 plt.savefig('histogram_quiz_participation.png')
-print(f"{Fore.GREEN}--- Histogram saved to histogram_quiz_participation.png ---")
+
+# Chech file is created
+assert os.path.exists('histogram_quiz_participation.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
+print(f"{"\033[38;5;46m"}!!! Histogram PNG Created !!!")
 plt.show()
 
 # Make a Pie Chart (Performance Category Distribution)
