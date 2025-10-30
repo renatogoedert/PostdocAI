@@ -27,8 +27,8 @@ scatter_graph = sns.scatterplot(
     data=df,
     x='StudyHours',
     y='PastPerformance',
-    hue='CourseCompletion',  # Color-codes points based on course completion 
-    style='CourseCompletion', # Uses different marker shapes 
+    hue='Completed',  # Color-codes points based on course completion 
+    style='Completed', # Uses different marker shapes 
     alpha=0.8
 )
 
