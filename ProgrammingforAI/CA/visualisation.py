@@ -43,3 +43,29 @@ plt.tight_layout()
 plt.savefig('scatter_performance_hours.png')
 print(f"{Fore.GREEN}--- Scatter plot saved to scatter_performance_hours.png ---")
 plt.show()
+
+# Make a Histogram (Distribution of Quiz Participation)
+print(f"{Fore.YELLOW}--- Generating Scatter Plot (Distribution of Quiz Participation) ---")
+
+plt.figure(figsize=(10, 6))
+hist_graph = sns.histplot(
+    data=df,
+    x='QuizParticipation',
+    bins=20, # Divides the data into 20 bins for a clear distribution
+    kde=True # Adds a smooth line to show the distribution curve
+)
+
+# Add labels and title
+hist_graph.set_title('Distribution of Quiz Participation', fontsize=16)
+hist_graph.set_xlabel('Quiz Participation Score (%)', fontsize=12)
+hist_graph.set_ylabel('Number of Students', fontsize=12)
+
+# Fixing plot to start in (0,0)
+plt.xlim(left=0)
+plt.ylim(bottom=0)
+plt.tight_layout()
+
+# Save file as PNG
+plt.savefig('histogram_quiz_participation.png')
+print(f"{Fore.GREEN}--- Histogram saved to histogram_quiz_participation.png ---")
+plt.show()
