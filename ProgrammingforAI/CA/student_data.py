@@ -23,11 +23,12 @@ data = {
 
 # Loop num_of_values time and add to data dictionary 
 for  i in range(1, num_of_values+1):
+    study_hours = np.random.uniform(1, 40)
     new_entry = {
         data['StudentID'].append(f'S{str(i).zfill(3)}'),
-        data['StudyHours'].append(np.random.uniform(1, 40)),
-        data['QuizParticipation'].append(np.random.randint(0, 101)),
-        data['PastPerformance'].append(np.random.randint(0, 101)),
+        data['StudyHours'].append(study_hours),
+        data['QuizParticipation'].append(np.random.randint(0, 41) + 20 + study_hours),
+        data['PastPerformance'].append(np.random.randint(0, 41) + 20 + study_hours),
         data['CourseCompletion'].append(np.random.choice([True, False]))
     }
 
