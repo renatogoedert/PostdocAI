@@ -52,3 +52,17 @@ print("New 'PerformanceCategory' column created. Showing value counts:")
 print(df['PerformanceCategory'].value_counts())
 print("\nDataFrame head with the new category:")
 print(df.head())
+
+# Creating the Completed Column
+print(f"\n{Fore.YELLOW}--- Creating Completed Category ---")
+
+# Classification using a lambda function
+completed = lambda c: 'Completed' if c else 'Not Completed'
+
+# Apply the lambda function
+df['Completed'] = df['CourseCompletion'].apply(completed)
+
+print("New 'Completed' column created.")
+print(df['Completed'].value_counts())
+print("\nDataFrame head with the new category:")
+print(df.head())
