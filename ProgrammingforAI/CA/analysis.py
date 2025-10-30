@@ -29,7 +29,7 @@ print("\nOther Inconsistencies:")
 # Inconsistecies on Study Hours 
 if 'StudyHours' in df.columns:
     num_perf = pd.to_numeric(df['StudyHours'], errors='coerce')
-    over_values = (num_perf > 168).sum()
+    over_values = (num_perf > 40).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on StudyHours")
     neg_values = (num_perf < 0).sum()
@@ -82,14 +82,14 @@ if 'StudyHours' in df.columns:
         df.loc[neg_index, 'StudyHours'] = np.nan
 
     # Finding StudyHours over the limit
-    over_index = df['StudyHours'] > 168
+    over_index = df['StudyHours'] > 40
 
     # IF over the limit values, change them to limit
     if over_index.sum() > 0:
-        df.loc[over_index, 'StudyHours'] = 168
+        df.loc[over_index, 'StudyHours'] = 40
 
 # Test for Inconsistecies StudyHours solved
-assert (df['StudyHours'] < 0).sum() == 0 or (df['StudyHours'] > 168).sum() == 0, f"{Fore.RED}X X X ERROR: StudyHours Inconsistecies not solved! X X X"
+assert (df['StudyHours'] < 0).sum() == 0 or (df['StudyHours'] > 40).sum() == 0, f"{Fore.RED}X X X ERROR: StudyHours Inconsistecies not solved! X X X"
 print(f"{Fore.GREEN}!!! Inconsistecies StudyHours solved !!!")
 
 # Solving Inconsistecies on QuizParticipation
@@ -245,7 +245,7 @@ print(f"{Fore.GREEN}!!! Missing Past Performance and Quiz Participation solved !
 print(f"{Fore.YELLOW}--- Normalising Study Hours ---")
 if 'StudyHours' in df.columns:
     a=0
-    df['StudyHours'] = df['StudyHours']/168
+    df['StudyHours'] = df['StudyHours']/40
 
 # Test for Normalised StudyHours
 assert (df['StudyHours']>1).sum() == 0, f"{Fore.RED}X X X ERROR: Study Hours values not Normalised! X X X"
@@ -260,7 +260,7 @@ print("Other Inconsistencies:")
 # Inconsistecies on Study Hours 
 if 'StudyHours' in df.columns:
     num_perf = pd.to_numeric(df['StudyHours'], errors='coerce')
-    over_values = (num_perf > 168).sum()
+    over_values = (num_perf > 40).sum()
     if over_values > 0:
         print(f" - Found {over_values} over the limit on StudyHours")
     neg_values = (num_perf < 0).sum()
