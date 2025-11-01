@@ -38,9 +38,9 @@ CA/
 │   └── util.py           <-- Utility functions (load/save, etc.)
 │
 ├── (generated files)
-│   ├── students_raw.csv
-│   ├── students_clean.csv
-│   └── ... (plots as .png)
+├── students_raw.csv
+├── students_clean.csv
+└── ... (plots as .png)
 ```
 
 The project was designed to emphasize its simplicity, without overengineering, while also promoting principles like reusability, in addition to considering a user-friendly experience. With that in mind, a procedural/functional structure was chosen; however, instead of demanding for a user to run multiple Python scripts, a central orchestrator (main.py) was added to the system design. This orchestrator script abstracts the entire worflow on a single pipeline, ensuring that all functions and scripts run in the right sequece of exucation, from data/file creation through to plotting in PNG, furthermore it includes robust concepts like ```try/catch``` blocks to terminate the program gracefully in case of an interruption. This main orchestrator can be accessed by:
