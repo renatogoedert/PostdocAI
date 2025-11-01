@@ -3,6 +3,7 @@
 
 # Project Structure
 
+```
 CA/
 │
 ├── main.py               <-- Orchestrator
@@ -19,4 +20,5 @@ CA/
 │   ├── students_raw.csv
 │   ├── students_clean.csv
 │   └── ... (plots as .png)
+```
 
