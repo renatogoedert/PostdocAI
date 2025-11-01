@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import os
 from colorama import Fore, init
-import util
+from . import util
 
 # Initialising Colorama, I like Colors, dont judge me!
 util.init_colors()

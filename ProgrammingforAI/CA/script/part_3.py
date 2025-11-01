@@ -2,7 +2,7 @@
 # Sutudent Number: x25115766
 
 from colorama import Fore
-import util
+from . import util
 
 # Initialising Colorama, I like Colors, dont judge me!
 util.init_colors()

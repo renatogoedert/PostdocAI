@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from colorama import Fore
-import util
+from . import util
 
 # Initialising Colorama, I like Colors, dont judge me!
 util.init_colors
