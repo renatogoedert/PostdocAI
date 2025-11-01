@@ -4,8 +4,8 @@
 
 from script import student_data
 from script import analysis
-from script import part_3
-from script import visualisation
+# from script import part_3
+# from script import visualisation
 from script.util import init_colors
 from colorama import Fore
 import time
@@ -32,7 +32,13 @@ def main():
 
     # Part 2: Data Wrangling
     print(f"\n{Fore.GREEN}--- Executing Part 2: Data Wrangling ---")
-    analysis()
+    analysis.main()
+    time.sleep(1)
+    print(f"\nPart 3 Running in 3 sec, press Ctrl+D to stop")
+    time.sleep(1)
+    print(f"Part 3 Running in 2 sec, press Ctrl+D to stop")
+    time.sleep(1)
+    print(f"Part 3 Running in 1 sec, press Ctrl+D to stop")
     time.sleep(1)
     
     # # Part 3: Data Analysis

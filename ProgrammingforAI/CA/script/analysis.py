@@ -352,7 +352,7 @@ def create_engagment_column(df):
 
     return df
 
-if __name__ == '__main__':
+def main():
     # Initialising Colorama, I like Colors, dont judge me!
     util.init_colors()
 
@@ -371,3 +371,7 @@ if __name__ == '__main__':
 
     # Save the cleaned data to a new file
     util.save_data(df,'students_clean.csv')
+
+if __name__ == '__main__':
+    main()
+
