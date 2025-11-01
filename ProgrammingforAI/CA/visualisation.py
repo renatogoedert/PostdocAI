@@ -1,8 +1,6 @@
 # Code developed by Renato Francisco Goedert
 # Sutudent Number: x25115766
 
-import os
-import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -43,16 +41,9 @@ scatter_graph.set_ylabel('Past Performance Score (%)', fontsize=12)
 plt.xlim(left=0, right=1)
 plt.ylim(bottom=0, top=100)
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0.)
-plt.tight_layout()
 
 # Save file as PNG
-print(f"{Fore.YELLOW}--- Saving Scatter plot to scatter_performance_hours.png ---")
-plt.savefig('scatter_performance_hours.png')
-
-# Chech file is created
-assert os.path.exists('scatter_performance_hours.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"{"\033[38;5;46m"}!!! Scatter Plot PNG Created !!!")
-plt.show()
+util.save_plot('scatter_performance_hours.png')
 
 # Make a Histogram (Distribution of Quiz Participation)
 print(f"{Fore.YELLOW}--- Generating Scatter Plot (Distribution of Quiz Participation) ---")
@@ -73,16 +64,9 @@ hist_graph.set_ylabel('Number of Students', fontsize=12)
 # Fixing plot area
 plt.ylim(bottom=0, top=100)
 plt.xlim(left=np.floor(min(df['QuizParticipation'])/10)*10, right=100)
-plt.tight_layout()
 
 # Save file as PNG
-print(f"{Fore.YELLOW}--- Saving Histogram to histogram_quiz_participation.png ---")
-plt.savefig('histogram_quiz_participation.png')
-
-# Chech file is created
-assert os.path.exists('histogram_quiz_participation.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"{"\033[38;5;46m"}!!! Histogram PNG Created !!!")
-plt.show()
+util.save_plot('histogram_quiz_participation.png')
 
 # Make a Bar Chart (Performance Category Distribution)
 print(f"{Fore.YELLOW}--- Generating Bar Chart (Average Engagement by Course Completion ---")
@@ -101,16 +85,9 @@ bar_graph.set_xlabel('Course Completion Status', fontsize=12)
 bar_graph.set_ylabel('Average Engagement Score', fontsize=12)
 
 plt.ylim(0, 1) 
-plt.tight_layout()
 
 # Save file as PNG
-print(f"{Fore.YELLOW}--- Saving Bar Chart to bar_chart_avg_engagement.png ---")
-plt.savefig('bar_chart_avg_engagement.png')
-
-# Chech file is created
-assert os.path.exists('bar_chart_avg_engagement.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"{"\033[38;5;46m"}!!! Bar Chart PNG Created !!!")
-plt.show()
+util.save_plot('bar_chart_avg_engagement.png')
 
 # Make a Pie Chart (Performance Category Distribution)
 print(f"{Fore.YELLOW}--- Generating Pie Chart (Performance Category Distribution) ---")
@@ -122,7 +99,7 @@ plt.pie(
     labels=category_counts.index,
     autopct='%1.1f%%', # Adds percentage labels with one decimal place
     startangle=140,      # Rotates the chart for better label placement
-    colors=['#4CAF50', '#FFC107', '#F44336'] # Green, Amber, Red colors
+    colors=['#4CAF50', '#FFC107', '#F44336'] 
 )
 
 # Add labels and title
@@ -130,10 +107,4 @@ plt.title('Distribution of Student Performance Categories', fontsize=16)
 plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
 # Save file as PNG
-print(f"{Fore.YELLOW}--- Saving Pie Chart to pie_chart_performance_category.png ---")
-plt.savefig('pie_chart_performance_category.png')
-
-# Chech file is created
-assert os.path.exists('pie_chart_performance_category.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"{"\033[38;5;46m"}!!! Pie Chart PNG Created !!!")
-plt.show()
+util.save_plot('pie_chart_performance_category.png')
