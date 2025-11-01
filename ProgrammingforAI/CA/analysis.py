@@ -3,18 +3,15 @@
 
 import pandas as pd
 import numpy as np
-from colorama import Fore, init
-import os 
+from colorama import Fore
+import util
 
 # Initialising Colorama, I like Colors, dont judge me!
-init(autoreset=True)
+util.init_colors()
 
 # Try to load the dataset
-try:
-    df = pd.read_csv('students_raw.csv')
-    print(f"{"\033[38;5;46m"} Succesfully loaded students_raw.csv")
-except FileNotFoundError:
-    print(f"{Fore.RED} ERROR: file not found. Make sure you have run python \"student_data.py\" ")
+df = util.load_data('students_raw.csv')
+
 
 # Print the info of the dataframe
 print("\n Initial DataFrame Info: ")
@@ -308,9 +305,4 @@ assert 'Engagement' in df.columns, f"{Fore.RED}X X X ERROR: Engagement Derived C
 print(f"{Fore.GREEN}!!! Created Engagement Derived Column !!!")
 
 # Save the cleaned data to a new file
-output_filename = 'students_clean.csv'
-df.to_csv(output_filename, index=False)
-
-# Chech file is created
-assert os.path.exists('students_clean.csv'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"\n\n{"\033[38;5;46m"}!!! CSV File Created !!!")
+util.save_data(df,'students_clean.csv')

@@ -3,20 +3,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
-from colorama import Fore, init
+from colorama import Fore
+import util
 
 # Initialising Colorama, I like Colors, dont judge me!
-init(autoreset=True)
+util.init_colors
 
 # Set a consistent style for the plots
 sns.set_theme(style="whitegrid")
 
 # Try to load the dataset
-try:
-    df = pd.read_csv('students_clean.csv')
-    print(f"{"\033[38;5;46m"} Succesfully loaded students_clean.csv")
-except FileNotFoundError:
-    print(f"{Fore.RED} ERROR: file not found. Make sure you have run python \"analysis.py\" ")
+df = util.load_data('students_clean.csv')
 
 # Start Plotting
 print(f"\n{Fore.YELLOW}--- Start the Ploting Code ---\n")
@@ -84,10 +81,6 @@ assert os.path.exists('histogram_quiz_participation.png'), f"{Fore.RED}X X X ERR
 print(f"{"\033[38;5;46m"}!!! Histogram PNG Created !!!")
 plt.show()
 
-
-
-
-
 # Make a Bar Chart (Performance Category Distribution)
 print(f"{Fore.YELLOW}--- Generating Bar Chart (Average Engagement by Course Completion ---")
 
@@ -115,13 +108,6 @@ plt.savefig('bar_chart_avg_engagement.png')
 assert os.path.exists('bar_chart_avg_engagement.png'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
 print(f"{"\033[38;5;46m"}!!! Bar Chart PNG Created !!!")
 plt.show()
-
-
-
-
-
-
-
 
 # Make a Pie Chart (Performance Category Distribution)
 print(f"{Fore.YELLOW}--- Generating Pie Chart (Performance Category Distribution) ---")

@@ -5,9 +5,10 @@ import pandas as pd
 import numpy as np
 import os
 from colorama import Fore, init
+import util
 
 # Initialising Colorama, I like Colors, dont judge me!
-init(autoreset=True)
+util.init_colors()
 
 # Set the number of values, could have a input there
 num_of_values = 500
@@ -96,8 +97,4 @@ print(f"{Fore.LIGHTGREEN_EX}!!! Inconsistent Data Type Added !!!")
 
 # Save dataset on csv
 print(f"{Fore.YELLOW}--- Exporting to CSV ---")
-df.to_csv('students_raw.csv', index=False)
-
-# Chech file is created
-assert os.path.exists('students_raw.csv'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"{"\033[38;5;46m"}!!! CSV File Created !!!")
+util.save_data(df, 'students_raw.csv')

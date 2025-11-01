@@ -1,18 +1,11 @@
-import os
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from colorama import Fore, init
+from colorama import Fore
+import util
 
 # Initialising Colorama, I like Colors, dont judge me!
-init(autoreset=True)
+util.init_colors()
 
 # Try to load the dataset
-try:
-    df = pd.read_csv('students_clean.csv')
-    print(f"{"\033[38;5;46m"} Succesfully loaded students_clean.csv")
-except FileNotFoundError:
-    print(f"{Fore.RED} ERROR: file not found. Make sure you have run python \"analysis.py\" ")
+df = util.load_data('students_clean.csv')
 
 # Descriptive Statistics
 print(f"\n{Fore.YELLOW}--- Getting Descriptive Statistics ---\n")
@@ -69,9 +62,4 @@ print("\nDataFrame head with the new category:")
 print(df.head())
 
 # Save the cleaned data to a new file
-output_filename = 'students_clean.csv'
-df.to_csv(output_filename, index=False)
-
-# Chech file is created
-assert os.path.exists('students_clean.csv'), f"{Fore.RED}X X X ERROR: File not Created! X X X"
-print(f"\n\n{"\033[38;5;46m"}!!! CSV File Created !!!")
+util.save_data(df, 'students_clean.csv')
