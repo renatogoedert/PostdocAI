@@ -101,7 +101,7 @@ def _solve_incosistencies(df):
 
         # IF over the limit values, change them to limit
         if over_index.sum() > 0:
-            df.loc[over_index, 'StudyHours'] = 40
+            df.loc[over_index, 'StudyHours'] = df['StudyHours'].clip(upper=40)
 
     # Test for Inconsistecies StudyHours solved
     assert (df['StudyHours'] < 0).sum() == 0 or (df['StudyHours'] > 40).sum() == 0, f"{Fore.RED}X X X ERROR: StudyHours Inconsistecies not solved! X X X"
@@ -125,7 +125,7 @@ def _solve_incosistencies(df):
 
         # IF over the limit values, change them to limit
         if over_index.sum() > 0:
-            df.loc[over_index, 'QuizParticipation'] = 100
+            df.loc[over_index, 'QuizParticipation'] = df['QuizParticipation'].clip(upper=100)
 
     # Test for Inconsistecies QuizParticipation solved
     assert (df['QuizParticipation'] < 0).sum() == 0 or (df['QuizParticipation'] > 100).sum() == 0, f"{Fore.RED}X X X ERROR: QuizParticipation Inconsistecies not solved! X X X"
@@ -149,7 +149,7 @@ def _solve_incosistencies(df):
 
         # IF over the limit values, change them to limit
         if over_index.sum() > 0:
-            df.loc[over_index, 'PastPerformance'] = 100
+            df.loc[over_index, 'PastPerformance'] = df['QuizParticipation'].clip(upper=100)
 
     # Test for Inconsistecies PastPerformance solved
     assert (df['PastPerformance'] < 0).sum() == 0 or (df['PastPerformance'] > 100).sum() == 0, f"{Fore.RED}X X X ERROR: PastPerformance Inconsistecies not solved! X X X"
@@ -219,7 +219,7 @@ def _solve_missing(df):
     if df['StudyHours'].isnull().sum() > 0:
 
         missing_index = df[df['StudyHours'].isnull()].index
-        df.loc[missing_index, 'StudyHours'] = df['StudyHours'].mean()
+        df.loc[missing_index, 'StudyHours'] = round(df['StudyHours'].mean(), 2)
     else:
         print("--- No Missing Value Found! ---")
 
@@ -254,13 +254,13 @@ def _solve_missing(df):
         if not missing_participation_index.empty:
             result = df.loc[missing_participation_index, 'PastPerformance'] * participation_mean / performance_mean
             #Make sure doesnt go over the limit
-            df.loc[missing_participation_index, 'QuizParticipation'] = result.clip(upper=100)
-        
+            df.loc[missing_participation_index, 'QuizParticipation'] = round(result.clip(upper=100), 2)
+
         #Check is there is PastPerformance values to be added and calculate them
         if not missing_performance_index.empty:
             result = df.loc[missing_performance_index, 'QuizParticipation'] * performance_mean / participation_mean
             #Make sure doesnt go over the limit
-            df.loc[missing_performance_index, 'PastPerformance'] = result.clip(upper=100)    
+            df.loc[missing_performance_index, 'PastPerformance'] = round(result.clip(upper=100), 2)
     else:
         print("--- No Missing Values Found! ---")
 
@@ -310,7 +310,7 @@ def _create_engagment_column(df):
     weight_study = 0.3
     weight_quiz = 0.7
 
-    df['Engagement'] = (weight_study * df['StudyHours']) + (weight_quiz * df['QuizParticipation']/100)
+    df['Engagement'] = round((weight_study * df['StudyHours']) + (weight_quiz * df['QuizParticipation']/100), 2)
     assert 'Engagement' in df.columns, f"{Fore.RED}X X X ERROR: Engagement Derived Column not Created! X X X"
     print(f"{Fore.GREEN}!!! Created Engagement Derived Column !!!")
 

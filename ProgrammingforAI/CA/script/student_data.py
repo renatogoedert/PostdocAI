@@ -28,7 +28,7 @@ def _run_create_dataset():
 
     # Loop num_of_values time and add to data dictionary 
     for  i in range(1, num_of_values+1):
-        study_hours = np.random.uniform(1, 40)
+        study_hours = np.random.randint(1, 40)
         new_entry = {
             data['StudentID'].append(f'S{str(i).zfill(3)}'),
             data['StudyHours'].append(study_hours),
