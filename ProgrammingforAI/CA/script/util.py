@@ -9,7 +9,6 @@ from colorama import Fore, init
 def init_colors():
     """Initializes Colorama for cross-platform colored terminal text."""
     init(autoreset=True)
-    print(f"{Fore.GREEN}Colorama initialized.")
 
 def load_data(filename):
     """
