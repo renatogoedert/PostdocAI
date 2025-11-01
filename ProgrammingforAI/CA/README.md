@@ -32,8 +32,8 @@ CA/
 ├── script/               <-- Package
 │   ├── __init__.py       <-- Makes 'script' a Python package
 │   ├── student_data.py   <-- Part 1: Data Generation
-│   ├── analysis.py       <-- Part 2: Data Wrangling
-│   ├── part_3.py         <-- Part 3: Data Analysis
+│   ├── wrangling.py       <-- Part 2: Data Wrangling
+│   ├── analysis.py         <-- Part 3: Data Analysis
 │   ├── visualisation.py  <-- Part 4: Data Visualisation
 │   └── util.py           <-- Utility functions (load/save, etc.)
 │
