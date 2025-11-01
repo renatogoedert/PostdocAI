@@ -115,6 +115,5 @@ def main():
     make_bar_graph(df)
     make_pie_graph(df)
 
-
 if __name__ == "__main__":
     main()
