@@ -65,18 +65,21 @@ The second phase of the implementation consists of loading the raw CSV file crea
 
 The data wrangling script solves the inconsistencies first, as some invalid values will be set as NaN and be processed by the missing values function after. Specifically, to solve inconsistencies in study hours, past performance, and quiz participation, the logic was the same and simple: in case of a negative value, it would be replaced with NaN, as it's hard to infer the reason for the negative value and its intended value. Conversely, for entries over the established upper limits (100 for past performance and quiz participation and 40 h for study hours), it would be assumed that the inconsistency might have happened due to some bonus points or extra work, so the most logical solution is to clip and set to their respective limits.
 
-
 ![Solving Study Hours Inconsistancies](./images/solve_inconsistencies_studyhours.png)
 
 A distinct logic was the one applied to solve the course completion column inconsistencies. Accounting for a potential scenario where the dataframe is provenient from a merge of different or legacy systems, it was anticipated that the field might contain a range of values, from the traditional (0, 1) to strings (yes, no, true, false) and also Bool values. With that in mind, the logic to fix these inconsistencies was to simply map a dictionary with all plausible variations to either True or False.
 
 ![Solving Course Completation Inconsistancies](./images/solve_inconsistencies_coursecompletation.png)
 
-Solving missing values
-
-to solve the missing study ID, a scrpit that would take the last avaliable ID possible and add to the rows was the best solution, as IDs should be unique so there is no need of removing it
+Continuing on the script, it moves to the missing-value handling function. Firstly, the function solves the missing IDs, and as the IDs must remain unique, the best solution developed was to get the last available ID, increment it, and fill in the missing rows, rather than deleting or leaving them blank. Needless to say, this logic is only justifiable for data analysis and should not be implemented into a production environment.
 
 ![Solving Missing StudyID](./images/solve_studyid_missing.png)
+
+The most elaborate solution was implemented for the missing quiz participation and past performance. First, there is an if statement that checks if the row is missing both past performance and quiz performance; in that case, the row is dropped. If only one is missing, a smart calculation is used: the function computes the mean of the differences between quiz participation and past performance for the whole group, then uses that average value to estimate the missing value. This method is based on the premise that the student performance follows the class average trend (e.g., if the course difficulty changes, the student would move along with the class). This approach, of course, has its limitations, but it provides a better solution than simply inserting the overall mean value.
+
+![Solving Missing Performancce](./images/solve_performance_missing.png)
+
+
 
 The strategies you used for handling missing and inconsistent values.
 The main findings from your analysis.
