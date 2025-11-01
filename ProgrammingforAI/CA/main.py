@@ -2,8 +2,8 @@
 # Sutudent Number: x25115766
 
 from script import student_data
+from script import wrangling
 from script import analysis
-from script import part_3
 from script import visualisation
 from script.util import init_colors
 from colorama import Fore
@@ -40,12 +40,12 @@ def main():
 
         # Part 2: Data Wrangling
         print(f"\n{Fore.CYAN}--- Executing Part 2: Data Wrangling ---")
-        analysis.main()
+        wrangling.main()
         countdown('Part 3')
         
         # Part 3: Data Analysis
         print(f"\n{Fore.CYAN}--- Executing Part 3: Data Analysis ---")
-        part_3.main()
+        analysis.main()
         countdown('Part 4')
         
         # Part 4: Data Visualisation
