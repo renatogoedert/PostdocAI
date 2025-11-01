@@ -4,7 +4,7 @@
 from colorama import Fore
 from . import util
 
-def make_descriptive_stats(df):
+def _make_descriptive_stats(df):
     """
     Runs the function to make the descriptive statistcs
 
@@ -42,7 +42,7 @@ def make_descriptive_stats(df):
 
     return df
 
-def make_func_programin(df):
+def _make_func_programin(df):
     """
     Runs the function to add functional proframming
 
@@ -89,8 +89,8 @@ def main():
     # Try to load the dataset
     df = util.load_data('students_clean.csv')
 
-    df = make_descriptive_stats(df)
-    df = make_func_programin(df)
+    df = _make_descriptive_stats(df)
+    df = _make_func_programin(df)
 
     # Save the cleaned data to a new file
     util.save_data(df, 'students_clean.csv')
