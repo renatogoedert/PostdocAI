@@ -1,5 +1,9 @@
+# Code developed by Renato Francisco Goedert
+# Sutudent Number: x25115766
+
 import pandas as pd
 import os
+import matplotlib.pyplot as plt
 from colorama import Fore, init
 
 def init_colors():
@@ -36,9 +40,29 @@ def save_data(df, filename):
     """
     try:
         df.to_csv(filename, index=False)
-        
+        # Check file is created
         assert os.path.exists(filename), f"{Fore.RED}X X X ERROR: File {filename} not created! X X X"
         print(f"{"\033[38;5;46m"}!!! Successfully saved data to {filename} !!!")
         
     except Exception as e:
         print(f"{Fore.RED}An error occurred while saving {filename}: {e}")
+
+def save_plot(filename):
+    """
+    Saves the current matplotlib.pyplot figure to a file, verifies, and shows it.
+    
+    Args:
+        filename (str): The desired output file path (e.g., 'my_plot.png').
+    """
+    try:
+        print(f"{Fore.YELLOW}--- Saving plot to {filename} ---")
+        plt.tight_layout()
+        plt.savefig(filename)
+        # Check file is created
+        assert os.path.exists(filename), f"File {filename} was not created."
+        print(f"{"\033[38;5;46m"}!!! Plot PNG Created: {filename} !!!")
+        
+        plt.show()
+        
+    except Exception as e:
+        print(f"{Fore.RED}X X X ERROR: Could not save plot {filename}. Reason: {e} X X X")
