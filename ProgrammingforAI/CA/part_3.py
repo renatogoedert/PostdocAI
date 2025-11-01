@@ -1,3 +1,6 @@
+# Code developed by Renato Francisco Goedert
+# Sutudent Number: x25115766
+
 from colorama import Fore
 import util
 
