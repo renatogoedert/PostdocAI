@@ -50,7 +50,7 @@ def run_create_dataset():
 
     return df
 
-def chaging_values():
+def chaging_values(df):
     """
     Runs the function to add missing and inconsistents values
 
@@ -113,7 +113,7 @@ def chaging_values():
 
     return df
 
-if __name__ == "__main__":
+def main():
     # Initialising Colorama, I like Colors, dont judge me!
     util.init_colors()
 
@@ -124,3 +124,6 @@ if __name__ == "__main__":
     # Save dataset on csv
     print(f"{Fore.YELLOW}--- Exporting to CSV ---")
     util.save_data(df, 'students_raw.csv')
+
+if __name__ == "__main__":
+    main()
