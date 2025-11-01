@@ -24,7 +24,7 @@ This report focus on the Reflection and reporting part, where is descreptive sho
 
 # Project Structure
 
-The project was design for simplisity and reusability, as not a very complex with several diferent scirpts to organize, with that in mid a procedural/functional structure was used, with that in mind, but also taking into consideration the User Experience wehn using the program, intead of ordering the user to run several scripts a orchstrator was developed (main.py), this orchstrator script is responsable to run all modules in the right order, it also has a try,except in order to make shure that in case of keyinteruption it would close grafully, making easy to re use and to be run for any user, in order to run all from file creating to plot run:
+The project was designed to emphasize its simplicity, without overengineering, while also promoting principles like reusability, in addition to considering a user-friendly experience. With that in mind, a procedural/functional structure was chosen; however, instead of demanding for a user to run multiple Python scripts, a central orchestrator (main.py) was added to the system design. This orchestrator script abstracts the entire worflow on a single pipeline, ensuring that all functions and scripts run in the right sequece of exucation, from data/file creation through to plotting in PNG, furthermore it includes robust concepts like ```try/catch``` blocks to terminate the program gracefully in case of an interruption. This main orchestrator can be accessed by:
 
 ```
 python main.py

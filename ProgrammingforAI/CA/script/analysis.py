@@ -6,7 +6,7 @@ import numpy as np
 from colorama import Fore
 from . import util
 
-def print_dataframe_info(df):
+def _print_dataframe_info(df):
     """
     Print dataframe info, missing values and inconsistencies 
 
@@ -72,7 +72,7 @@ def print_dataframe_info(df):
         else:
             print(f" - Found no Inconsistencies on CourseCompletion")
 
-def solve_incosistencies(df):
+def _solve_incosistencies(df):
     """
     Runs the function to solve inconsistents values
 
@@ -179,7 +179,7 @@ def solve_incosistencies(df):
 
     return df
 
-def solve_missing(df):
+def _solve_missing(df):
     """
     Runs the function to solve missing values
 
@@ -271,7 +271,7 @@ def solve_missing(df):
 
     return df
 
-def normalize_study_hours(df):
+def _normalize_study_hours(df):
     """
     Runs the function to normilize study hours
 
@@ -294,52 +294,7 @@ def normalize_study_hours(df):
 
     return df
 
-# # Print the missing values
-# print(f"\nMissing values after cleaning:\n{df.isnull().sum()}")
-
-# # Print the inconsistencies
-# print("Other Inconsistencies:")
-
-# # Inconsistecies on Study Hours 
-# if 'StudyHours' in df.columns:
-#     num_perf = pd.to_numeric(df['StudyHours'], errors='coerce')
-#     over_values = (num_perf > 40).sum()
-#     if over_values > 0:
-#         print(f" - Found {over_values} over the limit on StudyHours")
-#     neg_values = (num_perf < 0).sum()
-#     if neg_values > 0:
-#         print(f" - Found {neg_values} negative values on StudyHours")
-
-# # Inconsistecies on Quiz Participation 
-# if 'QuizParticipation' in df.columns:
-#     num_perf = pd.to_numeric(df['QuizParticipation'], errors='coerce')
-#     over_values = (num_perf > 100).sum()
-#     if over_values > 0:
-#         print(f" - Found {over_values} over the limit on QuizParticipation")
-#     neg_values = (num_perf < 0).sum()
-#     if neg_values > 0:
-#         print(f" - Found {neg_values} negative values on QuizParticipation")
-
-# # Inconsistecies on Quiz Past Performance:
-# if 'PastPerformance' in df.columns:
-#     num_perf = pd.to_numeric(df['PastPerformance'], errors='coerce')
-#     over_values = (num_perf > 100).sum()
-#     if over_values > 0:
-#         print(f" - Found {over_values} over the limit on PastPerformance")
-#     neg_values = (num_perf < 0).sum()
-#     if neg_values > 0:
-#         print(f" - Found {neg_values} negative values on PastPerformance")
-
-# # Inconsistecies on Course Completition:
-# if 'CourseCompletion' in df.columns:
-#     unique_values = df['CourseCompletion'].unique()
-
-#     set_uniques = {str(val) for val in unique_values
-#                    }
-#     if set_uniques != {'False', 'True'}:
-#         print(f" - Unique Values in CourseCompletion: {unique_values}")
-
-def create_engagment_column(df):
+def _create_engagment_column(df):
     """
     Runs the function to create engagment column
     Args:
@@ -367,16 +322,13 @@ def main():
 
     # Try to load the dataset
     df = util.load_data('students_raw.csv')
-    print_dataframe_info(df)
-    solve_incosistencies(df)
-    solve_missing(df)
-    print_dataframe_info(df)
-    normalize_study_hours(df)
-    create_engagment_column(df)
-
     print(f"\n\n{Fore.YELLOW}--- Solving Dataset Issues ---")
-    df = solve_incosistencies(df)
-
+    _print_dataframe_info(df)
+    _solve_incosistencies(df)
+    _solve_missing(df)
+    _print_dataframe_info(df)
+    _normalize_study_hours(df)
+    _create_engagment_column(df)
 
     # Save the cleaned data to a new file
     util.save_data(df,'students_clean.csv')
