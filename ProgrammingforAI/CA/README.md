@@ -61,13 +61,14 @@ Following the designed architecture, there are the core modules that cover each 
 
 # Data Wrangling
 
-The second phase of the implementation consists of loading the raw CSV file created on the previous phase and fix it using multiple cleaning and wragling strategies, like droping rows or filling the missing values with new, imputed or calculated, values. This phase also involves validating the ranges of values to garantee that none of them would go above the limit, normalizing the study hours to fall between 0 and 1 and, finally, create a new derived column for engagment.
+The second phase of the implementation consists of loading the raw CSV file created in the previous phase and fixing it using multiple cleaning and wrangling strategies, like dropping rows or filling the missing values with new, imputed, or calculated values. This phase also involves validating the ranges of values to guarantee that none of them would go above the limit, normalizing the study hours to fall between 0 and 1, and, finally, creating a new derived column for engagement.
 
-The script solves the inconsistencies first, as some invalid values will be set as NaN and be processed by the missing values function after. Specifically, to Solve Inconsistencies on Study Hours, Paste Performance and Quiz participation, the logic was the same and simple, in case of negative value, it would be replaced with NaN, as its hard to say what was the reason for the negative value. In case of the value be over the estabilished limit (100 to Past Performance and Quiz participation, and 40h to study hours), it would be considered that the inconsistency happen for some bonus points or extra work,  so it would be reduced to the clipped to the limit.
+The data wrangling script solves the inconsistencies first, as some invalid values will be set as NaN and be processed by the missing values function after. Specifically, to solve inconsistencies in study hours, past performance, and quiz participation, the logic was the same and simple: in case of a negative value, it would be replaced with NaN, as it's hard to infer the reason for the negative value and its intended value. Conversely, for entries over the established upper limits (100 for past performance and quiz participation and 40 h for study hours), it would be assumed that the inconsistency might have happened due to some bonus points or extra work, so the most logical solution is to clip and set to their respective limits.
+
 
 ![Solving Study Hours Inconsistancies](./images/solve_inconsistencies_studyhours.png)
 
-to solve course completation inconsistecies is the diferent logic, in this we consider that the values could go from a range of 0 and 1 and no and yes, as there maybe have older systems connected and  is a map, maping possible values to True/False
+A distinct logic was the one applied to solve the course completion column inconsistencies. Accounting for a potential scenario where the dataframe is provenient from a merge of different or legacy systems, it was anticipated that the field might contain a range of values, from the traditional (0, 1) to strings (yes, no, true, false) and also Bool values. With that in mind, the logic to fix these inconsistencies was to simply map a dictionary with all plausible variations to either True or False.
 
 ![Solving Course Completation Inconsistancies](./images/solve_inconsistencies_coursecompletation.png)
 
