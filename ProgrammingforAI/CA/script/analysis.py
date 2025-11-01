@@ -14,12 +14,12 @@ def print_dataframe_info(df):
         df (pd.DataFrame): The DataFrame info to be printed.
 
     """
-    # Print the info of the dataframe
-    print("\n Initial DataFrame Info: ")
-    df.info()
+    # # Print the info of the dataframe
+    # print("\n Initial DataFrame Info: ")
+    # df.info()
 
     # Print the missing values
-    print(f"Initial missing values before cleaning:\n{df.isnull().sum()}")
+    print(f"Missing values:\n{df.isnull().sum()}")
 
     # Print the inconsistencies
     print("\nOther Inconsistencies:")
@@ -28,31 +28,38 @@ def print_dataframe_info(df):
     if 'StudyHours' in df.columns:
         num_perf = pd.to_numeric(df['StudyHours'], errors='coerce')
         over_values = (num_perf > 40).sum()
+        neg_values = (num_perf < 0).sum()
+
         if over_values > 0:
             print(f" - Found {over_values} over the limit on StudyHours")
-        neg_values = (num_perf < 0).sum()
-        if neg_values > 0:
+        elif neg_values > 0:
             print(f" - Found {neg_values} negative values on StudyHours")
+        else:
+            print(f" - Found no Inconsistencies on StudyHours")
 
     # Inconsistecies on Quiz Participation 
     if 'QuizParticipation' in df.columns:
         num_perf = pd.to_numeric(df['QuizParticipation'], errors='coerce')
         over_values = (num_perf > 100).sum()
+        neg_values = (num_perf < 0).sum()
         if over_values > 0:
             print(f" - Found {over_values} over the limit on QuizParticipation")
-        neg_values = (num_perf < 0).sum()
-        if neg_values > 0:
+        elif neg_values > 0:
             print(f" - Found {neg_values} negative values on QuizParticipation")
+        else:
+            print(f" - Found no Inconsistencies on QuizParticipation")
 
     # Inconsistecies on Quiz Past Performance:
     if 'PastPerformance' in df.columns:
         num_perf = pd.to_numeric(df['PastPerformance'], errors='coerce')
         over_values = (num_perf > 100).sum()
+        neg_values = (num_perf < 0).sum()
         if over_values > 0:
             print(f" - Found {over_values} over the limit on PastPerformance")
-        neg_values = (num_perf < 0).sum()
-        if neg_values > 0:
+        elif neg_values > 0:
             print(f" - Found {neg_values} negative values on PastPerformance")
+        else:
+            print(f" - Found no Inconsistencies on PastPerformance")
 
     # Inconsistecies on Course Completition:
     if 'CourseCompletion' in df.columns:
@@ -62,6 +69,8 @@ def print_dataframe_info(df):
                     }
         if set_uniques != {'False', 'True'}:
             print(f" - Unique Values in CourseCompletion: {unique_values}")
+        else:
+            print(f" - Found no Inconsistencies on CourseCompletion")
 
 def solve_incosistencies(df):
     """
