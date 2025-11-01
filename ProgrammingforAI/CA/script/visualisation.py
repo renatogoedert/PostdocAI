@@ -108,3 +108,6 @@ plt.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
 # Save file as PNG
 util.save_plot('pie_chart_performance_category.png')
+
+if __name__ == "__main__":
+    main()

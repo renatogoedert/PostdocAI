@@ -66,3 +66,6 @@ print(df.head())
 
 # Save the cleaned data to a new file
 util.save_data(df, 'students_clean.csv')
+
+if __name__ == "__main__":
+    main()
