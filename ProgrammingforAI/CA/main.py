@@ -4,7 +4,7 @@
 from script import student_data
 from script import analysis
 from script import part_3
-# from script import visualisation
+from script import visualisation
 from script.util import init_colors
 from colorama import Fore
 import time
@@ -51,13 +51,13 @@ def main():
     print(f"Part 3 Running in 1 sec, press Ctrl+D to stop")
     time.sleep(1)
     
-    # # Part 4: Data Visualisation
-    # print(f"\n{Fore.GREEN}--- Executing Part 4: Data Visualisation ---")
-    # visualisation.run_part4_visualisation()
+    # Part 4: Data Visualisation
+    print(f"\n{Fore.GREEN}--- Executing Part 4: Data Visualisation ---")
+    visualisation.run_part4_visualisation()
     
-    # print(f"\n{Fore.CYAN}{'='*42}")
-    # print(f"{Fore.CYAN}== PIPELINE FINISHED SUCCESSFULLY (PLOTS) ==")
-    # print(f"{Fore.CYAN}{'='*42}")
+    print(f"\n{Fore.CYAN}{'='*42}")
+    print(f"{Fore.CYAN}== PIPELINE FINISHED SUCCESSFULLY (PLOTS) ==")
+    print(f"{Fore.CYAN}{'='*42}")
 
 if __name__ == "__main__":
     main()
