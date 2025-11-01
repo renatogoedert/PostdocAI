@@ -1,10 +1,9 @@
-# main.py
-# Main execution script for the Programming for AI CA.
-# This script runs all parts of the project in sequence.
+# Code developed by Renato Francisco Goedert
+# Sutudent Number: x25115766
 
 from script import student_data
 from script import analysis
-# from script import part_3
+from script import part_3
 # from script import visualisation
 from script.util import init_colors
 from colorama import Fore
@@ -41,10 +40,16 @@ def main():
     print(f"Part 3 Running in 1 sec, press Ctrl+D to stop")
     time.sleep(1)
     
-    # # Part 3: Data Analysis
-    # print(f"\n{Fore.GREEN}--- Executing Part 3: Data Analysis ---")
-    # part_3.run_part3_analysis()
-    # time.sleep(1)
+    # Part 3: Data Analysis
+    print(f"\n{Fore.GREEN}--- Executing Part 3: Data Analysis ---")
+    part_3.main()
+    time.sleep(1)
+    print(f"\nPart 3 Running in 3 sec, press Ctrl+D to stop")
+    time.sleep(1)
+    print(f"Part 3 Running in 2 sec, press Ctrl+D to stop")
+    time.sleep(1)
+    print(f"Part 3 Running in 1 sec, press Ctrl+D to stop")
+    time.sleep(1)
     
     # # Part 4: Data Visualisation
     # print(f"\n{Fore.GREEN}--- Executing Part 4: Data Visualisation ---")
