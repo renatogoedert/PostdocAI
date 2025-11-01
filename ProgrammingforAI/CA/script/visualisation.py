@@ -7,7 +7,7 @@ import numpy as np
 from colorama import Fore
 from . import util
 
-def make_scatter_graph(df):
+def _make_scatter_graph(df):
     # Make a Scatter Plot (Study Hours vs Past Performance)
     print(f"{Fore.YELLOW}--- Generating Scatter Plot (Study Hours vs Past Performance) ---")
 
@@ -34,7 +34,7 @@ def make_scatter_graph(df):
     # Save file as PNG
     util.save_plot('scatter_performance_hours.png')
 
-def make_histogram_graph(df):
+def _make_histogram_graph(df):
     # Make a Histogram (Distribution of Quiz Participation)
     print(f"{Fore.YELLOW}--- Generating Scatter Plot (Distribution of Quiz Participation) ---")
 
@@ -58,7 +58,7 @@ def make_histogram_graph(df):
     # Save file as PNG
     util.save_plot('histogram_quiz_participation.png')
 
-def make_bar_graph(df):
+def _make_bar_graph(df):
     # Make a Bar Chart (Performance Category Distribution)
     print(f"{Fore.YELLOW}--- Generating Bar Chart (Average Engagement by Course Completion ---")
 
@@ -80,7 +80,7 @@ def make_bar_graph(df):
     # Save file as PNG
     util.save_plot('bar_chart_avg_engagement.png')
 
-def make_pie_graph(df):
+def _make_pie_graph(df):
     # Make a Pie Chart (Performance Category Distribution)
     print(f"{Fore.YELLOW}--- Generating Pie Chart (Performance Category Distribution) ---")
 
@@ -110,10 +110,10 @@ def main():
 
     # Try to load the dataset
     df = util.load_data('students_clean.csv')
-    make_scatter_graph(df)
-    make_histogram_graph(df)
-    make_bar_graph(df)
-    make_pie_graph(df)
+    _make_histogram_graph(df)
+    _make_bar_graph(df)
+    _make_scatter_graph(df)
+    _make_pie_graph(df)
 
 if __name__ == "__main__":
     main()
