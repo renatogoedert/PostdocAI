@@ -44,16 +44,16 @@ def main():
     print(f"\n{Fore.GREEN}--- Executing Part 3: Data Analysis ---")
     part_3.main()
     time.sleep(1)
-    print(f"\nPart 3 Running in 3 sec, press Ctrl+D to stop")
+    print(f"\nPart 4 Running in 3 sec, press Ctrl+D to stop")
     time.sleep(1)
-    print(f"Part 3 Running in 2 sec, press Ctrl+D to stop")
+    print(f"Part 4 Running in 2 sec, press Ctrl+D to stop")
     time.sleep(1)
-    print(f"Part 3 Running in 1 sec, press Ctrl+D to stop")
+    print(f"Part 4 Running in 1 sec, press Ctrl+D to stop")
     time.sleep(1)
     
     # Part 4: Data Visualisation
     print(f"\n{Fore.GREEN}--- Executing Part 4: Data Visualisation ---")
-    visualisation.run_part4_visualisation()
+    visualisation.main()
     
     print(f"\n{Fore.CYAN}{'='*42}")
     print(f"{Fore.CYAN}== PIPELINE FINISHED SUCCESSFULLY (PLOTS) ==")

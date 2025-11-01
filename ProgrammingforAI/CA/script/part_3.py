@@ -82,9 +82,6 @@ def make_func_programin(df):
 
     return df
 
-# Save the cleaned data to a new file
-util.save_data(df, 'students_clean.csv')
-
 def main():
     # Initialising Colorama, I like Colors, dont judge me!
     util.init_colors()
