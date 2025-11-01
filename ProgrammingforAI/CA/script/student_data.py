@@ -6,7 +6,7 @@ import numpy as np
 from colorama import Fore
 from . import util
 
-def run_create_dataset():
+def _run_create_dataset():
     """
     Runs the function to create a 500 values
     
@@ -50,7 +50,7 @@ def run_create_dataset():
 
     return df
 
-def chaging_values(df):
+def _chaging_values(df):
     """
     Runs the function to add missing and inconsistents values
 
@@ -118,8 +118,8 @@ def main():
     util.init_colors()
 
     #Run the functions
-    df = run_create_dataset()
-    df = chaging_values(df)
+    df = _run_create_dataset()
+    df = _chaging_values(df)
 
     # Save dataset on csv
     print(f"{Fore.YELLOW}--- Exporting to CSV ---")
