@@ -14,7 +14,7 @@ This report focus on the Reflection and reporting part, where is descreptive sho
 
 ## Libraries used
 
-- NUmpy
+- Numpy
 - pandas
 - seaborn
 - matplotlib.pyplot
