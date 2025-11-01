@@ -54,7 +54,7 @@ In order to secure the project's proper reliability, a dedicated Python package 
 Following the designed architecture, there are the core modules that cover each stage of the CA implementation. These modules were organized by multiple private functions and a ```main()``` function that abstracts the execution of the module by coordinating each “step function”. At the very bottom of the module is the name-main idiom (```if __name__ == "__main__":```) to avoid the main() function being run when the module is imported. Moreover, the “Step Functions” were made private (prefixed by an underscore), thereby respecting the principle of encapsulation. The modules also include multiple ```print()``` statements to inform the user about the stages and ```asserts``` statements to make sure that the script is running smoothly. 
 
 
-[main() function example](./images/main%20func.png)
+![main() function example](./images/main%20func.png)
 
 
 # Insights from Data Visualisation
