@@ -22,8 +22,14 @@ def main():
     # Part 1: Data Generation
     print(f"\n{Fore.GREEN}--- Executing Part 1: Data Generation ---")
     student_data.main()
-    time.sleep(1) # Small pause
-    
+    time.sleep(1)
+    print(f"\n{Fore.GREEN}--- Part 2 Running in 3 sec, press Ctrl+D to stop ---")
+    time.sleep(1)
+    print(f"\n{Fore.GREEN}--- Part 2 Running in 2 sec, press Ctrl+D to stop ---")
+    time.sleep(1)
+    print(f"\n{Fore.GREEN}--- Part 2 Running in 1 sec, press Ctrl+D to stop ---")
+    time.sleep(1)
+
     # Part 2: Data Wrangling
     print(f"\n{Fore.GREEN}--- Executing Part 2: Data Wrangling ---")
     analysis()
