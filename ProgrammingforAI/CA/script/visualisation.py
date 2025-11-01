@@ -115,8 +115,6 @@ def main():
     make_bar_graph(df)
     make_pie_graph(df)
 
-    # Start Plotting
-    print(f"\n{Fore.YELLOW}--- Start the Ploting Code ---\n")
 
 if __name__ == "__main__":
     main()

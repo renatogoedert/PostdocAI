@@ -58,7 +58,7 @@ def main():
     
     except KeyboardInterrupt:
         print(f"\n{Fore.LIGHTRED_EX}{'='*40}")
-        print(f"{Fore.LIGHTRED_EX}== PIPELINE INTERRUPTED BY USER ==")
+        print(f"{Fore.LIGHTRED_EX}===== PIPELINE INTERRUPTED BY USER =====")
         print(f"{Fore.LIGHTRED_EX}{'='*40}")
 
 
