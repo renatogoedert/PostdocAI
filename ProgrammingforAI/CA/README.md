@@ -99,7 +99,11 @@ In order to have an understanding from the plot, a stoisch calculation was used 
 
 ![Code for Random data](./images/random_results_code.png)
 
-SOme understanding of the Python language was also developed during the development of this report, as the knowledge of the need of the ```__init__.py``` 
+SOme understanding of the Python language was also developed during the development of this report, as the knowledge of the need of the ```__init__.py``` or hor the function if ```__name__ == "__main__":``` works, also the recursive print, was a code found on stack flow that improve the small details of the code
+
+Some challenges also from creating a propoer logic, like the calculation to use 
+
+
 
 
 
