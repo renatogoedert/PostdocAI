@@ -121,11 +121,11 @@ From the grouping operation in the previous step, the bar chart displays the ave
 
 # Reflection
 
-several challenges were reaised during the creating of this project, and solved with creativity and knowledge, showing how important this caracteristics are for the scientsts and their academic/working life, one of them was the scatter plot, the first result consists a very spread result, what would make sense, as the random was used
+During the development of this continuous assessment, several challenges were encountered and solved with creativity and knowledge, showing how important these characteristics are for the scientists and their academic/working life. One such challenge arose on the first iteration of the scatter plot graph, an interaction that arranged the points in a very dispersed way, displaying no clear pattern of correlation
 
 ![First Scatter Plot](./first%20graphs/scatter_performance_hours.png)
 
-In order to have an understanding from the plot, a stoisch calculation was used to generate the first results, this code qould have a minimum of 20, and would correlate the past performance and quiz participation with study hours, artifially creating a tren espected in the real word data
+The principal cause for that was the randomness of the values created on the first part, so, in order to have an underling patten to be meaningfully analised from the plot, a stochastic calculation was applied. The fixed code, instead of generating completely random value, it set a minimum value of 20 and made the Past Performance and Quiz Participation correlated to the study hours, in that way creating a data pattern
 
 ![Code for Random data](./images/random_results_code.png)
 
