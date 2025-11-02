@@ -81,6 +81,17 @@ The most elaborate solution was implemented for the missing quiz participation a
 
 # Data Analysis
 
+analising the Descriptive Statistics its truly that the mean is almost on the eacly mid point of the avaliable range, and that the median is virtually identical to the mean, wich indicates the distribuition of study hours is higly simetrica, with a Standard deviation of 0.2792 is a high degreee of variability, so the students are cleary not clustering arounf the average and wide spread
+
+The results of Quiz Participation has a mean of 61.25, wich is over the 50% medium of the range (0-100) putting most of the values on the good category, the mediam is also similar to mean, showing a symmetrical distibution, at leats aorund mediam/mean, and as study hours the standard devietaion indicates a wide spread of result, which makes sense when the data is randomly generated
+
+![Descriptive Statistics](./images/statistics%20for%20Study%20Hours%20and%20Quiz%20participation.png)
+
+When grouping an interesting inverse relationship is show, where the students who did not complete the course have a higher average engagment score(0.597) than the student who did complete the course (0.569) but not a significant diference either, 1.8%.
+
+![Grouping Statistics](./images/statistics%20for%20grouping.png)
+
+
 # Data Visualisation
 
 The visualialisations alway help with the understanding of the data, for example the scatter plot graph below, we can see that the past performance have a correlation with study hours, but not so much deterministic, and we can see that the course completaion or not doesnt really affect study hours or past performance
