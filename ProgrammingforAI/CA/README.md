@@ -96,11 +96,11 @@ A grouped analysis was also run in the dataset, this second step divided the stu
 
 # Data Visualisation
 
-The visualialisations alway help with the understanding of the data, for example the scatter plot graph below, we can see that the past performance have a correlation with study hours, but not so much deterministic, and we can see that the course completaion or not doesnt really affect study hours or past performance
+With the focus of receiving more insights, the visualization script focuses on the plotting of graphs that highlights data patterns. The first graph, the scatter plot graph (image below), displays a clear correlation of past performance with study hours, suggesting, with low determinism, that the more hours, the better the performance. Not just that, it also foregrounds that the course completion has little to no effect on the performance or study hours. 
 
 ![Scatter Plot chart](./scatter_performance_hours.png)
 
-The Histogram shows that most of the quiz participation are on the 50% to 70% range, and no value below 20%, the chart shows a little stif to the right side, showing that most values over the 50%. A similar trend is see on the Pie chart , that most of sudents are on the medium  engagment results, but the uppper max has more them the bottom limit
+The histogram graph evidences the fact that most of the quiz participation is in the 50% to 70% range and that no value goes below 20%. Additionally, the chart shows a slight skew to the right side, indicating that most values are over the midpoint of 50%. A similar trend is displayed on the pie chart: most of the students are in the medium engagement results, with the upper performance range moderately exceeding the bottom one
 
 <table style="width:100%">
   <tr>
@@ -115,7 +115,7 @@ The Histogram shows that most of the quiz participation are on the 50% to 70% ra
   </tr>
 </table>
 
-The Bar chart, anasing the engagment grouping by course completation doesnt show any notable diference between completed and not completed, aslo reinforcing the find on the chatter plot. This charts show that there is not a diference between who completed the course and who did not, but mostly of the students are on the upper half, mosntly on the medium values.
+From the grouping operation in the previous step, the bar chart displays the average engagement for the two groups (completed and not completed). This doesn't show any notable difference between the two groups, further reinforcing the finding on the chatter plot that, whether they have completed the benign course or not, there isn't any correlation with any performance/engagement.
 
 ![Bar plot](./bar_chart_avg_engagement.png)
 
