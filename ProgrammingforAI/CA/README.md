@@ -87,9 +87,7 @@ The visualialisations alway help with the understanding of the data, for example
 
 ![Scatter Plot chart](./scatter_performance_hours.png)
 
-![Scatter plot code](./images/scatter_plot_code.png)
-
-The Histogram shows that most of the quiz participation are on the 50% to 70% range, and no value below 20%, the chart shows a little stif to the right side, showing that most values over the 50%, the Pie chart also enforces the same, that most of sudents are on the medium results, but the uppper max has more them the bottom limit
+The Histogram shows that most of the quiz participation are on the 50% to 70% range, and no value below 20%, the chart shows a little stif to the right side, showing that most values over the 50%. A similar trend is see on the Pie chart , that most of sudents are on the medium  engagment results, but the uppper max has more them the bottom limit
 
 <table style="width:100%">
   <tr>
@@ -103,6 +101,10 @@ The Histogram shows that most of the quiz participation are on the 50% to 70% ra
     </td>
   </tr>
 </table>
+
+The Bar chart, anasing the engagment grouping by course completation doesnt show any notable diference between completed and not completed, aslo reinforcing the find on the chatter plot. This charts show that there is not a diference between who completed the course and who did not, but mostly of the students are on the upper half, mosntly on the medium values.
+
+![Bar plot](./bar_chart_avg_engagement.png)
 
 # Reflection
 
