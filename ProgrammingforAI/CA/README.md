@@ -89,8 +89,7 @@ The results clearly show that the mean value of study hours is almost the same a
 
 The results of quiz participation have a mean of 61.25, which is slightly above the midpoint of the range (0-100), implying that most of the values are in the good category. As previously seen in study hours, the median closely matches the mean, suggesting another symmetrical distribution. In conclusion, these results are expected when the data is randomly generated
 
-
-When grouping an interesting inverse relationship is show, where the students who did not complete the course have a higher average engagment score(0.597) than the student who did complete the course (0.569) but not a significant diference either, 1.8%.
+A grouped analysis was also run in the dataset, this second step divided the students according to their course completion status and displayed the average engagement of the group. Interestingly, this showed an inverse relationship, where the students who did not complete the course have a higher average engagement score (0.597) than the students who did complete the course (0.569), Although the difference of values is about 1.8%, small enough to be negligible. 
 
 ![Grouping Statistics](./images/statistics%20for%20grouping.png)
 
