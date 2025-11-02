@@ -83,11 +83,15 @@ The most elaborate solution was implemented for the missing quiz participation a
 
 # Data Visualisation
 
-The visualialisations alway help with the understanding of the data, for example the scatter plot graph below, 
+The visualialisations alway help with the understanding of the data, for example the scatter plot graph below, we can see that the past performance have a correlation with study hours, but not so much deterministic, and we can see that the course completaion or not doesnt really affect study hours or past performance
+
+![Scatter Plot chart](./scatter_performance_hours.png)
 
 ![Scatter plot code](./images/scatter_plot_code.png)
 
-![Scatter Plot chart](./scatter_performance_hours.png)
+The Histogram shows that most of the quiz participation are on the 50% to 70% range, and no value below 20%, the chart shows a little stif to the right side, showing that most values over the 50%, the Pie chart also enforces the same, that most of sudents are on the medium results, but the uppper max has more them the bottom limit
+
+![Histogram](./histogram_quiz_participation.png) ![Pie Chart](./pie_chart_performance_category.png)
 
 # Reflection
 
@@ -101,7 +105,7 @@ In order to have an understanding from the plot, a stoisch calculation was used 
 
 SOme understanding of the Python language was also developed during the development of this report, as the knowledge of the need of the ```__init__.py``` or hor the function if ```__name__ == "__main__":``` works, also the recursive print, was a code found on stack flow that improve the small details of the code
 
-Some challenges also from creating a propoer logic, like the calculation to use 
+Some challenges also from creating a propoer logic, like the calculation to use the quiz participation and past performance to calculate each other, it came from a place of trying to find the perfect way to solve the missing values, and with mathematical knowledge a fit solution was found
 
 
 
