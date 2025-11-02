@@ -79,13 +79,32 @@ The most elaborate solution was implemented for the missing quiz participation a
 
 ![Solving Missing Performancce](./images/solve_performance_missing.png)
 
+# Data Analysis
+
+# Data Visualisation
+
+The visualialisations alway help with the understanding of the data, for example the scatter plot graph below, 
+
+![Scatter plot code](./images/scatter_plot_code.png)
+
+![Scatter Plot chart](./scatter_performance_hours.png)
+
+# Reflection
+
+several challenges were reaised during the creating of this project, and solved with creativity and knowledge, showing how important this caracteristics are for the scientsts and their academic/working life, one of them was the scatter plot, the first result consists a very spread result, what would make sense, as the random was used
+
+![First Scatter Plot](./first%20graphs/scatter_performance_hours.png)
+
+In order to have an understanding from the plot, a stoisch calculation was used to generate the first results, this code qould have a minimum of 20, and would correlate the past performance and quiz participation with study hours, artifially creating a tren espected in the real word data
+
+![Code for Random data](./images/random_results_code.png)
+
+SOme understanding of the Python language was also developed during the development of this report, as the knowledge of the need of the ```__init__.py``` 
 
 
+
+ ---- ----- --- -- - - -- - - - 
 The strategies you used for handling missing and inconsistent values.
 The main findings from your analysis.
 The insights drawn from your visualisations.
 Challenges you faced, how you resolved them, and what you learned.
-
-# Reflection
-
-several challenges were reaised during the creating of this project, and solved with creativity and knowledge, showing how important this caracteristics are for the scientsts and their academic/working life

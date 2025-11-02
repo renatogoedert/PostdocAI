@@ -1,498 +1,497 @@
 StudentID,StudyHours,QuizParticipation,PastPerformance,CourseCompletion,Engagement,PerformanceCategory,Completed
-S001,0.1,41.0,47.0,True,0.32,Low,Completed
-S002,0.575,59.0,51.0,True,0.59,Medium,Completed
-S003,0.725,57.0,53.0,True,0.62,Medium,Completed
-S004,0.2,58.0,30.0,False,0.47,Medium,Not Completed
-S005,0.55,70.0,79.0,True,0.66,Medium,Completed
-S006,0.775,85.0,79.0,False,0.83,High,Not Completed
-S007,0.35,49.0,62.0,True,0.45,Medium,Completed
-S008,0.3,50.0,43.0,False,0.44,Medium,Not Completed
-S009,0.35,57.0,55.0,True,0.5,Medium,Completed
-S010,0.55,46.91,45.0,True,0.49,Medium,Completed
-S011,0.8,90.0,87.0,False,0.87,High,Not Completed
-S012,0.575,48.0,46.05,False,0.51,Medium,Not Completed
-S013,0.825,63.0,93.0,False,0.69,Medium,Not Completed
-S014,0.3,59.0,39.0,True,0.5,Medium,Completed
-S015,0.2,64.0,35.0,False,0.51,Medium,Not Completed
-S016,0.7,88.0,84.42,True,0.83,High,Completed
-S017,0.55,53.0,56.0,True,0.54,Medium,Completed
-S018,0.5,76.0,49.0,False,0.68,Medium,Not Completed
-S019,0.425,49.0,47.01,True,0.47,Medium,Completed
-S020,0.625,67.0,84.0,False,0.66,Medium,Not Completed
-S021,0.85,78.0,54.0,True,0.8,High,Completed
-S022,0.875,89.65,86.0,False,0.89,High,Not Completed
-S023,0.425,60.0,70.0,True,0.55,Medium,Completed
-S024,0.51525,58.0,72.0,True,0.56,Medium,Completed
-S025,0.725,75.0,57.0,True,0.74,High,Completed
-S027,0.325,100.0,63.0,False,0.8,High,Not Completed
-S028,0.125,58.0,44.0,True,0.44,Medium,Completed
-S029,0.55,59.0,54.0,False,0.58,Medium,Not Completed
-S030,0.55,71.0,82.0,False,0.66,Medium,Not Completed
-S031,0.775,90.0,69.0,False,0.86,High,Not Completed
-S032,0.75,90.0,79.0,True,0.85,High,Completed
-S033,0.51525,49.0,52.0,False,0.5,Medium,Not Completed
-S034,0.5,54.0,57.0,True,0.53,Medium,Completed
-S035,0.25,63.0,30.0,False,0.52,Medium,Not Completed
-S036,0.9,77.0,73.87,True,0.81,High,Completed
-S037,0.625,50.04,48.0,False,0.54,Medium,Not Completed
-S038,0.425,55.0,68.0,True,0.51,Medium,Completed
-S039,0.5,55.0,62.0,True,0.54,Medium,Completed
-S040,0.4,38.0,64.0,False,0.39,Low,Not Completed
-S041,0.85,93.0,89.21,False,0.91,High,Not Completed
-S042,0.675,53.0,77.0,False,0.57,Medium,Not Completed
-S043,0.85,84.0,86.0,False,0.84,High,Not Completed
-S044,0.775,70.0,89.0,True,0.72,High,Completed
-S045,0.6,56.0,65.0,False,0.57,Medium,Not Completed
-S046,0.075,40.0,24.0,False,0.3,Low,Not Completed
-S047,0.8,70.0,66.0,False,0.73,High,Not Completed
-S048,0.675,82.0,47.0,False,0.78,High,Not Completed
-S049,0.2,57.0,54.68,True,0.46,Medium,Completed
-S050,0.9,95.0,81.0,True,0.94,High,Completed
-S051,0.825,69.0,55.0,False,0.73,High,Not Completed
-S052,0.4,72.0,64.0,True,0.62,Medium,Completed
-S053,0.05,59.0,56.6,False,0.43,Medium,Not Completed
-S054,0.55,69.0,55.0,False,0.65,Medium,Not Completed
-S055,0.175,61.0,58.0,True,0.48,Medium,Completed
-S056,0.6,76.0,45.0,True,0.71,High,Completed
-S057,0.25,48.0,63.0,True,0.41,Medium,Completed
-S058,0.925,97.0,88.0,False,0.96,High,Not Completed
-S059,0.6,53.0,78.0,True,0.55,Medium,Completed
-S060,0.65,53.0,63.0,False,0.57,Medium,Not Completed
-S061,0.325,100.0,61.0,True,0.8,High,Completed
-S062,0.225,37.0,49.0,False,0.33,Low,Not Completed
-S063,0.125,100.0,26.0,False,0.74,High,Not Completed
-S064,0.075,28.0,61.0,True,0.22,Low,Completed
-S065,0.175,43.0,27.0,True,0.35,Low,Completed
-S066,0.575,67.0,57.0,True,0.64,Medium,Completed
-S067,0.95,81.0,87.0,False,0.85,High,Not Completed
-S068,0.475,50.0,47.96,True,0.49,Medium,Completed
-S069,0.9,85.0,63.0,False,0.86,High,Not Completed
-S070,0.275,31.0,36.0,False,0.3,Low,Not Completed
-S071,0.875,83.0,62.0,True,0.84,High,Completed
-S072,0.5,77.0,66.0,True,0.69,Medium,Completed
-S073,0.9,74.0,79.0,True,0.79,High,Completed
-S074,0.9,60.0,65.0,False,0.69,Medium,Not Completed
-S075,0.45,41.0,59.0,False,0.42,Medium,Not Completed
-S076,0.075,60.0,40.0,True,0.44,Medium,Completed
-S077,0.525,48.0,44.0,False,0.49,Medium,Not Completed
-S078,0.45,56.0,57.0,True,0.53,Medium,Completed
-S079,0.45,68.0,50.0,False,0.61,Medium,Not Completed
-S080,0.5,55.0,52.0,False,0.54,Medium,Not Completed
-S081,0.675,56.0,56.0,True,0.59,Medium,Completed
-S082,0.575,83.0,72.0,False,0.75,High,Not Completed
-S083,0.975,94.0,90.17,True,0.95,High,Completed
-S084,0.85,85.0,88.0,False,0.85,High,Not Completed
-S085,0.95,58.0,75.0,False,0.69,Medium,Not Completed
-S086,0.825,54.0,63.0,False,0.63,Medium,Not Completed
-S087,0.575,82.0,48.0,True,0.75,High,Completed
-S088,0.3,39.0,37.41,True,0.36,Low,Completed
-S089,0.325,37.0,34.0,True,0.36,Low,Completed
-S090,0.375,48.0,73.0,False,0.45,Medium,Not Completed
-S091,0.51525,64.0,68.0,False,0.6,Medium,Not Completed
-S092,0.6,59.0,83.0,True,0.59,Medium,Completed
-S093,0.575,81.0,58.0,False,0.74,High,Not Completed
-S094,0.575,81.0,59.0,True,0.74,High,Completed
-S095,0.725,53.0,72.0,True,0.59,Medium,Completed
-S096,0.475,65.0,79.0,True,0.6,Medium,Completed
-S097,0.425,71.0,45.0,True,0.62,Medium,Completed
-S098,0.65,73.0,75.0,False,0.71,High,Not Completed
-S099,0.8,92.0,57.0,True,0.88,High,Completed
-S100,0.175,62.0,40.0,True,0.49,Medium,Completed
-S101,0.075,60.0,34.0,False,0.44,Medium,Not Completed
-S102,0.975,75.0,89.0,True,0.82,High,Completed
-S103,0.025,34.0,37.0,False,0.25,Low,Not Completed
-S104,0.925,71.0,58.0,True,0.77,High,Completed
-S105,0.15,47.0,66.0,True,0.37,Low,Completed
-S106,0.15,66.0,35.0,False,0.51,Medium,Not Completed
-S107,0.025,22.0,21.1,True,0.16,Low,Completed
-S108,0.575,57.0,46.0,True,0.57,Medium,Completed
-S109,0.675,86.0,78.0,True,0.8,High,Completed
-S110,0.9,58.0,89.0,True,0.68,Medium,Completed
-S111,0.75,76.0,64.0,True,0.76,High,Completed
-S112,0.4,36.0,75.0,True,0.37,Low,Completed
-S113,0.175,39.0,63.0,True,0.33,Low,Completed
-S114,0.75,61.0,80.0,False,0.65,Medium,Not Completed
-S115,0.7,88.0,75.0,False,0.83,High,Not Completed
-S116,0.125,54.0,30.0,True,0.42,Medium,Completed
-S117,0.2,100.0,31.0,True,0.76,High,Completed
-S118,0.35,64.0,72.0,False,0.55,Medium,Not Completed
-S119,0.775,73.0,85.0,True,0.74,High,Completed
-S120,0.725,79.0,72.0,False,0.77,High,Not Completed
-S121,0.5,59.0,46.0,False,0.56,Medium,Not Completed
-S122,0.075,48.0,26.0,False,0.36,Low,Not Completed
-S123,0.7,73.0,60.0,False,0.72,High,Not Completed
-S124,0.575,76.0,68.0,True,0.7,High,Completed
-S125,0.2,66.0,47.0,False,0.52,Medium,Not Completed
-S127,0.05,42.0,48.0,True,0.31,Low,Completed
-S128,0.05,51.0,34.0,False,0.37,Low,Not Completed
-S129,0.3,52.0,52.0,False,0.45,Medium,Not Completed
-S130,0.975,96.0,63.0,True,0.96,High,Completed
-S131,0.825,65.0,61.0,False,0.7,High,Not Completed
-S132,0.225,32.0,30.7,False,0.29,Low,Not Completed
-S133,0.5,51.0,68.0,True,0.51,Medium,Completed
-S134,0.45,43.0,40.0,False,0.44,Medium,Not Completed
-S135,0.2,100.0,51.0,True,0.76,High,Completed
-S136,0.95,93.0,61.0,True,0.94,High,Completed
-S137,0.6,61.5,59.0,False,0.61,Medium,Not Completed
-S138,0.5,47.0,62.0,False,0.48,Medium,Not Completed
-S139,0.675,71.0,56.0,False,0.7,High,Not Completed
-S140,0.7,54.0,63.0,True,0.59,Medium,Completed
-S141,0.325,68.0,35.0,False,0.57,Medium,Not Completed
-S142,0.51525,100.0,40.0,True,0.85,High,Completed
-S143,0.025,37.0,39.0,True,0.27,Low,Completed
-S144,0.2,28.0,46.0,False,0.26,Low,Not Completed
-S145,0.45,44.0,76.0,True,0.44,Medium,Completed
-S146,0.075,51.0,33.0,True,0.38,Low,Completed
-S147,0.675,56.0,84.0,False,0.59,Medium,Not Completed
-S148,0.525,45.0,72.0,True,0.47,Medium,Completed
-S149,0.725,89.0,64.0,False,0.84,High,Not Completed
-S150,0.51525,71.0,60.0,False,0.65,Medium,Not Completed
-S151,0.425,40.0,72.0,False,0.41,Medium,Not Completed
-S152,0.725,78.0,84.0,False,0.76,High,Not Completed
-S153,0.075,26.0,33.0,False,0.2,Low,Not Completed
-S154,0.725,50.0,89.0,True,0.57,Medium,Completed
-S155,0.175,65.0,62.35,False,0.51,Medium,Not Completed
-S156,0.3,45.87,44.0,False,0.41,Medium,Not Completed
-S157,0.51525,56.0,38.0,False,0.55,Medium,Not Completed
-S158,0.05,36.0,34.53,True,0.27,Low,Completed
-S159,0.975,74.0,86.0,True,0.81,High,Completed
-S160,0.85,55.0,56.0,False,0.64,Medium,Not Completed
-S161,0.025,58.0,27.0,True,0.41,Medium,Completed
-S162,0.75,70.0,80.0,True,0.72,High,Completed
-S163,0.525,59.0,56.6,False,0.57,Medium,Not Completed
-S164,0.175,100.0,35.0,True,0.75,High,Completed
-S165,0.725,72.0,78.0,False,0.72,High,Not Completed
-S166,0.25,59.0,33.0,True,0.49,Medium,Completed
-S167,0.475,47.95,46.0,True,0.48,Medium,Completed
-S168,0.625,76.1,73.0,False,0.72,High,Not Completed
-S169,0.35,38.0,73.0,True,0.37,Low,Completed
-S170,0.85,59.0,76.0,True,0.67,Medium,Completed
-S171,0.9,57.0,89.0,False,0.67,Medium,Not Completed
-S172,0.5,63.0,62.0,False,0.59,Medium,Not Completed
-S173,0.675,78.0,63.0,True,0.75,High,Completed
-S174,0.525,50.0,68.0,True,0.51,Medium,Completed
-S175,0.675,49.0,48.0,False,0.55,Medium,Not Completed
-S176,0.4,45.0,58.0,True,0.43,Medium,Completed
-S177,0.825,84.0,55.0,True,0.84,High,Completed
-S178,0.85,87.0,60.0,True,0.86,High,Completed
-S179,0.2,39.0,65.0,False,0.33,Low,Not Completed
-S180,0.25,51.0,48.92,False,0.43,Medium,Not Completed
-S181,0.375,68.0,65.23,False,0.59,Medium,Not Completed
-S182,0.775,90.0,66.0,True,0.86,High,Completed
-S183,0.8,60.0,90.0,True,0.66,Medium,Completed
-S184,0.625,66.0,75.0,False,0.65,Medium,Not Completed
-S185,0.3,63.0,47.0,True,0.53,Medium,Completed
-S186,0.575,51.0,79.0,False,0.53,Medium,Not Completed
-S187,0.85,89.0,85.38,True,0.88,High,Completed
-S188,0.125,31.0,31.0,False,0.25,Low,Not Completed
-S189,0.725,80.0,75.0,False,0.78,High,Not Completed
-S190,0.675,56.0,79.0,False,0.59,Medium,Not Completed
-S191,0.45,44.0,44.0,False,0.44,Medium,Not Completed
-S192,0.525,42.0,69.0,True,0.45,Medium,Completed
-S193,0.125,56.0,40.0,False,0.43,Medium,Not Completed
-S194,0.9,96.0,64.0,True,0.94,High,Completed
-S195,0.225,100.0,47.0,False,0.77,High,Not Completed
-S196,0.5,54.0,51.0,True,0.53,Medium,Completed
-S197,0.2,34.0,53.0,False,0.3,Low,Not Completed
-S198,0.1,53.0,43.0,False,0.4,Medium,Not Completed
-S199,0.65,46.0,72.0,True,0.52,Medium,Completed
-S200,0.5,52.0,43.0,True,0.51,Medium,Completed
-S201,0.5,55.0,65.0,False,0.54,Medium,Not Completed
-S202,0.225,59.0,33.0,False,0.48,Medium,Not Completed
-S203,0.8,58.0,61.0,False,0.65,Medium,Not Completed
-S204,0.325,44.0,52.0,True,0.41,Medium,Completed
-S205,0.325,70.0,51.0,False,0.59,Medium,Not Completed
-S206,0.975,87.0,98.0,True,0.9,High,Completed
-S207,0.925,81.0,81.0,True,0.84,High,Completed
-S208,0.4,56.0,64.0,False,0.51,Medium,Not Completed
-S501,0.325,56.0,37.0,True,0.49,Medium,Completed
-S210,0.15,53.0,50.0,True,0.42,Medium,Completed
-S211,0.675,66.0,61.0,False,0.66,Medium,Not Completed
-S212,0.375,56.0,69.0,True,0.5,Medium,Completed
-S213,0.95,65.0,64.0,False,0.74,High,Not Completed
-S214,0.2,48.0,37.0,False,0.4,Medium,Not Completed
-S215,0.1,54.0,54.0,False,0.41,Medium,Not Completed
-S502,0.525,72.0,76.0,False,0.66,Medium,Not Completed
-S217,0.6,72.0,71.0,False,0.68,Medium,Not Completed
-S218,0.4,37.0,68.0,True,0.38,Low,Completed
-S219,0.425,77.0,62.0,False,0.67,Medium,Not Completed
-S220,0.55,53.0,72.0,False,0.54,Medium,Not Completed
-S221,0.225,34.0,48.0,True,0.31,Low,Completed
-S222,0.875,100.0,55.0,False,0.96,High,Not Completed
-S223,0.4,52.0,73.0,True,0.48,Medium,Completed
-S224,0.275,31.0,36.0,True,0.3,Low,Completed
-S225,0.025,25.0,32.0,True,0.18,Low,Completed
-S226,0.525,69.0,61.0,False,0.64,Medium,Not Completed
-S227,0.575,45.0,48.0,True,0.49,Medium,Completed
-S228,0.51525,63.0,48.0,True,0.6,Medium,Completed
-S229,0.675,61.0,71.0,False,0.63,Medium,Not Completed
-S230,0.125,100.0,36.0,True,0.74,High,Completed
-S231,0.6,54.0,54.0,False,0.56,Medium,Not Completed
-S232,0.8,88.0,84.42,False,0.86,High,Not Completed
-S233,0.875,77.0,79.0,True,0.8,High,Completed
-S234,0.75,84.0,80.58,True,0.81,High,Completed
-S235,0.025,43.0,24.0,True,0.31,Low,Completed
-S236,0.8,72.0,70.0,False,0.74,High,Not Completed
-S237,0.2,59.0,41.0,False,0.47,Medium,Not Completed
-S238,0.55,65.0,63.0,True,0.62,Medium,Completed
-S239,0.51525,55.25,53.0,False,0.54,Medium,Not Completed
-S240,0.55,65.0,77.0,False,0.62,Medium,Not Completed
-S241,0.05,46.0,58.0,True,0.34,Low,Completed
-S242,0.9,87.0,83.46,False,0.88,High,Not Completed
-S243,0.1,44.0,54.0,True,0.34,Low,Completed
-S244,0.275,55.0,66.0,False,0.47,Medium,Not Completed
-S245,0.6,47.0,74.0,True,0.51,Medium,Completed
-S503,0.575,57.0,61.0,False,0.57,Medium,Not Completed
-S247,0.45,39.0,47.0,True,0.41,Medium,Completed
-S248,0.4,76.0,56.0,False,0.65,Medium,Not Completed
-S249,0.225,59.0,64.0,True,0.48,Medium,Completed
-S250,0.275,37.0,60.0,False,0.34,Low,Not Completed
-S251,0.725,65.0,82.0,True,0.67,Medium,Completed
-S252,0.35,57.0,44.0,False,0.5,Medium,Not Completed
-S253,0.875,73.0,85.0,True,0.77,High,Completed
-S254,0.775,82.0,88.0,False,0.81,High,Not Completed
-S255,0.875,78.0,77.0,False,0.81,High,Not Completed
-S256,0.875,66.0,71.0,True,0.72,High,Completed
-S257,0.175,56.29,54.0,False,0.45,Medium,Not Completed
-S258,0.25,64.0,59.0,False,0.52,Medium,Not Completed
-S259,0.95,70.0,73.0,False,0.77,High,Not Completed
-S260,0.125,25.0,51.0,True,0.21,Low,Completed
-S261,0.9,88.0,69.0,True,0.89,High,Completed
-S262,0.975,89.0,95.0,True,0.92,High,Completed
-S263,0.825,92.0,85.0,True,0.89,High,Completed
-S264,0.75,76.0,59.0,True,0.76,High,Completed
-S265,0.875,83.0,89.0,True,0.84,High,Completed
-S266,0.275,63.0,42.0,False,0.52,Medium,Not Completed
-S267,0.95,83.0,96.0,False,0.87,High,Not Completed
-S268,0.85,86.0,66.0,True,0.86,High,Completed
-S269,0.525,45.0,68.0,True,0.47,Medium,Completed
-S270,0.75,78.0,75.0,True,0.77,High,Completed
-S271,0.925,60.0,62.0,False,0.7,High,Not Completed
-S272,0.45,56.0,74.0,True,0.53,Medium,Completed
-S273,0.975,86.0,67.0,True,0.89,High,Completed
-S274,0.125,47.95,46.0,True,0.37,Low,Completed
-S275,0.275,71.0,55.0,False,0.58,Medium,Not Completed
-S276,0.6,49.0,83.0,False,0.52,Medium,Not Completed
-S277,0.6,56.0,79.0,True,0.57,Medium,Completed
-S278,0.675,79.0,80.0,False,0.76,High,Not Completed
-S279,0.1,39.0,37.0,True,0.3,Low,Completed
-S280,0.51525,59.0,56.6,True,0.57,Medium,Completed
-S281,0.325,49.0,42.0,False,0.44,Medium,Not Completed
-S282,0.4,39.0,42.0,False,0.39,Low,Not Completed
-S283,0.7,59.0,79.0,False,0.62,Medium,Not Completed
-S284,0.15,44.82,43.0,True,0.36,Low,Completed
-S285,0.375,48.0,56.0,False,0.45,Medium,Not Completed
-S286,0.95,76.0,84.0,False,0.82,High,Not Completed
-S287,0.51525,61.0,82.0,True,0.58,Medium,Completed
-S288,0.925,96.0,73.0,False,0.95,High,Not Completed
-S289,0.075,57.0,39.0,True,0.42,Medium,Completed
-S290,0.675,82.0,78.66,False,0.78,High,Not Completed
-S291,0.425,77.0,46.0,False,0.67,Medium,Not Completed
-S292,0.3,70.0,67.0,True,0.58,Medium,Completed
-S293,0.65,63.0,73.0,True,0.64,Medium,Completed
-S294,0.4,69.0,64.0,False,0.6,Medium,Not Completed
-S295,0.05,49.0,45.0,True,0.36,Low,Completed
-S296,0.25,55.0,34.0,False,0.46,Medium,Not Completed
-S297,0.5,50.0,56.0,False,0.5,Medium,Not Completed
-S298,0.525,59.0,76.0,False,0.57,Medium,Not Completed
-S299,0.3,35.0,39.0,False,0.34,Low,Not Completed
-S300,0.1,63.0,27.0,False,0.47,Medium,Not Completed
-S301,0.8,61.0,78.0,True,0.67,Medium,Completed
-S302,0.75,85.0,81.54,True,0.82,High,Completed
-S303,0.775,66.0,63.31,True,0.69,Medium,Completed
-S304,0.35,37.0,52.0,True,0.36,Low,Completed
-S305,0.275,70.0,63.0,False,0.57,Medium,Not Completed
-S306,0.275,45.0,57.0,False,0.4,Medium,Not Completed
-S307,0.35,48.0,73.0,False,0.44,Medium,Not Completed
-S308,0.775,66.0,84.0,True,0.69,Medium,Completed
-S309,0.05,47.95,46.0,True,0.35,Low,Completed
-S310,0.15,42.0,42.0,False,0.34,Low,Not Completed
-S311,0.2,100.0,49.0,True,0.76,High,Completed
-S312,0.51525,76.0,57.0,False,0.69,Medium,Not Completed
-S313,0.275,67.0,37.0,True,0.55,Medium,Completed
-S314,0.6,84.0,58.0,True,0.77,High,Completed
-S315,0.675,84.0,64.0,True,0.79,High,Completed
-S316,0.4,39.0,62.0,True,0.39,Low,Completed
-S317,0.51525,49.0,58.0,True,0.5,Medium,Completed
-S318,0.675,87.0,66.0,False,0.81,High,Not Completed
-S319,0.75,78.0,66.0,False,0.77,High,Not Completed
-S320,0.35,56.0,37.0,True,0.5,Medium,Completed
-S321,0.4,68.0,54.0,False,0.6,Medium,Not Completed
-S322,0.275,67.0,63.0,True,0.55,Medium,Completed
-S323,0.425,48.0,56.0,True,0.46,Medium,Completed
-S324,0.975,88.0,83.0,False,0.91,High,Not Completed
-S325,0.6,48.0,44.0,True,0.52,Medium,Completed
-S326,0.1,27.0,47.0,True,0.22,Low,Completed
-S327,0.45,65.0,70.0,True,0.59,Medium,Completed
-S328,0.325,47.0,33.0,True,0.43,Medium,Completed
-S329,0.35,61.0,58.0,False,0.53,Medium,Not Completed
-S330,0.5,54.0,70.0,True,0.53,Medium,Completed
-S331,0.75,90.0,55.0,False,0.85,High,Not Completed
-S332,0.225,39.0,58.0,False,0.34,Low,Not Completed
-S333,0.45,68.0,68.0,False,0.61,Medium,Not Completed
-S334,0.725,73.0,70.03,False,0.73,High,Not Completed
-S335,0.25,47.0,62.0,True,0.4,Medium,Completed
-S336,0.51525,72.0,60.0,True,0.66,Medium,Completed
-S337,0.925,80.0,64.0,True,0.84,High,Completed
-S338,0.925,89.65,86.0,True,0.91,High,Completed
-S339,0.7,56.0,57.0,False,0.6,Medium,Not Completed
-S340,0.575,44.0,80.0,False,0.48,Medium,Not Completed
-S341,0.975,67.0,73.0,False,0.76,High,Not Completed
-S342,0.525,65.0,58.0,False,0.61,Medium,Not Completed
-S343,0.575,58.0,56.0,False,0.58,Medium,Not Completed
-S344,0.15,100.0,48.0,True,0.74,High,Completed
-S345,0.225,58.0,53.0,True,0.47,Medium,Completed
-S346,0.575,56.0,52.0,True,0.56,Medium,Completed
-S347,0.8,82.0,90.0,True,0.81,High,Completed
-S348,0.3,37.0,56.0,True,0.35,Low,Completed
-S349,0.925,65.0,95.0,True,0.73,High,Completed
-S350,0.8,88.0,70.0,True,0.86,High,Completed
-S351,0.225,37.0,35.49,False,0.33,Low,Not Completed
-S352,0.575,74.0,79.0,True,0.69,Medium,Completed
-S353,0.325,71.0,64.0,False,0.59,Medium,Not Completed
-S354,0.05,51.0,55.0,False,0.37,Low,Not Completed
-S355,0.275,52.0,62.0,True,0.45,Medium,Completed
-S356,0.075,58.0,61.0,True,0.43,Medium,Completed
-S357,0.3,66.0,54.0,False,0.55,Medium,Not Completed
-S358,0.425,37.0,46.0,True,0.39,Low,Completed
-S359,0.5,77.0,42.0,False,0.69,Medium,Not Completed
-S360,0.275,37.0,35.49,False,0.34,Low,Not Completed
-S361,0.95,83.0,86.0,False,0.87,High,Not Completed
-S362,0.65,65.0,75.0,True,0.65,Medium,Completed
-S363,0.05,53.0,52.0,True,0.39,Low,Completed
-S364,0.3,43.0,34.0,True,0.39,Low,Completed
-S365,0.975,60.0,82.0,False,0.71,High,Not Completed
-S366,0.75,50.0,72.0,False,0.57,Medium,Not Completed
-S367,0.7,70.0,67.15,True,0.7,High,Completed
-S368,0.125,65.0,45.0,False,0.49,Medium,Not Completed
-S369,0.45,57.0,68.0,True,0.53,Medium,Completed
-S370,0.575,73.0,59.0,False,0.68,Medium,Not Completed
-S504,0.675,78.0,67.0,False,0.75,High,Not Completed
-S372,0.4,67.0,59.0,False,0.59,Medium,Not Completed
-S373,0.75,52.0,82.0,False,0.59,Medium,Not Completed
-S374,0.675,80.0,76.74,True,0.76,High,Completed
-S375,0.825,58.38,56.0,True,0.66,Medium,Completed
-S376,0.1,42.0,53.0,False,0.32,Low,Not Completed
-S377,0.65,82.0,63.0,True,0.77,High,Completed
-S378,0.55,74.0,53.0,True,0.68,Medium,Completed
-S379,0.475,68.0,46.0,False,0.62,Medium,Not Completed
-S380,0.125,58.0,26.0,True,0.44,Medium,Completed
-S381,0.85,64.0,83.0,True,0.7,High,Completed
-S382,0.55,63.0,47.0,False,0.61,Medium,Not Completed
-S383,0.8,76.0,72.91,True,0.77,High,Completed
-S384,0.4,75.0,46.0,False,0.64,Medium,Not Completed
-S385,0.225,68.0,54.0,False,0.54,Medium,Not Completed
-S386,0.975,72.0,69.07,False,0.8,High,Not Completed
-S387,0.825,59.0,53.0,False,0.66,Medium,Not Completed
-S388,0.5,51.0,79.0,True,0.51,Medium,Completed
-S389,0.225,69.0,64.0,False,0.55,Medium,Not Completed
-S390,0.125,32.0,25.0,False,0.26,Low,Not Completed
-S391,0.325,55.0,33.0,False,0.48,Medium,Not Completed
-S392,0.6,76.0,78.0,True,0.71,High,Completed
-S393,0.475,75.0,43.0,False,0.67,Medium,Not Completed
-S394,0.1,35.0,41.0,True,0.28,Low,Completed
-S395,0.9,78.0,88.0,False,0.82,High,Not Completed
-S396,0.25,65.0,40.0,True,0.53,Medium,Completed
-S397,0.6,57.0,55.0,True,0.58,Medium,Completed
-S398,0.525,47.0,63.0,True,0.49,Medium,Completed
-S399,0.95,78.18,75.0,True,0.83,High,Completed
-S400,0.85,84.0,59.0,False,0.84,High,Not Completed
-S401,0.2,100.0,48.0,True,0.76,High,Completed
-S402,0.275,61.0,38.0,True,0.51,Medium,Completed
-S403,0.075,33.0,25.0,True,0.25,Low,Completed
-S404,0.475,60.0,57.56,False,0.56,Medium,Not Completed
-S405,0.375,37.0,52.0,False,0.37,Low,Not Completed
-S406,0.95,77.0,91.0,False,0.82,High,Not Completed
-S407,0.75,71.0,81.0,False,0.72,High,Not Completed
-S408,0.75,100.0,85.0,True,0.92,High,Completed
-S409,0.51525,49.0,57.0,False,0.5,Medium,Not Completed
-S410,0.925,77.0,60.0,False,0.82,High,Not Completed
-S411,0.125,27.0,52.0,False,0.23,Low,Not Completed
-S412,0.51525,62.0,49.0,False,0.59,Medium,Not Completed
-S413,0.425,54.0,38.0,False,0.51,Medium,Not Completed
-S414,0.025,52.0,47.0,True,0.37,Low,Completed
-S415,0.925,60.0,77.0,False,0.7,High,Not Completed
-S416,0.25,62.0,63.0,True,0.51,Medium,Completed
-S417,0.35,53.0,59.0,False,0.48,Medium,Not Completed
-S418,0.375,67.0,62.0,True,0.58,Medium,Completed
-S419,0.25,67.0,66.0,False,0.54,Medium,Not Completed
-S420,0.775,88.0,73.0,False,0.85,High,Not Completed
-S421,0.175,56.0,52.0,True,0.44,Medium,Completed
-S422,0.625,54.0,51.8,False,0.57,Medium,Not Completed
-S423,0.65,60.46,58.0,False,0.62,Medium,Not Completed
-S424,0.25,58.0,62.0,True,0.48,Medium,Completed
-S425,0.55,65.0,49.0,False,0.62,Medium,Not Completed
-S426,0.625,52.12,50.0,False,0.55,Medium,Not Completed
-S427,0.55,47.95,46.0,False,0.5,Medium,Not Completed
-S428,0.95,65.0,77.0,True,0.74,High,Completed
-S429,0.725,62.0,77.0,True,0.65,Medium,Completed
-S430,0.975,84.0,94.0,False,0.88,High,Not Completed
-S431,0.225,33.0,59.0,True,0.3,Low,Completed
-S432,0.525,67.0,78.0,False,0.63,Medium,Not Completed
-S433,0.25,30.0,64.0,True,0.28,Low,Completed
-S434,0.425,67.0,77.0,False,0.6,Medium,Not Completed
-S435,0.525,51.0,55.0,True,0.51,Medium,Completed
-S436,0.625,67.0,47.0,False,0.66,Medium,Not Completed
-S437,0.825,72.0,69.07,True,0.75,High,Completed
-S438,0.075,61.0,61.0,False,0.45,Medium,Not Completed
-S439,0.5,40.0,51.0,True,0.43,Medium,Completed
-S440,0.9,67.0,64.0,False,0.74,High,Not Completed
-S441,0.425,42.0,40.29,True,0.42,Medium,Completed
-S442,0.575,58.0,51.0,False,0.58,Medium,Not Completed
-S443,0.325,43.0,38.0,False,0.4,Medium,Not Completed
-S444,0.475,50.0,51.0,False,0.49,Medium,Not Completed
-S445,0.425,57.0,46.0,False,0.53,Medium,Not Completed
-S446,0.4,36.0,75.0,True,0.37,Low,Completed
-S447,0.35,57.0,38.0,False,0.5,Medium,Not Completed
-S448,0.825,88.0,72.0,True,0.86,High,Completed
-S449,0.45,78.0,65.0,True,0.68,Medium,Completed
-S450,0.5,58.0,44.0,True,0.56,Medium,Completed
-S451,0.375,47.0,45.09,False,0.44,Medium,Not Completed
-S452,0.95,66.0,73.0,True,0.75,High,Completed
-S453,0.425,61.0,58.52,True,0.55,Medium,Completed
-S454,0.675,87.0,70.0,True,0.81,High,Completed
-S455,0.925,58.0,90.0,True,0.68,Medium,Completed
-S456,0.8,91.0,52.0,False,0.88,High,Not Completed
-S458,0.025,52.0,42.0,False,0.37,Low,Not Completed
-S459,0.6,66.0,58.0,True,0.64,Medium,Completed
-S460,0.425,53.0,59.0,False,0.5,Medium,Not Completed
-S461,0.825,54.0,82.0,False,0.63,Medium,Not Completed
-S462,0.675,57.0,72.0,False,0.6,Medium,Not Completed
-S463,0.75,60.0,72.0,False,0.64,Medium,Not Completed
-S464,0.775,91.0,63.0,False,0.87,High,Not Completed
-S465,0.25,36.0,63.0,True,0.33,Low,Completed
-S466,0.65,67.0,61.0,False,0.66,Medium,Not Completed
-S467,0.75,73.0,52.0,True,0.74,High,Completed
-S468,0.9,71.0,67.0,True,0.77,High,Completed
-S469,0.25,49.0,66.0,False,0.42,Medium,Not Completed
-S470,0.075,28.0,40.0,False,0.22,Low,Not Completed
-S471,0.675,65.67,63.0,False,0.66,Medium,Not Completed
-S505,0.25,41.0,39.0,False,0.36,Low,Not Completed
-S473,0.4,54.0,43.0,True,0.5,Medium,Completed
-S474,0.425,61.0,63.0,True,0.55,Medium,Completed
-S475,0.225,50.0,37.0,False,0.42,Medium,Not Completed
-S476,0.725,61.0,55.0,False,0.64,Medium,Not Completed
-S477,0.55,48.0,49.0,True,0.5,Medium,Completed
-S478,0.15,60.0,58.0,False,0.46,Medium,Not Completed
-S479,0.95,83.0,68.0,False,0.87,High,Not Completed
-S480,0.25,67.0,64.27,False,0.54,Medium,Not Completed
-S481,0.1,61.0,48.0,True,0.46,Medium,Completed
-S482,0.9,56.0,58.0,False,0.66,Medium,Not Completed
-S483,0.6,79.0,80.0,False,0.73,High,Not Completed
-S484,0.975,90.0,79.0,False,0.92,High,Not Completed
-S485,0.6,68.0,65.0,False,0.66,Medium,Not Completed
-S486,0.525,66.0,63.31,False,0.62,Medium,Not Completed
-S487,0.175,30.0,32.0,False,0.26,Low,Not Completed
-S488,0.975,91.0,96.0,False,0.93,High,Not Completed
-S489,0.95,68.8,66.0,True,0.77,High,Completed
-S490,0.925,96.0,92.0,True,0.95,High,Completed
-S491,0.7,63.59,61.0,False,0.66,Medium,Not Completed
-S492,0.55,54.0,48.0,True,0.54,Medium,Completed
-S493,0.075,41.0,23.0,False,0.31,Low,Not Completed
-S494,0.525,53.0,48.0,True,0.53,Medium,Completed
-S495,0.675,100.0,95.93,True,0.9,High,Completed
-S496,0.75,59.0,64.0,True,0.64,Medium,Completed
-S497,0.8,90.0,59.0,True,0.87,High,Completed
-S498,0.3,40.0,43.0,False,0.37,Low,Not Completed
-S499,0.875,91.73,88.0,True,0.9,High,Completed
-S500,0.35,55.0,74.0,False,0.49,Medium,Not Completed
+S001,0.975,80.0,76.0,False,0.85,High,Not Completed
+S002,0.925,69.0,59.0,True,0.76,High,Completed
+S003,0.125,36.0,53.0,True,0.29,Low,Completed
+S004,0.65,86.0,82.0,False,0.8,High,Not Completed
+S005,0.925,63.0,65.0,True,0.72,High,Completed
+S006,0.025,43.36,42.0,True,0.31,Low,Completed
+S007,0.125,28.0,44.0,True,0.23,Low,Completed
+S008,0.65,58.0,49.0,True,0.6,Medium,Completed
+S009,0.625,47.0,68.0,False,0.52,Medium,Not Completed
+S010,0.5,51.0,65.0,True,0.51,Medium,Completed
+S011,0.375,36.13,35.0,False,0.37,Low,Not Completed
+S012,0.625,82.0,72.0,False,0.76,High,Not Completed
+S013,0.075,56.0,63.0,True,0.41,Medium,Completed
+S014,0.275,39.0,45.0,False,0.36,Low,Not Completed
+S015,0.6,83.0,80.39,False,0.76,High,Not Completed
+S016,0.75,57.0,54.0,False,0.62,Medium,Not Completed
+S017,0.825,100.0,90.0,True,0.95,High,Completed
+S018,0.45,41.0,61.0,False,0.42,Medium,Not Completed
+S019,0.75,65.0,59.0,False,0.68,Medium,Not Completed
+S020,0.85,55.0,85.0,False,0.64,Medium,Not Completed
+S021,0.1,45.0,41.0,False,0.34,Low,Not Completed
+S022,0.475,51.0,71.0,True,0.5,Medium,Completed
+S023,0.075,55.0,61.0,False,0.41,Medium,Not Completed
+S024,0.725,70.0,84.0,False,0.71,High,Not Completed
+S025,0.75,78.0,70.0,False,0.77,High,Not Completed
+S026,0.5,60.0,56.0,False,0.57,Medium,Not Completed
+S027,0.725,70.0,67.0,True,0.71,High,Completed
+S028,0.975,75.0,72.0,True,0.82,High,Completed
+S029,0.075,28.0,58.0,True,0.22,Low,Completed
+S030,0.95,78.0,81.0,False,0.83,High,Not Completed
+S031,0.05,27.0,24.0,False,0.2,Low,Not Completed
+S032,0.025,38.0,29.0,True,0.27,Low,Completed
+S033,0.5,77.0,46.0,False,0.69,Medium,Not Completed
+S034,0.3,41.0,69.0,True,0.38,Low,Completed
+S035,0.425,57.0,57.0,True,0.53,Medium,Completed
+S036,0.15,54.0,57.0,False,0.42,Medium,Not Completed
+S037,0.025,44.0,35.0,True,0.32,Low,Completed
+S038,0.25,52.0,51.0,True,0.44,Medium,Completed
+S039,0.45,59.0,78.0,False,0.55,Medium,Not Completed
+S040,0.475,46.0,44.0,False,0.46,Medium,Not Completed
+S041,0.225,40.0,59.0,True,0.35,Low,Completed
+S042,0.05,62.0,35.0,False,0.45,Medium,Not Completed
+S043,0.275,55.0,53.27,False,0.47,Medium,Not Completed
+S501,0.4974999999999999,74.33,72.0,False,0.67,Medium,Not Completed
+S045,0.975,99.0,64.0,False,0.99,High,Not Completed
+S046,0.725,74.0,70.0,False,0.74,High,Not Completed
+S047,0.275,42.0,47.0,False,0.38,Low,Not Completed
+S048,0.75,57.0,54.0,True,0.62,Medium,Completed
+S049,0.75,59.0,57.15,True,0.64,Medium,Completed
+S050,0.875,80.0,71.0,False,0.82,High,Not Completed
+S051,0.7,64.0,61.99,False,0.66,Medium,Not Completed
+S052,0.675,80.0,69.0,False,0.76,High,Not Completed
+S053,0.35,41.0,49.0,True,0.39,Low,Completed
+S054,0.65,69.0,58.0,True,0.68,Medium,Completed
+S055,0.275,60.0,57.0,False,0.5,Medium,Not Completed
+S056,0.775,65.0,74.0,False,0.69,Medium,Not Completed
+S057,0.35,36.0,40.0,True,0.36,Low,Completed
+S058,0.95,71.0,94.0,True,0.78,High,Completed
+S059,0.2,65.0,57.0,True,0.52,Medium,Completed
+S060,0.25,50.0,49.0,False,0.42,Medium,Not Completed
+S061,0.925,65.0,72.0,False,0.73,High,Not Completed
+S062,0.575,100.0,58.0,False,0.87,High,Not Completed
+S063,0.15,54.0,45.0,False,0.42,Medium,Not Completed
+S064,0.2,31.0,30.03,False,0.28,Low,Not Completed
+S065,0.45,70.0,49.0,True,0.62,Medium,Completed
+S066,0.2,42.0,31.0,False,0.35,Low,Not Completed
+S067,0.575,51.0,64.0,True,0.53,Medium,Completed
+S068,0.525,100.0,73.0,False,0.86,High,Not Completed
+S069,0.625,61.0,79.0,True,0.61,Medium,Completed
+S070,0.6,62.0,79.0,False,0.61,Medium,Not Completed
+S071,0.05,42.0,24.0,True,0.31,Low,Completed
+S072,0.4974999999999999,67.0,74.0,False,0.62,Medium,Not Completed
+S073,0.85,67.0,64.9,False,0.72,High,Not Completed
+S074,0.925,80.0,57.0,False,0.84,High,Not Completed
+S502,0.4,55.0,52.0,False,0.5,Medium,Not Completed
+S076,0.2,51.0,67.0,False,0.42,Medium,Not Completed
+S077,0.425,67.0,77.0,False,0.6,Medium,Not Completed
+S078,0.825,65.0,65.0,False,0.7,High,Not Completed
+S079,0.4974999999999999,29.0,54.0,False,0.35,Low,Not Completed
+S080,0.4974999999999999,57.0,37.0,True,0.55,Medium,Completed
+S081,0.45,75.0,38.0,True,0.66,Medium,Completed
+S082,0.5,40.0,61.0,True,0.43,Medium,Completed
+S083,0.2,32.0,33.0,False,0.28,Low,Not Completed
+S084,0.925,94.0,82.0,False,0.94,High,Not Completed
+S085,0.4974999999999999,56.0,57.0,False,0.54,Medium,Not Completed
+S086,0.525,60.0,68.0,True,0.58,Medium,Completed
+S087,0.525,42.0,53.0,False,0.45,Medium,Not Completed
+S088,0.725,55.0,81.0,True,0.6,Medium,Completed
+S089,0.475,71.0,41.0,True,0.64,Medium,Completed
+S090,0.725,75.0,79.0,True,0.74,High,Completed
+S091,0.575,46.0,61.0,False,0.49,Medium,Not Completed
+S092,0.2,50.0,40.0,False,0.41,Medium,Not Completed
+S093,0.425,39.0,73.0,True,0.4,Medium,Completed
+S094,0.525,48.0,48.0,False,0.49,Medium,Not Completed
+S095,0.225,33.0,35.0,False,0.3,Low,Not Completed
+S096,0.2,50.0,41.0,True,0.41,Medium,Completed
+S097,0.125,65.0,62.96,False,0.49,Medium,Not Completed
+S098,0.95,96.0,96.0,True,0.96,High,Completed
+S099,0.7,53.0,72.0,False,0.58,Medium,Not Completed
+S100,0.625,65.0,62.96,False,0.64,Medium,Not Completed
+S101,0.075,53.0,58.0,True,0.39,Low,Completed
+S102,0.025,100.0,55.0,True,0.71,High,Completed
+S103,0.95,90.0,95.0,True,0.91,High,Completed
+S104,0.25,58.0,58.0,True,0.48,Medium,Completed
+S105,0.775,87.0,89.0,True,0.84,High,Completed
+S106,0.275,37.0,63.0,True,0.34,Low,Completed
+S107,0.8,81.0,73.0,False,0.81,High,Not Completed
+S108,0.65,61.0,59.08,False,0.62,Medium,Not Completed
+S109,0.425,52.0,39.0,True,0.49,Medium,Completed
+S110,0.875,79.0,59.0,True,0.82,High,Completed
+S111,0.825,83.63,81.0,True,0.83,High,Completed
+S112,0.325,33.0,64.0,False,0.33,Low,Not Completed
+S113,0.75,90.0,90.0,True,0.85,High,Completed
+S114,0.75,53.0,90.0,True,0.6,Medium,Completed
+S115,0.175,30.0,43.0,False,0.26,Low,Not Completed
+S116,0.925,96.0,84.0,False,0.95,High,Not Completed
+S117,0.2,59.0,30.0,False,0.47,Medium,Not Completed
+S118,0.675,84.0,57.0,False,0.79,High,Not Completed
+S119,0.8,75.0,63.0,False,0.76,High,Not Completed
+S120,0.725,69.0,66.83,False,0.7,High,Not Completed
+S121,0.3,52.0,46.0,True,0.45,Medium,Completed
+S122,0.375,64.0,74.0,True,0.56,Medium,Completed
+S123,0.625,68.0,46.0,False,0.66,Medium,Not Completed
+S124,0.05,61.0,59.08,False,0.44,Medium,Not Completed
+S125,0.925,72.0,70.0,False,0.78,High,Not Completed
+S126,0.825,86.0,61.0,False,0.85,High,Not Completed
+S127,0.375,51.0,49.4,True,0.47,Medium,Completed
+S128,0.25,68.0,56.0,True,0.55,Medium,Completed
+S129,0.275,64.0,43.0,True,0.53,Medium,Completed
+S130,0.675,54.0,52.0,False,0.58,Medium,Not Completed
+S131,0.375,53.0,73.0,False,0.48,Medium,Not Completed
+S132,0.75,67.0,64.9,True,0.69,Medium,Completed
+S133,0.075,100.0,57.0,False,0.72,High,Not Completed
+S134,0.95,81.0,98.0,False,0.85,High,Not Completed
+S135,0.725,74.0,57.0,False,0.74,High,Not Completed
+S136,0.15,66.0,47.0,False,0.51,Medium,Not Completed
+S137,0.5,79.0,73.0,False,0.7,High,Not Completed
+S138,0.7,72.0,68.0,True,0.71,High,Completed
+S139,0.425,41.0,39.71,True,0.41,Medium,Completed
+S140,0.675,69.0,78.0,True,0.69,Medium,Completed
+S141,0.175,41.0,65.0,True,0.34,Low,Completed
+S142,0.7,79.0,60.0,True,0.76,High,Completed
+S143,0.025,42.0,61.0,False,0.3,Low,Not Completed
+S144,0.1,54.0,45.0,False,0.41,Medium,Not Completed
+S145,0.375,69.0,44.0,False,0.6,Medium,Not Completed
+S146,0.2,64.0,64.0,True,0.51,Medium,Completed
+S147,0.475,50.0,48.43,False,0.49,Medium,Not Completed
+S148,0.325,43.0,38.0,False,0.4,Medium,Not Completed
+S149,0.5,57.0,44.0,True,0.55,Medium,Completed
+S150,0.825,54.0,93.0,False,0.63,Medium,Not Completed
+S151,0.2,55.0,29.0,False,0.44,Medium,Not Completed
+S152,0.4974999999999999,69.0,77.0,True,0.63,Medium,Completed
+S153,0.675,67.0,72.0,False,0.67,Medium,Not Completed
+S154,0.875,83.0,66.0,True,0.84,High,Completed
+S155,0.6,55.0,79.0,True,0.56,Medium,Completed
+S156,0.275,50.59,49.0,True,0.44,Medium,Completed
+S157,0.925,67.0,82.0,True,0.75,High,Completed
+S158,0.55,46.46,45.0,False,0.49,Medium,Not Completed
+S159,0.65,83.0,48.0,True,0.78,High,Completed
+S160,0.625,61.0,83.0,True,0.61,Medium,Completed
+S161,0.4974999999999999,81.0,58.0,True,0.72,High,Completed
+S162,0.2,41.0,45.0,False,0.35,Low,Not Completed
+S163,0.15,46.0,37.0,True,0.37,Low,Completed
+S164,0.675,64.0,61.99,True,0.65,Medium,Completed
+S165,0.475,68.0,59.0,True,0.62,Medium,Completed
+S166,0.975,81.0,78.0,False,0.86,High,Not Completed
+S167,0.475,100.0,44.0,False,0.84,High,Not Completed
+S168,0.25,50.0,39.0,True,0.42,Medium,Completed
+S169,0.375,43.0,63.0,True,0.41,Medium,Completed
+S171,0.65,58.0,56.18,False,0.6,Medium,Not Completed
+S172,0.5,51.0,68.0,True,0.51,Medium,Completed
+S173,0.05,62.0,57.0,True,0.45,Medium,Completed
+S174,0.725,52.0,51.0,True,0.58,Medium,Completed
+S175,0.35,43.0,34.0,False,0.41,Medium,Not Completed
+S176,0.85,89.0,78.0,True,0.88,High,Completed
+S177,0.425,72.0,57.0,True,0.63,Medium,Completed
+S178,0.7,77.0,85.0,False,0.75,High,Not Completed
+S179,0.4974999999999999,71.0,60.0,False,0.65,Medium,Not Completed
+S180,0.75,100.0,64.0,False,0.92,High,Not Completed
+S181,0.4974999999999999,22.0,44.0,False,0.3,Low,Not Completed
+S182,0.225,34.07,33.0,True,0.31,Low,Completed
+S183,0.7,52.65,51.0,False,0.58,Medium,Not Completed
+S184,0.575,69.0,68.0,True,0.66,Medium,Completed
+S185,0.05,28.0,57.0,True,0.21,Low,Completed
+S186,0.6,62.0,54.0,True,0.61,Medium,Completed
+S187,0.075,61.0,36.0,True,0.45,Medium,Completed
+S188,0.125,52.0,32.0,False,0.4,Medium,Not Completed
+S189,0.1,60.0,39.0,False,0.45,Medium,Not Completed
+S190,0.15,53.0,66.0,True,0.42,Medium,Completed
+S191,0.3,46.0,71.0,True,0.41,Medium,Completed
+S192,0.375,61.0,40.0,True,0.54,Medium,Completed
+S193,0.525,74.0,66.0,True,0.68,Medium,Completed
+S194,0.75,53.0,83.0,False,0.6,Medium,Not Completed
+S195,0.45,68.0,55.0,True,0.61,Medium,Completed
+S196,0.25,32.0,63.0,True,0.3,Low,Completed
+S197,0.625,100.0,68.0,True,0.89,High,Completed
+S198,0.35,48.0,69.0,False,0.44,Medium,Not Completed
+S199,0.4,65.0,53.0,False,0.57,Medium,Not Completed
+S200,0.9,70.0,67.8,False,0.76,High,Not Completed
+S201,0.125,50.0,48.43,False,0.39,Low,Not Completed
+S202,0.475,63.0,66.0,False,0.58,Medium,Not Completed
+S203,0.05,54.0,32.0,False,0.39,Low,Not Completed
+S204,0.225,67.0,61.0,True,0.54,Medium,Completed
+S205,0.3,66.0,63.0,False,0.55,Medium,Not Completed
+S207,0.85,76.0,66.0,False,0.79,High,Not Completed
+S208,0.525,78.0,41.0,True,0.7,High,Completed
+S209,0.975,75.0,63.0,True,0.82,High,Completed
+S210,0.35,43.0,36.0,False,0.41,Medium,Not Completed
+S211,0.2,33.0,53.0,False,0.29,Low,Not Completed
+S212,0.45,75.0,56.0,False,0.66,Medium,Not Completed
+S503,0.8,67.0,80.0,False,0.71,High,Not Completed
+S214,0.625,74.0,70.0,False,0.71,High,Not Completed
+S215,0.925,77.0,94.0,True,0.82,High,Completed
+S216,0.35,53.69,52.0,True,0.48,Medium,Completed
+S217,0.475,75.0,41.0,True,0.67,Medium,Completed
+S218,0.775,64.0,87.0,True,0.68,Medium,Completed
+S219,0.975,90.0,73.0,True,0.92,High,Completed
+S220,0.9,80.0,83.0,False,0.83,High,Not Completed
+S221,0.6,53.0,69.0,False,0.55,Medium,Not Completed
+S222,0.65,55.0,60.0,False,0.58,Medium,Not Completed
+S223,0.225,54.0,34.0,True,0.45,Medium,Completed
+S224,0.6,73.0,50.0,False,0.69,Medium,Not Completed
+S225,0.25,57.0,51.0,True,0.47,Medium,Completed
+S226,0.6,77.0,75.0,False,0.72,High,Not Completed
+S227,0.725,68.0,65.0,False,0.69,Medium,Not Completed
+S228,0.825,87.0,71.0,True,0.86,High,Completed
+S229,0.6,47.0,65.0,True,0.51,Medium,Completed
+S230,0.6,66.0,77.0,True,0.64,Medium,Completed
+S231,0.975,80.0,65.0,False,0.85,High,Not Completed
+S232,0.825,75.0,72.64,True,0.77,High,Completed
+S233,0.65,54.0,73.0,False,0.57,Medium,Not Completed
+S234,0.25,36.0,53.0,True,0.33,Low,Completed
+S235,0.975,82.0,84.0,True,0.87,High,Completed
+S236,0.6,75.0,58.0,True,0.7,High,Completed
+S237,0.25,49.0,47.46,True,0.42,Medium,Completed
+S238,0.075,26.0,40.0,True,0.2,Low,Completed
+S239,0.3,67.0,55.0,False,0.56,Medium,Not Completed
+S240,0.525,51.0,49.0,True,0.51,Medium,Completed
+S241,0.225,50.0,48.43,True,0.42,Medium,Completed
+S242,0.3,71.0,36.0,True,0.59,Medium,Completed
+S243,0.925,60.0,80.0,True,0.7,High,Completed
+S244,0.675,52.0,52.0,True,0.57,Medium,Completed
+S245,0.5,64.0,43.0,True,0.6,Medium,Completed
+S246,0.125,100.0,46.0,False,0.74,High,Not Completed
+S247,0.275,36.0,63.0,True,0.33,Low,Completed
+S248,0.025,33.0,42.0,True,0.24,Low,Completed
+S249,0.85,85.0,82.33,False,0.85,High,Not Completed
+S250,0.6,82.0,75.0,False,0.75,High,Not Completed
+S251,0.25,42.0,42.0,False,0.37,Low,Not Completed
+S252,0.925,63.0,83.0,True,0.72,High,Completed
+S253,0.575,78.0,47.0,False,0.72,High,Not Completed
+S254,0.925,62.0,73.0,False,0.71,High,Not Completed
+S255,0.6,75.0,78.0,False,0.7,High,Not Completed
+S256,0.975,77.0,74.58,True,0.83,High,Completed
+S257,0.025,54.0,52.0,False,0.39,Low,Not Completed
+S258,0.825,81.0,57.0,False,0.81,High,Not Completed
+S259,0.8,70.21,68.0,False,0.73,High,Not Completed
+S260,0.65,69.0,53.0,False,0.68,Medium,Not Completed
+S261,0.1,30.0,38.0,False,0.24,Low,Not Completed
+S262,0.9,71.0,75.0,True,0.77,High,Completed
+S263,0.95,87.0,85.0,True,0.89,High,Completed
+S264,0.075,100.0,43.0,False,0.72,High,Not Completed
+S265,0.025,38.2,37.0,True,0.27,Low,Completed
+S266,0.725,62.0,87.0,False,0.65,Medium,Not Completed
+S267,0.25,67.0,59.0,True,0.54,Medium,Completed
+S268,0.75,59.0,87.0,True,0.64,Medium,Completed
+S269,0.6,51.0,61.0,False,0.54,Medium,Not Completed
+S270,0.3,41.0,47.0,False,0.38,Low,Not Completed
+S271,0.325,70.0,66.0,True,0.59,Medium,Completed
+S272,0.2,54.0,52.3,True,0.44,Medium,Completed
+S273,0.1,61.0,54.0,False,0.46,Medium,Not Completed
+S274,0.425,68.0,62.0,False,0.6,Medium,Not Completed
+S275,0.5,48.0,47.0,False,0.49,Medium,Not Completed
+S276,0.75,71.24,69.0,False,0.72,High,Not Completed
+S277,0.8,78.0,86.0,True,0.79,High,Completed
+S278,0.45,57.0,47.0,True,0.53,Medium,Completed
+S279,0.925,62.0,59.0,False,0.71,High,Not Completed
+S280,0.475,45.0,67.0,True,0.46,Medium,Completed
+S281,0.275,52.0,32.0,False,0.45,Medium,Not Completed
+S282,0.4974999999999999,79.0,80.0,False,0.7,High,Not Completed
+S283,0.85,67.0,56.0,True,0.72,High,Completed
+S284,0.9,81.0,56.0,True,0.84,High,Completed
+S285,0.075,28.91,28.0,False,0.22,Low,Not Completed
+S286,0.4974999999999999,52.0,50.0,True,0.51,Medium,Completed
+S287,0.7,83.0,82.0,False,0.79,High,Not Completed
+S288,0.55,55.0,57.0,False,0.55,Medium,Not Completed
+S289,0.125,31.0,45.0,True,0.25,Low,Completed
+S290,0.675,48.0,75.0,False,0.54,Medium,Not Completed
+S291,0.275,69.0,48.0,True,0.57,Medium,Completed
+S292,0.4,57.0,58.0,True,0.52,Medium,Completed
+S293,0.075,100.0,38.0,False,0.72,High,Not Completed
+S294,0.85,89.0,56.0,True,0.88,High,Completed
+S295,0.85,54.0,76.0,True,0.63,Medium,Completed
+S296,0.5,53.0,61.0,False,0.52,Medium,Not Completed
+S297,0.05,31.0,30.03,True,0.23,Low,Completed
+S298,0.4974999999999999,58.0,53.0,True,0.56,Medium,Completed
+S299,0.25,41.0,49.0,True,0.36,Low,Completed
+S300,0.775,58.0,80.0,False,0.64,Medium,Not Completed
+S301,0.475,64.0,59.0,False,0.59,Medium,Not Completed
+S302,0.175,67.0,36.0,True,0.52,Medium,Completed
+S303,0.275,55.0,58.0,True,0.47,Medium,Completed
+S304,0.55,52.0,79.0,True,0.53,Medium,Completed
+S305,0.225,36.0,34.87,True,0.32,Low,Completed
+S306,0.05,40.0,43.0,False,0.3,Low,Not Completed
+S307,0.4974999999999999,47.0,47.0,False,0.48,Medium,Not Completed
+S308,0.55,68.0,51.0,True,0.64,Medium,Completed
+S309,0.95,71.0,66.0,False,0.78,High,Not Completed
+S310,0.15,43.0,47.0,True,0.35,Low,Completed
+S311,0.025,27.0,24.0,True,0.2,Low,Completed
+S312,0.675,85.0,67.0,False,0.8,High,Not Completed
+S313,0.3,50.0,48.43,True,0.44,Medium,Completed
+S314,0.15,62.0,47.0,False,0.48,Medium,Not Completed
+S315,0.2,28.0,27.12,False,0.26,Low,Not Completed
+S316,0.725,71.0,83.0,False,0.71,High,Not Completed
+S317,0.65,60.0,77.0,True,0.62,Medium,Completed
+S318,0.45,100.0,39.0,False,0.84,High,Not Completed
+S319,0.475,42.0,54.0,True,0.44,Medium,Completed
+S320,0.525,47.0,74.0,False,0.49,Medium,Not Completed
+S504,0.55,43.0,71.0,False,0.47,Medium,Not Completed
+S323,0.15,44.0,57.0,True,0.35,Low,Completed
+S324,0.975,66.0,90.0,False,0.75,High,Not Completed
+S325,0.3,69.0,47.0,False,0.57,Medium,Not Completed
+S326,0.75,69.0,64.0,True,0.71,High,Completed
+S327,0.3,62.0,70.0,False,0.52,Medium,Not Completed
+S328,0.525,51.0,41.0,False,0.51,Medium,Not Completed
+S505,0.875,88.0,85.24,True,0.88,High,Completed
+S330,0.975,59.0,69.0,True,0.71,High,Completed
+S331,0.25,46.0,34.0,True,0.4,Medium,Completed
+S332,0.65,78.0,78.0,True,0.74,High,Completed
+S333,0.875,81.0,68.0,True,0.83,High,Completed
+S334,0.025,47.0,37.0,True,0.34,Low,Completed
+S335,0.55,43.0,41.65,True,0.47,Medium,Completed
+S336,0.925,59.0,78.0,True,0.69,Medium,Completed
+S337,0.275,61.0,31.0,False,0.51,Medium,Not Completed
+S338,0.15,33.0,56.0,False,0.28,Low,Not Completed
+S339,0.95,83.0,84.0,False,0.87,High,Not Completed
+S340,0.95,85.0,58.0,True,0.88,High,Completed
+S341,0.1,57.0,27.0,True,0.43,Medium,Completed
+S342,0.925,99.11,96.0,True,0.97,High,Completed
+S343,0.575,43.0,60.0,True,0.47,Medium,Completed
+S344,0.725,58.0,61.0,True,0.62,Medium,Completed
+S345,0.2,53.0,59.0,False,0.43,Medium,Not Completed
+S346,0.325,57.0,33.0,False,0.5,Medium,Not Completed
+S347,0.275,37.0,61.0,True,0.34,Low,Completed
+S348,0.7,54.0,55.0,False,0.59,Medium,Not Completed
+S349,0.225,60.0,40.0,True,0.49,Medium,Completed
+S350,0.825,82.0,86.0,False,0.82,High,Not Completed
+S351,0.35,59.0,70.0,True,0.52,Medium,Completed
+S352,0.8,75.0,61.0,False,0.76,High,Not Completed
+S353,0.45,53.0,64.0,True,0.51,Medium,Completed
+S354,0.95,85.0,92.0,False,0.88,High,Not Completed
+S355,0.175,42.0,37.0,True,0.35,Low,Completed
+S356,0.7,77.43,75.0,True,0.75,High,Completed
+S357,0.35,51.0,49.4,False,0.46,Medium,Not Completed
+S358,0.75,61.0,67.0,False,0.65,Medium,Not Completed
+S359,0.075,50.0,33.0,True,0.37,Low,Completed
+S360,0.975,60.91,59.0,True,0.72,High,Completed
+S361,0.2,61.0,61.0,False,0.49,Medium,Not Completed
+S362,0.3,62.0,70.0,True,0.52,Medium,Completed
+S363,0.275,48.0,34.0,True,0.42,Medium,Completed
+S364,0.65,59.0,83.0,True,0.61,Medium,Completed
+S365,0.1,46.0,51.0,True,0.35,Low,Completed
+S366,0.35,100.0,69.0,True,0.8,High,Completed
+S367,0.9,82.0,68.0,True,0.84,High,Completed
+S368,0.9,61.0,85.0,True,0.7,High,Completed
+S369,0.575,83.0,46.0,True,0.75,High,Completed
+S370,0.95,66.0,63.93,False,0.75,High,Not Completed
+S371,0.65,52.0,66.0,True,0.56,Medium,Completed
+S372,0.225,42.0,35.0,True,0.36,Low,Completed
+S373,0.85,57.0,54.0,True,0.65,Medium,Completed
+S374,0.075,24.0,48.0,True,0.19,Low,Completed
+S375,0.75,52.0,69.0,True,0.59,Medium,Completed
+S376,0.825,59.0,92.0,False,0.66,Medium,Not Completed
+S377,0.45,68.0,68.0,False,0.61,Medium,Not Completed
+S378,0.75,57.0,68.0,False,0.62,Medium,Not Completed
+S379,0.3,44.0,36.0,False,0.4,Medium,Not Completed
+S380,0.375,38.0,63.0,False,0.38,Low,Not Completed
+S381,0.2,34.0,61.0,True,0.3,Low,Completed
+S382,0.3,66.0,34.0,False,0.55,Medium,Not Completed
+S383,0.625,54.0,69.0,False,0.57,Medium,Not Completed
+S384,0.85,67.0,85.0,False,0.72,High,Not Completed
+S385,0.375,45.0,66.0,False,0.43,Medium,Not Completed
+S386,0.225,38.0,47.0,False,0.33,Low,Not Completed
+S387,0.275,59.0,42.0,True,0.5,Medium,Completed
+S388,0.075,62.0,51.0,True,0.46,Medium,Completed
+S389,0.75,70.0,58.0,False,0.72,High,Not Completed
+S390,0.8,78.0,66.0,True,0.79,High,Completed
+S391,0.6,48.0,59.0,True,0.52,Medium,Completed
+S392,0.25,69.0,48.0,False,0.56,Medium,Not Completed
+S393,0.825,81.56,79.0,True,0.82,High,Completed
+S394,0.275,64.0,35.0,True,0.53,Medium,Completed
+S395,0.4974999999999999,83.0,58.0,False,0.73,High,Not Completed
+S396,0.35,61.0,69.0,True,0.53,Medium,Completed
+S397,0.7,63.0,55.0,False,0.65,Medium,Not Completed
+S398,0.225,51.0,44.0,True,0.42,Medium,Completed
+S399,0.75,88.0,88.0,True,0.84,High,Completed
+S400,0.75,52.0,55.0,True,0.59,Medium,Completed
+S401,0.325,34.0,34.0,False,0.34,Low,Not Completed
+S402,0.725,52.0,75.0,True,0.58,Medium,Completed
+S403,0.775,64.01,62.0,False,0.68,Medium,Not Completed
+S404,0.1,35.0,36.0,False,0.28,Low,Not Completed
+S405,0.65,77.0,62.0,False,0.73,High,Not Completed
+S406,0.575,68.0,47.0,False,0.65,Medium,Not Completed
+S407,0.1,32.0,51.0,True,0.25,Low,Completed
+S408,0.75,81.0,87.0,True,0.79,High,Completed
+S409,0.15,100.0,41.0,False,0.74,High,Not Completed
+S410,0.95,95.0,91.0,False,0.95,High,Not Completed
+S411,0.9,82.0,79.42,True,0.84,High,Completed
+S412,0.325,47.0,39.0,False,0.43,Medium,Not Completed
+S413,0.05,35.0,49.0,False,0.26,Low,Not Completed
+S414,0.05,45.0,27.0,True,0.33,Low,Completed
+S415,0.125,29.0,48.0,False,0.24,Low,Not Completed
+S416,0.925,77.0,74.58,False,0.82,High,Not Completed
+S417,0.45,68.0,72.0,False,0.61,Medium,Not Completed
+S418,0.175,41.0,62.0,True,0.34,Low,Completed
+S419,0.95,94.0,66.0,True,0.94,High,Completed
+S420,0.075,60.0,43.0,True,0.44,Medium,Completed
+S421,0.325,64.0,53.0,True,0.55,Medium,Completed
+S422,0.4974999999999999,54.0,67.0,False,0.53,Medium,Not Completed
+S423,0.775,63.0,87.0,True,0.67,Medium,Completed
+S424,0.65,66.0,73.0,False,0.66,Medium,Not Completed
+S425,0.85,58.0,79.0,False,0.66,Medium,Not Completed
+S426,0.3,32.0,30.99,True,0.31,Low,Completed
+S427,0.825,100.0,66.0,True,0.95,High,Completed
+S428,0.15,31.0,53.0,False,0.26,Low,Not Completed
+S429,0.175,60.0,32.0,False,0.47,Medium,Not Completed
+S430,0.725,52.0,54.0,False,0.58,Medium,Not Completed
+S431,0.575,51.0,59.0,False,0.53,Medium,Not Completed
+S432,0.6,72.0,69.74,False,0.68,Medium,Not Completed
+S433,0.6,76.0,73.61,False,0.71,High,Not Completed
+S434,0.475,44.0,58.0,False,0.45,Medium,Not Completed
+S435,0.825,76.0,88.0,True,0.78,High,Completed
+S436,0.95,94.0,85.0,False,0.94,High,Not Completed
+S437,0.425,71.0,57.0,False,0.62,Medium,Not Completed
+S438,0.75,68.0,66.0,True,0.7,High,Completed
+S439,0.5,65.0,42.0,False,0.6,Medium,Not Completed
+S440,0.425,47.0,39.0,False,0.46,Medium,Not Completed
+S441,0.35,53.0,45.0,False,0.48,Medium,Not Completed
+S442,0.275,67.0,68.0,False,0.55,Medium,Not Completed
+S443,0.475,66.0,53.0,True,0.6,Medium,Completed
+S444,0.525,72.0,69.74,False,0.66,Medium,Not Completed
+S445,0.95,88.0,84.0,False,0.9,High,Not Completed
+S446,0.425,74.0,73.0,False,0.65,Medium,Not Completed
+S447,0.3,70.0,39.0,True,0.58,Medium,Completed
+S448,0.25,43.0,60.0,False,0.38,Low,Not Completed
+S449,0.5,44.0,40.0,True,0.46,Medium,Completed
+S450,0.325,42.0,59.0,False,0.39,Low,Not Completed
+S451,0.625,45.0,45.0,False,0.5,Medium,Not Completed
+S452,0.125,56.0,30.0,True,0.43,Medium,Completed
+S453,0.45,40.0,39.0,False,0.42,Medium,Not Completed
+S454,0.1,25.0,57.0,True,0.2,Low,Completed
+S455,0.4,58.0,68.0,True,0.53,Medium,Completed
+S456,0.55,77.0,71.0,True,0.7,High,Completed
+S457,0.025,59.0,53.0,False,0.42,Medium,Not Completed
+S458,0.4,40.0,40.0,True,0.4,Medium,Completed
+S459,0.925,72.0,85.0,False,0.78,High,Not Completed
+S460,0.55,78.0,59.0,False,0.71,High,Not Completed
+S461,0.25,47.0,60.0,False,0.4,Medium,Not Completed
+S462,0.2,63.0,43.0,True,0.5,Medium,Completed
+S463,0.3,60.0,58.12,True,0.51,Medium,Completed
+S464,0.7,70.0,74.0,True,0.7,High,Completed
+S465,0.95,72.0,98.0,False,0.79,High,Not Completed
+S466,0.675,75.0,61.0,True,0.73,High,Completed
+S467,0.7,74.0,70.0,False,0.73,High,Not Completed
+S468,0.8,67.0,64.9,True,0.71,High,Completed
+S469,0.275,68.0,53.0,False,0.56,Medium,Not Completed
+S470,0.2,29.0,55.0,False,0.26,Low,Not Completed
+S471,0.825,84.0,81.0,True,0.84,High,Completed
+S472,0.9,67.0,75.0,False,0.74,High,Not Completed
+S473,0.425,74.0,39.0,False,0.65,Medium,Not Completed
+S474,0.325,39.0,37.0,False,0.37,Low,Not Completed
+S475,0.125,29.94,29.0,True,0.25,Low,Completed
+S476,0.6,81.0,69.0,True,0.75,High,Completed
+S477,0.15,65.0,61.0,True,0.5,Medium,Completed
+S478,0.425,69.0,67.0,False,0.61,Medium,Not Completed
+S479,0.025,54.0,61.0,True,0.39,Low,Completed
+S480,0.175,46.0,40.0,False,0.37,Low,Not Completed
+S482,0.375,36.0,42.0,True,0.36,Low,Completed
+S483,0.2,58.0,31.0,True,0.47,Medium,Completed
+S484,0.325,73.0,33.0,True,0.61,Medium,Completed
+S485,0.25,57.0,52.0,True,0.47,Medium,Completed
+S486,0.875,82.0,55.0,True,0.84,High,Completed
+S487,0.2,54.0,31.0,False,0.44,Medium,Not Completed
+S488,0.9,96.02,93.0,True,0.94,High,Completed
+S489,0.9,67.0,92.0,False,0.74,High,Not Completed
+S490,0.825,68.0,69.0,True,0.72,High,Completed
+S491,0.325,66.0,72.0,False,0.56,Medium,Not Completed
+S492,0.7,63.0,66.0,True,0.65,Medium,Completed
+S493,0.225,41.0,62.0,False,0.35,Low,Not Completed
+S494,0.275,64.01,62.0,True,0.53,Medium,Completed
+S495,0.525,72.0,51.0,False,0.66,Medium,Not Completed
+S496,0.675,82.0,87.0,True,0.78,High,Completed
+S497,0.775,82.0,57.0,False,0.81,High,Not Completed
+S498,0.075,48.0,42.0,True,0.36,Low,Completed
+S499,0.5,80.0,47.0,False,0.71,High,Not Completed
+S500,0.825,79.0,56.0,False,0.8,High,Not Completed
