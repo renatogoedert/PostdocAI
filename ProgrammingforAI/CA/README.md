@@ -81,11 +81,14 @@ The most elaborate solution was implemented for the missing quiz participation a
 
 # Data Analysis
 
-analising the Descriptive Statistics its truly that the mean is almost on the eacly mid point of the avaliable range, and that the median is virtually identical to the mean, wich indicates the distribuition of study hours is higly simetrica, with a Standard deviation of 0.2792 is a high degreee of variability, so the students are cleary not clustering arounf the average and wide spread
-
-The results of Quiz Participation has a mean of 61.25, wich is over the 50% medium of the range (0-100) putting most of the values on the good category, the mediam is also similar to mean, showing a symmetrical distibution, at leats aorund mediam/mean, and as study hours the standard devietaion indicates a wide spread of result, which makes sense when the data is randomly generated
+With the dataset cleaned and prepared, the next step is the analysis, a step that aims to show the patterns and trends in the student engagement and performance. The first function focuses on computing the descriptive analysis for study hours and quiz participation. 
 
 ![Descriptive Statistics](./images/statistics%20for%20Study%20Hours%20and%20Quiz%20participation.png)
+
+The results clearly show that the mean value of study hours is almost the same as the exact midpoint of the available range (0.5). Moreover, the fact that the median and mean are very similar also means that the distribution of study hours is highly symmetrical. Besides, a standard deviation of 0.2792 shows a high degree of variability, expressing that the study hours values are not clustering around the average but are widespread.
+
+The results of quiz participation have a mean of 61.25, which is slightly above the midpoint of the range (0-100), implying that most of the values are in the good category. As previously seen in study hours, the median closely matches the mean, suggesting another symmetrical distribution. In conclusion, these results are expected when the data is randomly generated
+
 
 When grouping an interesting inverse relationship is show, where the students who did not complete the course have a higher average engagment score(0.597) than the student who did complete the course (0.569) but not a significant diference either, 1.8%.
 
