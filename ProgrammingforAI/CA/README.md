@@ -91,7 +91,18 @@ The visualialisations alway help with the understanding of the data, for example
 
 The Histogram shows that most of the quiz participation are on the 50% to 70% range, and no value below 20%, the chart shows a little stif to the right side, showing that most values over the 50%, the Pie chart also enforces the same, that most of sudents are on the medium results, but the uppper max has more them the bottom limit
 
-![Histogram](./histogram_quiz_participation.png) ![Pie Chart](./pie_chart_performance_category.png)
+<table style="width:100%">
+  <tr>
+    <td style="width:50%; text-align:center;">
+      <img src="./histogram_quiz_participation.png" alt="Histogram of Quiz Participation" style="max-width:100%; height:auto;">
+      <p>Figure 1: Histogram of Quiz Participation</p>
+    </td>
+    <td style="width:50%; text-align:center;">
+      <img src="./pie_chart_performance_category.png" alt="Pie Chart of Performance Categories" style="max-width:100%; height:auto;">
+      <p>Figure 2: Pie Chart of Performance Category Distribution</p>
+    </td>
+  </tr>
+</table>
 
 # Reflection
 
