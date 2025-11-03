@@ -23,7 +23,7 @@ def countdown(part_name, seconds=3):
     #Adding empty line with recursive to remove countdown
     print(" " * 100, end="\r")
 
-adding # Run pipeline on entry option
+# Run pipeline on entry option
 def run_pipeline(option):
 
     # Just Generation
