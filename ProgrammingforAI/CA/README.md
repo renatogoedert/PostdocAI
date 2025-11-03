@@ -132,3 +132,14 @@ The main reason for such dispersion was the use of purely random values in the g
 In the process of doing this report, I furthered my understanding of Python, in particular the need for an init.py file, the use of the if name == "main": construct, and implementation of recursive printing, which I adapted from a Stack Overflow discussion.
 
 Besides, building the logic behind how quiz participation and past performance relate to one another introduced yet another challenge: I had to deal with the problem of missing values and explore mathematically appropriate ways of relating the variables meaningfully. A satisfying result was eventually reached through mathematical reasoning and iterative refinement of code.
+
+
+
+
+
+
+########
+
+[1]  Hunt, Andrew; Thomas, David (1999). The Pragmatic Programmer: From Journeyman to Master (1 ed.). US: Addison-Wesley. pp. 320. ISBN 978-0-201-61622-4.
+
+#########
