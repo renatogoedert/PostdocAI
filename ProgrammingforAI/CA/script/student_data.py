@@ -24,18 +24,28 @@ def _run_create_dataset():
         'QuizParticipation': [],
         'PastPerformance': [],
         'CourseCompletion': [],
+        'Course':[]
+    }
+
+    course_coef = {
+        "Course A": 8.0,
+        "Course B": 6.0,
+        "Course C": 4.0
     }
 
     # Loop num_of_values time and add to data dictionary 
     for  i in range(1, num_of_values+1):
         study_hours = np.random.randint(1, 40)
-        new_entry = {
-            data['StudentID'].append(f'S{str(i).zfill(3)}'),
-            data['StudyHours'].append(study_hours),
-            data['QuizParticipation'].append(np.random.randint(0, 41) + 20 + study_hours),
-            data['PastPerformance'].append(np.random.randint(0, 41) + 20 + study_hours),
-            data['CourseCompletion'].append(np.random.choice([True, False]))
-        }
+        course = np.random.choice(["Course A", "Course B", "Course C"])
+        coef = course_coef[course]
+
+        data['StudentID'].append(f'S{str(i).zfill(3)}'),
+        data['StudyHours'].append(study_hours),
+        data['QuizParticipation'].append(np.random.randint(0, 21) + coef * 5 + study_hours),
+        data['PastPerformance'].append(np.random.randint(0, 21) + coef * 5 + study_hours),
+        data['CourseCompletion'].append(np.random.choice([True, False])),
+        data['Course'].append(course)
+
 
     # After values added, create DataFrame with data
     df = pd.DataFrame(data)

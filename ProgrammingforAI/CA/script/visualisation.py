@@ -101,6 +101,57 @@ def _make_pie_graph(df):
     # Save file as PNG
     util.save_plot('pie_chart_performance_category.png')
 
+def _make_2_scatter_graph(df):
+    # Make a 2nd Scatter Plot (Study Hours vs Past Performance)
+    print(f"{Fore.YELLOW}--- Generating 2 Scatter Plot (Study Hours vs Past Performance) ---")
+
+    plt.figure(figsize=(10, 6))
+    scatter_graph = sns.scatterplot(
+        data=df,
+        x='StudyHours',
+        y='PastPerformance',
+        hue='Course',  # Color-codes points based on course  
+        style='Course', # Uses different marker shapes 
+        alpha=0.8
+    )
+
+    # Add labels and title
+    scatter_graph.set_title('Study Hours vs Past Performance', fontsize = 16)
+    scatter_graph.set_xlabel('Study Hours (Normalized)', fontsize=12)
+    scatter_graph.set_ylabel('Past Performance Score (%)', fontsize=12)
+
+    # Fixing plot area and legend out of chart
+    plt.xlim(left=0, right=1)
+    plt.ylim(bottom=0, top=100)
+    handles, labels = plt.gca().get_legend_handles_labels()
+    labels, handles = zip(*sorted(zip(labels, handles), key=lambda x: x[0]))
+    plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0.)
+
+    # Save file as PNG
+    util.save_plot('scatter_course_performance_hours.png')
+
+def _make_2_bar_graph(df):
+    # Make a Bar Chart (Performance Category Distribution)
+    print(f"{Fore.YELLOW}--- Generating 2 Bar Chart (Average Engagement by Course ---")
+
+    group_stats = df.groupby('Course')['Engagement'].mean().reset_index()
+    plt.figure(figsize=(8, 6))
+    bar_graph = sns.barplot(
+        data=group_stats,
+        x='Course',
+        y='Engagement'
+    )
+
+    # Add labels and title
+    bar_graph.set_title('Average Engagement by Course', fontsize=16)
+    # bar_graph.set_xlabel('Course Status', fontsize=12)
+    bar_graph.set_ylabel('Average Engagement Score', fontsize=12)
+
+    plt.ylim(0, 1) 
+
+    # Save file as PNG
+    util.save_plot('bar_course_chart_avg_engagement.png')
+
 def main():
     # Initialising Colorama, I like Colors, dont judge me!
     util.init_colors
@@ -114,6 +165,8 @@ def main():
     _make_bar_graph(df)
     _make_scatter_graph(df)
     _make_pie_graph(df)
+    _make_2_scatter_graph(df)
+    _make_2_bar_graph(df)
 
 if __name__ == "__main__":
     main()
