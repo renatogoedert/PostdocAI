@@ -85,9 +85,9 @@ After the data wrangling stage, the new CSV file, containing the clean and prepa
 
 ![Descriptive Statistics](./images/statistics%20for%20Study%20Hours%20and%20Quiz%20participation.png)
 
-The results for study hours, shown on the image above, clearly exhibit that the mean value is almost the same as the exact midpoint of the available range (0.5). Moreover, the fact that the median and mean are very similar also means that the distribution of study hours is highly symmetrical. Besides, a standard deviation of 0.2792 shows a high degree of variability, expressing that the study hours values are not clustering around the average but are widespread.
+The results for study hours, shown on the image above, clearly exhibit that the mean value is almost the same as the exact midpoint of the available range (0.5). Moreover, the fact that the median and mean are very similar also means that the distribution of study hours is highly symmetrical. Besides, the standard deviation value of 0.2792 expresses that the study hours values are not clustering around the average but are widespread across the range.
 
-The results of quiz participation have a mean of 61.25, which is slightly above the midpoint of the range (0-100), implying that most of the values are in the good category. As previously seen in study hours, the median closely matches the mean, suggesting another symmetrical distribution. In conclusion, these results are expected when the data is randomly generated
+Switching to quiz participation, the mean achieves a result of 61.25, which is slightly above the midpoint of the range (0-100), where most of the values are considered in the good category. As previously seen in study hours, the median closely matches the mean, suggesting another symmetrical distribution. In conclusion, these results are expected when the data is randomly generated
 
 A grouped analysis was also run in the dataset, this second step divided the students according to their course completion status and displayed the average engagement of the group. Interestingly, this showed an inverse relationship, where the students who did not complete the course have a higher average engagement score (0.597) than the students who did complete the course (0.569), although the difference of values is about 1.8%, small enough to be negligible. 
 
