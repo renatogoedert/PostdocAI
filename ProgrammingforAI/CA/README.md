@@ -125,20 +125,10 @@ During the development of this continuous assessment, several challenges were en
 
 ![First Scatter Plot](./first%20graphs/scatter_performance_hours.png)
 
-The principal cause for that was the randomness of the values created on the first part, so, in order to have an underling patten to be meaningfully analised from the plot, a stochastic calculation was applied. The fixed code, instead of generating completely random value, it set a minimum value of 20 and made the Past Performance and Quiz Participation correlated to the study hours, in that way creating a data pattern
+The main reason for such dispersion was the use of purely random values in the generation. In order to provide a meaningful underlying pattern for analysis, this code was revised: instead of generating completely random values, a stochastic process was used that also imposed a minimum value of 20, and made "Past Performance" and "Quiz Participation" variables correlated with "Study Hours". Thus, a meaningful pattern was introduced into the data
 
 ![Code for Random data](./images/random_results_code.png)
 
-SOme understanding of the Python language was also developed during the development of this report, as the knowledge of the need of the ```__init__.py``` or hor the function if ```__name__ == "__main__":``` works, also the recursive print, was a code found on stack flow that improve the small details of the code
+In the process of doing this report, I furthered my understanding of Python, in particular the need for an init.py file, the use of the if name == "main": construct, and implementation of recursive printing, which I adapted from a Stack Overflow discussion.
 
-Some challenges also from creating a propoer logic, like the calculation to use the quiz participation and past performance to calculate each other, it came from a place of trying to find the perfect way to solve the missing values, and with mathematical knowledge a fit solution was found
-
-
-
-
-
- ---- ----- --- -- - - -- - - - 
-The strategies you used for handling missing and inconsistent values.
-The main findings from your analysis.
-The insights drawn from your visualisations.
-Challenges you faced, how you resolved them, and what you learned.
+Besides, building the logic behind how quiz participation and past performance relate to one another introduced yet another challenge: I had to deal with the problem of missing values and explore mathematically appropriate ways of relating the variables meaningfully. A satisfying result was eventually reached through mathematical reasoning and iterative refinement of code.
