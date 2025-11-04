@@ -129,7 +129,7 @@ Finally, there is one extra field created, the Course field, and for this field,
 <table style="width:100%">
   <tr>
     <td style="width:50%; text-align:center;">
-      <img src="./bar_course_chart_avg_engagement" alt="Histogram of Quiz Participation" style="max-width:100%; height:auto;">
+      <img src="./bar_course_chart_avg_engagement.png" alt="Histogram of Quiz Participation" style="max-width:100%; height:auto;">
       <p>Figure 1: Histogram of Quiz Participation</p>
     </td>
     <td style="width:50%; text-align:center;">
