@@ -1,499 +1,501 @@
-StudentID,StudyHours,QuizParticipation,PastPerformance,CourseCompletion,Course,Engagement,PerformanceCategory,Completed
-S001,0.476,100.0,45.0,False,Course B,0.84,High,Not Completed
-S002,0.25,64.0,68.0,False,Course A,0.52,Medium,Not Completed
-S003,0.85,67.0,62.0,False,Course C,0.72,High,Not Completed
-S004,0.476,46.0,55.0,True,Course C,0.46,Medium,Completed
-S005,0.775,76.0,88.0,True,Course A,0.76,High,Completed
-S006,0.275,52.0,56.0,False,Course B,0.45,Medium,Not Completed
-S007,0.5,40.0,51.0,False,Course C,0.43,Medium,Not Completed
-S008,0.45,100.0,56.0,True,Course C,0.84,High,Completed
-S009,0.55,59.0,57.19,False,Course C,0.58,Medium,Not Completed
-S010,0.625,72.0,74.0,True,Course A,0.69,Medium,Completed
-S011,0.425,42.0,49.0,False,Course C,0.42,Medium,Not Completed
-S012,0.6,63.0,52.0,True,Course C,0.62,Medium,Completed
-S013,0.75,70.0,83.0,False,Course A,0.72,High,Not Completed
-S014,0.375,43.0,55.0,False,Course C,0.41,Medium,Not Completed
-S015,0.9,60.0,61.0,True,Course C,0.69,Medium,Completed
-S016,0.75,77.0,84.0,False,Course A,0.76,High,Not Completed
-S017,0.45,53.0,43.0,True,Course C,0.51,Medium,Completed
-S018,0.05,44.0,50.0,False,Course A,0.32,Low,Not Completed
-S019,0.175,44.0,42.65,False,Course C,0.36,Low,Not Completed
-S020,0.15,50.0,44.0,True,Course B,0.39,Low,Completed
-S021,0.375,73.0,72.0,False,Course A,0.62,Medium,Not Completed
-S022,0.925,82.0,93.0,False,Course A,0.85,High,Not Completed
-S023,0.625,53.0,51.37,True,Course C,0.56,Medium,Completed
-S024,0.725,51.0,49.43,True,Course C,0.57,Medium,Completed
-S025,0.725,88.0,75.0,False,Course A,0.83,High,Not Completed
-S026,0.825,76.0,69.0,False,Course B,0.78,High,Not Completed
-S027,0.35,59.0,45.0,False,Course B,0.52,Medium,Not Completed
-S028,0.275,100.0,41.0,False,Course B,0.78,High,Not Completed
-S029,0.625,65.0,45.0,False,Course C,0.64,Medium,Not Completed
-S030,0.1,44.0,42.65,False,Course B,0.34,Low,Not Completed
-S031,0.6,69.0,82.0,False,Course A,0.66,Medium,Not Completed
-S032,0.425,53.0,52.0,False,Course C,0.5,Medium,Not Completed
-S033,0.075,50.0,48.46,True,Course A,0.37,Low,Completed
-S034,0.35,57.0,44.0,False,Course B,0.5,Medium,Not Completed
-S035,0.9,85.0,83.0,False,Course B,0.86,High,Not Completed
-S036,0.65,64.0,74.0,True,Course B,0.64,Medium,Completed
-S037,0.45,53.0,38.0,False,Course C,0.51,Medium,Not Completed
-S038,0.1,39.0,39.0,False,Course C,0.3,Low,Not Completed
-S039,0.175,58.0,56.0,True,Course A,0.46,Medium,Completed
-S040,0.1,44.0,36.0,False,Course B,0.34,Low,Not Completed
-S041,0.025,45.4,44.0,True,Course B,0.33,Low,Completed
-S042,0.375,47.0,45.56,True,Course B,0.44,Medium,Completed
-S043,0.85,67.0,55.0,True,Course C,0.72,High,Completed
-S044,0.8,76.0,79.0,True,Course B,0.77,High,Completed
-S045,0.375,52.0,50.4,False,Course C,0.48,Medium,Not Completed
-S046,0.025,47.0,49.0,True,Course A,0.34,Low,Completed
-S047,0.175,48.0,38.0,True,Course B,0.39,Low,Completed
-S048,0.975,98.0,84.0,False,Course A,0.98,High,Not Completed
-S049,0.275,59.0,67.0,False,Course A,0.5,Medium,Not Completed
-S050,0.475,68.0,73.0,False,Course A,0.62,Medium,Not Completed
-S051,0.15,46.0,44.0,True,Course C,0.37,Low,Completed
-S052,0.025,50.0,42.0,True,Course B,0.36,Low,Completed
-S053,0.325,50.0,51.0,True,Course C,0.45,Medium,Completed
-S054,0.925,60.0,66.0,False,Course C,0.7,High,Not Completed
-S055,0.25,46.0,51.0,True,Course B,0.4,Medium,Completed
-S056,0.2,38.0,51.0,False,Course B,0.33,Low,Not Completed
-S057,0.925,67.0,69.0,False,Course B,0.75,High,Not Completed
-S058,0.525,54.0,46.0,True,Course C,0.54,Medium,Completed
-S059,0.675,69.12,67.0,False,Course B,0.69,Medium,Not Completed
-S060,0.225,43.0,32.0,True,Course C,0.37,Low,Completed
-S061,0.275,52.0,59.0,True,Course B,0.45,Medium,Completed
-S062,0.825,73.0,63.0,True,Course C,0.76,High,Completed
-S063,0.25,48.0,50.0,True,Course B,0.41,Medium,Completed
-S064,0.875,67.0,59.0,False,Course C,0.73,High,Not Completed
-S065,0.6,78.0,64.0,False,Course A,0.73,High,Not Completed
-S066,0.476,50.0,49.0,True,Course C,0.49,Medium,Completed
-S067,0.45,75.0,61.0,False,Course A,0.66,Medium,Not Completed
-S068,0.2,52.0,54.0,False,Course A,0.42,Medium,Not Completed
-S069,0.8,67.0,70.0,False,Course B,0.71,High,Not Completed
-S070,0.55,80.0,68.0,True,Course A,0.73,High,Completed
-S071,0.8,72.0,75.0,False,Course B,0.74,High,Not Completed
-S072,0.875,85.0,84.0,True,Course A,0.86,High,Completed
-S073,0.5,50.0,49.0,False,Course C,0.5,Medium,Not Completed
-S074,0.175,36.0,30.0,False,Course C,0.3,Low,Not Completed
-S075,0.25,53.0,56.0,True,Course B,0.45,Medium,Completed
-S076,0.375,47.0,42.0,True,Course C,0.44,Medium,Completed
-S077,0.476,41.0,36.0,True,Course C,0.43,Medium,Completed
-S079,0.25,70.0,52.0,False,Course A,0.56,Medium,Not Completed
-S080,0.425,61.0,48.0,True,Course B,0.55,Medium,Completed
-S081,0.125,36.0,34.89,False,Course B,0.29,Low,Not Completed
-S082,0.175,55.0,67.0,True,Course A,0.44,Medium,Completed
-S083,0.625,68.0,74.0,True,Course B,0.66,Medium,Completed
-S084,0.35,38.0,43.0,True,Course C,0.37,Low,Completed
-S085,0.775,85.0,72.0,True,Course A,0.83,High,Completed
-S086,0.55,63.0,73.0,True,Course A,0.61,Medium,Completed
-S087,0.15,44.0,50.0,False,Course B,0.35,Low,Not Completed
-S088,0.525,70.0,76.0,False,Course A,0.65,Medium,Not Completed
-S089,0.525,56.0,59.0,False,Course B,0.55,Medium,Not Completed
-S090,0.45,58.0,60.0,False,Course A,0.54,Medium,Not Completed
-S091,0.775,79.0,83.0,False,Course A,0.79,High,Not Completed
-S092,0.4,53.0,50.0,False,Course C,0.49,Medium,Not Completed
-S093,0.9,86.0,83.36,False,Course A,0.87,High,Not Completed
-S094,0.725,79.0,79.0,False,Course B,0.77,High,Not Completed
-S095,0.05,53.0,50.0,False,Course A,0.39,Low,Not Completed
-S501,0.1,40.0,39.0,False,Course C,0.31,Low,Not Completed
-S097,0.65,81.0,69.0,True,Course A,0.76,High,Completed
-S098,0.125,41.0,42.0,True,Course B,0.32,Low,Completed
-S099,0.775,53.0,51.37,False,Course C,0.6,Medium,Not Completed
-S100,0.476,79.0,80.0,False,Course A,0.7,High,Not Completed
-S101,0.476,79.0,80.0,False,Course B,0.7,High,Not Completed
-S102,0.175,59.0,63.0,True,Course A,0.47,Medium,Completed
-S103,0.1,54.0,50.0,True,Course A,0.41,Medium,Completed
-S104,0.45,77.0,59.0,True,Course A,0.67,Medium,Completed
-S105,0.15,100.0,57.0,True,Course A,0.74,High,Completed
-S106,0.65,73.0,60.0,True,Course B,0.71,High,Completed
-S107,0.425,61.0,59.13,False,Course A,0.55,Medium,Not Completed
-S108,0.825,66.0,54.0,False,Course C,0.71,High,Not Completed
-S109,0.45,48.0,50.0,True,Course C,0.47,Medium,Completed
-S110,0.5,69.0,77.0,True,Course A,0.63,Medium,Completed
-S111,0.6,59.0,64.0,True,Course B,0.59,Medium,Completed
-S112,0.175,57.0,40.0,True,Course B,0.45,Medium,Completed
-S113,0.25,46.0,54.0,True,Course B,0.4,Medium,Completed
-S114,0.425,71.0,58.0,False,Course A,0.62,Medium,Not Completed
-S115,0.9,70.0,85.0,True,Course B,0.76,High,Completed
-S116,0.25,43.0,40.0,False,Course C,0.38,Low,Not Completed
-S117,0.95,72.0,83.0,False,Course B,0.79,High,Not Completed
-S118,0.476,54.68,53.0,True,Course C,0.53,Medium,Completed
-S119,0.175,58.0,55.0,True,Course A,0.46,Medium,Completed
-S120,0.975,80.0,96.0,False,Course A,0.85,High,Not Completed
-S121,0.975,86.0,99.0,False,Course A,0.89,High,Not Completed
-S122,0.925,63.0,57.0,True,Course C,0.72,High,Completed
-S123,0.476,76.0,92.0,False,Course A,0.67,Medium,Not Completed
-S124,0.575,57.0,53.0,True,Course B,0.57,Medium,Completed
-S125,0.175,53.0,61.0,True,Course A,0.42,Medium,Completed
-S126,0.85,71.0,75.0,True,Course B,0.75,High,Completed
-S127,0.95,69.0,65.0,False,Course C,0.77,High,Not Completed
-S128,0.5,58.0,56.0,False,Course C,0.56,Medium,Not Completed
-S502,0.025,35.0,32.0,False,Course B,0.25,Low,Not Completed
-S130,0.9,77.0,66.0,True,Course B,0.81,High,Completed
-S131,0.3,59.0,62.0,True,Course A,0.5,Medium,Completed
-S132,0.5,70.0,66.0,False,Course A,0.64,Medium,Not Completed
-S133,0.075,53.0,37.0,False,Course B,0.39,Low,Not Completed
-S134,0.625,70.0,63.0,True,Course B,0.68,Medium,Completed
-S135,0.15,46.0,43.0,True,Course C,0.37,Low,Completed
-S136,0.85,67.0,68.0,False,Course C,0.72,High,Not Completed
-S137,0.025,40.0,35.0,False,Course C,0.29,Low,Not Completed
-S138,0.4,54.0,59.0,True,Course B,0.5,Medium,Completed
-S139,0.075,43.0,48.0,True,Course A,0.32,Low,Completed
-S140,0.425,75.0,72.7,True,Course A,0.65,Medium,Completed
-S141,0.6,66.03,64.0,True,Course B,0.64,Medium,Completed
-S142,0.225,42.0,58.0,True,Course B,0.36,Low,Completed
-S143,0.225,33.0,44.0,True,Course C,0.3,Low,Completed
-S144,0.05,45.0,50.0,False,Course B,0.33,Low,Not Completed
-S145,0.5,77.0,74.0,True,Course A,0.69,Medium,Completed
-S146,0.175,60.0,59.0,True,Course A,0.47,Medium,Completed
-S147,0.5,40.0,50.0,True,Course C,0.43,Medium,Completed
-S148,0.3,32.0,44.0,False,Course C,0.31,Low,Not Completed
-S149,0.65,63.0,56.0,True,Course C,0.64,Medium,Completed
-S150,0.975,75.0,77.0,False,Course B,0.82,High,Not Completed
-S151,0.8,84.0,75.0,False,Course A,0.83,High,Not Completed
-S152,0.1,55.0,53.31,True,Course A,0.42,Medium,Completed
-S153,0.6,71.0,82.0,False,Course A,0.68,Medium,Not Completed
-S154,0.8,75.0,78.0,False,Course B,0.76,High,Not Completed
-S155,0.725,52.0,58.0,True,Course C,0.58,Medium,Completed
-S156,0.8,70.0,66.0,False,Course B,0.73,High,Not Completed
-S157,0.95,87.0,90.0,True,Course A,0.89,High,Completed
-S158,0.975,84.0,98.0,False,Course A,0.88,High,Not Completed
-S159,0.55,68.0,81.0,True,Course A,0.64,Medium,Completed
-S160,0.325,63.0,70.0,True,Course A,0.54,Medium,Completed
-S161,0.5,56.0,53.0,True,Course B,0.54,Medium,Completed
-S162,0.425,53.0,53.0,False,Course C,0.5,Medium,Not Completed
-S163,0.45,74.28,72.0,False,Course A,0.65,Medium,Not Completed
-S164,0.075,46.0,40.0,False,Course B,0.34,Low,Not Completed
-S165,0.55,57.0,66.0,False,Course B,0.56,Medium,Not Completed
-S166,0.1,36.0,50.0,True,Course B,0.28,Low,Completed
-S503,0.2,53.0,56.0,False,Course B,0.43,Medium,Not Completed
-S168,0.625,54.0,55.0,True,Course C,0.57,Medium,Completed
-S169,0.25,50.0,42.0,True,Course C,0.42,Medium,Completed
-S170,0.1,45.0,47.0,False,Course A,0.34,Low,Not Completed
-S171,0.85,77.0,76.0,True,Course A,0.79,High,Completed
-S172,0.3,66.0,67.0,False,Course A,0.55,Medium,Not Completed
-S173,0.6,63.0,55.0,True,Course C,0.62,Medium,Completed
-S174,0.5,73.0,65.0,True,Course A,0.66,Medium,Completed
-S175,0.625,80.0,72.0,True,Course A,0.75,High,Completed
-S176,0.675,60.0,62.0,True,Course B,0.62,Medium,Completed
-S177,0.225,51.0,55.0,True,Course B,0.42,Medium,Completed
-S178,0.55,79.0,71.0,True,Course A,0.72,High,Completed
-S179,0.4,46.0,42.0,False,Course C,0.44,Medium,Not Completed
-S180,0.275,43.33,42.0,False,Course C,0.39,Low,Not Completed
-S181,0.375,63.0,59.0,True,Course B,0.55,Medium,Completed
-S182,0.55,70.0,58.0,True,Course B,0.66,Medium,Completed
-S183,0.375,50.55,49.0,True,Course B,0.47,Medium,Completed
-S184,0.6,77.38,75.0,False,Course A,0.72,High,Not Completed
-S185,0.825,78.0,76.0,False,Course A,0.79,High,Not Completed
-S186,0.475,74.0,71.73,True,Course A,0.66,Medium,Completed
-S187,0.65,57.0,56.0,False,Course C,0.59,Medium,Not Completed
-S188,0.775,71.0,80.0,False,Course A,0.73,High,Not Completed
-S189,0.125,41.0,37.0,False,Course C,0.32,Low,Not Completed
-S190,0.5,65.0,63.0,True,Course A,0.6,Medium,Completed
-S191,0.925,67.0,67.0,True,Course C,0.75,High,Completed
-S192,0.9,85.0,69.0,False,Course B,0.86,High,Not Completed
-S193,0.325,63.0,68.0,False,Course A,0.54,Medium,Not Completed
-S194,0.125,48.0,52.0,False,Course B,0.37,Low,Not Completed
-S195,0.525,65.0,62.0,False,Course A,0.61,Medium,Not Completed
-S196,0.925,79.0,89.0,False,Course A,0.83,High,Not Completed
-S197,0.475,53.0,66.0,True,Course B,0.51,Medium,Completed
-S198,0.05,33.0,31.0,False,Course C,0.25,Low,Not Completed
-S199,0.925,100.0,91.0,False,Course A,0.98,High,Not Completed
-S200,0.625,82.0,84.0,True,Course A,0.76,High,Completed
-S201,0.025,30.95,30.0,True,Course C,0.22,Low,Completed
-S202,0.125,46.0,46.0,False,Course A,0.36,Low,Not Completed
-S203,0.75,75.0,71.0,True,Course B,0.75,High,Completed
-S204,0.35,64.0,65.0,False,Course A,0.55,Medium,Not Completed
-S205,0.125,100.0,61.0,False,Course A,0.74,High,Not Completed
-S206,0.525,68.0,60.0,False,Course B,0.63,Medium,Not Completed
-S207,0.075,61.0,43.0,True,Course A,0.45,Medium,Completed
-S208,0.175,47.0,56.0,True,Course B,0.38,Low,Completed
-S209,0.425,61.0,61.0,False,Course A,0.55,Medium,Not Completed
-S210,0.875,69.0,79.0,False,Course B,0.75,High,Not Completed
-S211,0.275,37.0,35.0,True,Course C,0.34,Low,Completed
-S212,0.15,58.0,53.0,False,Course A,0.45,Medium,Not Completed
-S213,0.825,75.0,77.0,True,Course B,0.77,High,Completed
-S214,0.275,58.0,58.0,True,Course B,0.49,Medium,Completed
-S215,0.275,49.0,50.0,False,Course C,0.43,Medium,Not Completed
-S216,0.425,40.0,37.0,True,Course C,0.41,Medium,Completed
-S217,0.975,87.0,79.0,True,Course B,0.9,High,Completed
-S218,0.8,64.0,76.0,False,Course B,0.69,Medium,Not Completed
-S219,0.55,69.0,62.0,False,Course A,0.65,Medium,Not Completed
-S220,0.476,49.0,46.0,False,Course C,0.49,Medium,Not Completed
-S221,0.1,24.0,30.0,False,Course C,0.2,Low,Not Completed
-S222,0.35,50.0,61.0,False,Course B,0.45,Medium,Not Completed
-S223,0.675,78.0,75.6,False,Course A,0.75,High,Not Completed
-S224,0.675,67.0,68.0,True,Course A,0.67,Medium,Completed
-S226,0.35,49.0,51.0,False,Course B,0.45,Medium,Not Completed
-S227,0.5,62.0,62.0,True,Course A,0.58,Medium,Completed
-S228,0.475,42.0,55.0,True,Course C,0.44,Medium,Completed
-S229,0.575,66.0,74.0,False,Course A,0.63,Medium,Not Completed
-S230,0.525,77.0,71.0,True,Course A,0.7,High,Completed
-S231,0.625,70.0,85.0,False,Course A,0.68,Medium,Not Completed
-S232,0.925,71.0,68.82,True,Course B,0.77,High,Completed
-S233,0.7,53.0,48.0,True,Course C,0.58,Medium,Completed
-S234,0.9,66.0,76.0,True,Course C,0.73,High,Completed
-S235,0.45,48.0,56.0,True,Course C,0.47,Medium,Completed
-S236,0.35,49.0,39.0,True,Course C,0.45,Medium,Completed
-S237,0.075,50.55,49.0,False,Course A,0.38,Low,Not Completed
-S238,0.125,49.52,48.0,False,Course B,0.38,Low,Not Completed
-S239,0.75,74.0,86.0,False,Course A,0.74,High,Not Completed
-S240,0.75,71.0,80.0,True,Course B,0.72,High,Completed
-S241,0.875,92.0,77.0,True,Course A,0.91,High,Completed
-S242,0.4,64.0,53.0,True,Course B,0.57,Medium,Completed
-S243,0.775,56.0,70.0,False,Course C,0.62,Medium,Not Completed
-S244,0.825,70.0,71.0,True,Course B,0.74,High,Completed
-S245,0.525,61.0,53.0,True,Course C,0.58,Medium,Completed
-S246,0.5,70.0,67.85,False,Course B,0.64,Medium,Not Completed
-S247,0.55,72.0,63.0,False,Course B,0.67,Medium,Not Completed
-S248,0.425,57.0,52.0,False,Course B,0.53,Medium,Not Completed
-S249,0.475,55.71,54.0,True,Course C,0.53,Medium,Completed
-S250,0.875,93.0,76.0,False,Course A,0.91,High,Not Completed
-S251,0.5,53.0,69.0,True,Course B,0.52,Medium,Completed
-S252,0.825,86.0,81.0,False,Course A,0.85,High,Not Completed
-S253,0.025,47.0,59.0,True,Course A,0.34,Low,Completed
-S254,0.05,32.0,38.0,True,Course C,0.24,Low,Completed
-S255,0.9,64.0,64.0,True,Course C,0.72,High,Completed
-S256,0.55,53.0,51.0,False,Course C,0.54,Medium,Not Completed
-S257,0.25,36.0,31.0,False,Course C,0.33,Low,Not Completed
-S258,0.2,61.0,50.0,True,Course A,0.49,Medium,Completed
-S259,0.825,62.0,61.0,True,Course C,0.68,Medium,Completed
-S260,0.625,49.0,52.0,True,Course C,0.53,Medium,Completed
-S261,0.475,54.0,67.0,True,Course B,0.52,Medium,Completed
-S262,0.325,49.0,48.0,True,Course B,0.44,Medium,Completed
-S263,0.55,44.0,54.0,False,Course C,0.47,Medium,Not Completed
-S264,0.375,56.0,57.0,True,Course B,0.5,Medium,Completed
-S265,0.275,53.0,52.0,False,Course A,0.45,Medium,Not Completed
-S266,0.925,80.47,78.0,True,Course A,0.84,High,Completed
-S267,0.05,57.0,44.0,True,Course A,0.41,Medium,Completed
-S268,0.775,88.0,86.0,False,Course A,0.85,High,Not Completed
-S269,0.2,56.0,61.0,False,Course A,0.45,Medium,Not Completed
-S270,0.05,33.0,35.0,False,Course B,0.25,Low,Not Completed
-S271,0.125,100.0,49.0,True,Course B,0.74,High,Completed
-S272,0.85,83.0,76.0,True,Course B,0.84,High,Completed
-S273,0.175,62.0,49.0,True,Course A,0.49,Medium,Completed
-S274,0.1,36.0,25.0,True,Course C,0.28,Low,Completed
-S275,0.075,41.0,39.74,False,Course C,0.31,Low,Not Completed
-S276,0.875,55.0,61.0,False,Course C,0.65,Medium,Not Completed
-S277,0.75,86.0,75.0,True,Course A,0.83,High,Completed
-S278,0.775,100.0,64.0,False,Course C,0.93,High,Not Completed
-S279,0.275,61.0,59.13,True,Course B,0.51,Medium,Completed
-S280,0.225,49.0,48.0,True,Course C,0.41,Medium,Completed
-S281,0.15,100.0,66.0,False,Course A,0.74,High,Not Completed
-S282,0.8,53.0,72.0,True,Course C,0.61,Medium,Completed
-S283,0.475,100.0,96.93,True,Course B,0.84,High,Completed
-S284,0.476,34.0,44.0,False,Course C,0.38,Low,Not Completed
-S285,0.125,45.0,45.0,True,Course B,0.35,Low,Completed
-S286,0.175,67.0,64.94,False,Course A,0.52,Medium,Not Completed
-S287,0.85,67.0,65.0,True,Course C,0.72,High,Completed
-S288,0.1,58.0,50.0,True,Course A,0.44,Medium,Completed
-S289,0.15,33.0,37.0,False,Course C,0.28,Low,Not Completed
-S290,0.075,30.0,37.0,True,Course C,0.23,Low,Completed
-S291,0.7,75.0,73.0,True,Course A,0.74,High,Completed
-S292,0.1,48.0,51.0,True,Course A,0.37,Low,Completed
-S293,0.225,54.0,66.0,False,Course A,0.45,Medium,Not Completed
-S294,0.45,100.0,50.0,True,Course B,0.84,High,Completed
-S295,0.05,57.0,55.25,True,Course A,0.41,Medium,Completed
-S296,0.65,57.0,64.0,False,Course C,0.59,Medium,Not Completed
-S297,0.975,67.0,66.0,False,Course C,0.76,High,Not Completed
-S298,0.725,49.0,50.0,False,Course C,0.56,Medium,Not Completed
-S299,0.7,58.0,60.0,True,Course C,0.62,Medium,Completed
-S300,0.1,63.0,49.0,True,Course A,0.47,Medium,Completed
-S301,0.475,54.0,46.0,True,Course C,0.52,Medium,Completed
-S302,0.875,73.0,72.0,False,Course C,0.77,High,Not Completed
-S303,0.5,44.0,43.0,True,Course C,0.46,Medium,Completed
-S304,0.8,55.0,53.31,False,Course C,0.62,Medium,Not Completed
-S305,0.075,53.65,52.0,True,Course B,0.4,Medium,Completed
-S306,0.775,87.0,75.0,True,Course A,0.84,High,Completed
-S307,0.975,98.0,94.99,False,Course A,0.98,High,Not Completed
-S308,0.625,60.0,67.0,False,Course B,0.61,Medium,Not Completed
-S309,0.725,88.0,72.0,False,Course A,0.83,High,Not Completed
-S310,0.375,53.0,52.0,False,Course C,0.48,Medium,Not Completed
-S311,0.925,93.0,80.0,True,Course A,0.93,High,Completed
-S312,0.925,70.0,67.85,True,Course B,0.77,High,Completed
-S313,0.35,55.0,66.0,False,Course A,0.49,Medium,Not Completed
-S314,0.05,44.0,57.0,True,Course A,0.32,Low,Completed
-S315,0.05,29.0,39.0,False,Course C,0.22,Low,Not Completed
-S316,0.725,73.0,73.0,False,Course B,0.73,High,Not Completed
-S317,0.7,75.0,74.0,False,Course A,0.74,High,Not Completed
-S318,0.025,43.0,47.0,False,Course B,0.31,Low,Not Completed
-S319,0.9,72.0,69.79,False,Course B,0.77,High,Not Completed
-S320,0.625,58.81,57.0,False,Course C,0.6,Medium,Not Completed
-S504,0.45,38.0,50.0,True,Course C,0.4,Medium,Completed
-S322,0.225,46.0,54.0,False,Course B,0.39,Low,Not Completed
-S323,0.8,87.0,89.0,True,Course A,0.85,High,Completed
-S324,0.125,45.4,44.0,False,Course B,0.36,Low,Not Completed
-S325,0.875,95.0,92.08,False,Course A,0.93,High,Not Completed
-S326,0.925,86.0,70.0,False,Course B,0.88,High,Not Completed
-S327,0.476,81.0,80.0,False,Course A,0.71,High,Not Completed
-S328,0.65,51.59,50.0,True,Course C,0.56,Medium,Completed
-S329,0.025,27.0,32.0,False,Course C,0.2,Low,Not Completed
-S330,0.2,44.0,46.0,True,Course B,0.37,Low,Completed
-S331,0.725,72.0,79.0,True,Course A,0.72,High,Completed
-S332,0.525,61.0,65.0,True,Course A,0.58,Medium,Completed
-S333,0.775,73.0,82.0,False,Course A,0.74,High,Not Completed
-S334,0.15,39.0,37.8,False,Course B,0.32,Low,Not Completed
-S335,0.025,59.0,42.0,False,Course A,0.42,Medium,Not Completed
-S336,0.125,45.0,40.0,True,Course B,0.35,Low,Completed
-S337,0.875,75.0,65.0,False,Course B,0.79,High,Not Completed
-S338,0.475,71.0,79.0,True,Course A,0.64,Medium,Completed
-S339,0.5,66.0,51.0,False,Course B,0.61,Medium,Not Completed
-S340,0.225,53.0,42.0,False,Course B,0.44,Medium,Not Completed
-S341,0.7,76.0,70.0,True,Course A,0.74,High,Completed
-S342,0.6,70.0,65.0,False,Course B,0.67,Medium,Not Completed
-S343,0.05,62.0,59.0,True,Course A,0.45,Medium,Completed
-S344,0.925,72.0,68.0,False,Course B,0.78,High,Not Completed
-S345,0.275,62.0,67.0,False,Course A,0.52,Medium,Not Completed
-S346,0.8,71.0,66.0,False,Course C,0.74,High,Not Completed
-S347,0.7,85.0,76.0,True,Course A,0.8,High,Completed
-S348,0.525,42.0,58.0,False,Course C,0.45,Medium,Not Completed
-S349,0.15,58.0,58.0,False,Course A,0.45,Medium,Not Completed
-S350,0.65,70.0,65.0,False,Course B,0.68,Medium,Not Completed
-S351,0.65,59.0,61.0,True,Course B,0.61,Medium,Completed
-S352,0.9,66.0,64.0,True,Course C,0.73,High,Completed
-S353,0.625,79.0,85.0,False,Course A,0.74,High,Not Completed
-S354,0.5,70.0,53.0,True,Course B,0.64,Medium,Completed
-S355,0.225,68.0,56.0,False,Course A,0.54,Medium,Not Completed
-S356,0.85,70.0,67.85,False,Course B,0.74,High,Not Completed
-S357,0.075,38.0,40.0,False,Course B,0.29,Low,Not Completed
-S358,0.925,85.0,83.0,False,Course A,0.87,High,Not Completed
-S359,0.825,58.0,56.22,True,Course C,0.65,Medium,Completed
-S360,0.6,54.0,57.0,False,Course B,0.56,Medium,Not Completed
-S361,0.35,44.0,42.65,True,Course B,0.41,Medium,Completed
-S362,0.025,33.0,31.99,True,Course C,0.24,Low,Completed
-S363,0.2,100.0,96.93,True,Course C,0.76,High,Completed
-S364,0.625,55.0,69.0,True,Course B,0.57,Medium,Completed
-S365,0.475,63.0,54.0,True,Course B,0.58,Medium,Completed
-S366,0.875,81.0,72.0,True,Course B,0.83,High,Completed
-S367,0.05,36.0,45.0,False,Course B,0.27,Low,Not Completed
-S368,0.725,75.0,81.0,False,Course A,0.74,High,Not Completed
-S369,0.35,50.0,55.0,False,Course B,0.45,Medium,Not Completed
-S370,0.175,52.0,57.0,True,Course B,0.42,Medium,Completed
-S371,0.675,84.0,86.0,True,Course A,0.79,High,Completed
-S372,0.225,30.95,30.0,True,Course C,0.28,Low,Completed
-S373,0.5,64.0,70.0,True,Course A,0.6,Medium,Completed
-S374,0.8,66.0,63.97,True,Course C,0.7,High,Completed
-S375,0.275,49.52,48.0,True,Course C,0.43,Medium,Completed
-S376,0.1,39.0,37.0,True,Course C,0.3,Low,Completed
-S377,0.05,24.0,23.26,True,Course C,0.18,Low,Completed
-S378,0.35,71.0,69.0,False,Course A,0.6,Medium,Not Completed
-S379,0.125,65.0,54.0,True,Course A,0.49,Medium,Completed
-S380,0.9,57.0,66.0,False,Course C,0.67,Medium,Not Completed
-S381,0.125,25.0,25.0,True,Course C,0.21,Low,Completed
-S382,0.8,76.0,75.0,False,Course B,0.77,High,Not Completed
-S383,0.35,52.0,54.0,False,Course C,0.47,Medium,Not Completed
-S384,0.9,93.0,94.0,True,Course A,0.92,High,Completed
-S385,0.5,70.0,67.0,True,Course B,0.64,Medium,Completed
-S386,0.45,55.0,60.0,False,Course B,0.52,Medium,Not Completed
-S387,0.15,38.0,31.0,True,Course C,0.31,Low,Completed
-S388,0.325,44.0,45.0,True,Course C,0.41,Medium,Completed
-S389,0.35,44.0,45.0,True,Course B,0.41,Medium,Completed
-S390,0.1,38.0,28.0,True,Course C,0.3,Low,Completed
-S391,0.575,68.0,73.0,False,Course A,0.65,Medium,Not Completed
-S392,0.575,60.0,58.16,True,Course B,0.59,Medium,Completed
-S393,0.075,58.0,46.0,True,Course A,0.43,Medium,Completed
-S394,0.6,78.0,79.0,False,Course A,0.73,High,Not Completed
-S395,0.825,68.0,63.0,False,Course C,0.72,High,Not Completed
-S396,0.25,48.0,49.0,False,Course C,0.41,Medium,Not Completed
-S397,0.6,73.0,55.0,False,Course B,0.69,Medium,Not Completed
-S398,0.2,66.0,50.0,True,Course A,0.52,Medium,Completed
-S399,0.95,62.0,68.0,False,Course C,0.72,High,Not Completed
-S400,0.7,72.0,58.0,False,Course B,0.71,High,Not Completed
-S401,0.5,58.81,57.0,True,Course C,0.56,Medium,Completed
-S402,0.625,80.0,67.0,True,Course A,0.75,High,Completed
-S403,0.05,46.0,43.0,True,Course B,0.34,Low,Completed
-S404,0.65,73.0,68.0,False,Course A,0.71,High,Not Completed
-S405,0.475,55.0,52.0,True,Course B,0.53,Medium,Completed
-S406,0.05,45.0,46.0,False,Course B,0.33,Low,Not Completed
-S407,0.675,66.03,64.0,True,Course B,0.66,Medium,Completed
-S408,0.55,64.0,65.0,False,Course B,0.61,Medium,Not Completed
-S409,0.45,60.0,76.0,False,Course A,0.55,Medium,Not Completed
-S410,0.15,26.0,26.0,True,Course C,0.23,Low,Completed
-S411,0.9,91.0,87.0,False,Course A,0.91,High,Not Completed
-S412,0.85,65.0,77.0,False,Course B,0.71,High,Not Completed
-S413,0.25,45.0,46.0,False,Course B,0.39,Low,Not Completed
-S414,0.1,32.0,40.0,True,Course C,0.25,Low,Completed
-S415,0.75,67.0,64.0,False,Course C,0.69,Medium,Not Completed
-S416,0.25,60.0,64.0,True,Course A,0.5,Medium,Completed
-S417,0.675,70.0,62.0,True,Course B,0.69,Medium,Completed
-S418,0.6,58.0,58.0,False,Course C,0.59,Medium,Not Completed
-S419,0.325,68.0,72.0,False,Course A,0.57,Medium,Not Completed
-S420,0.476,62.0,55.0,False,Course C,0.58,Medium,Not Completed
-S421,0.8,92.0,83.0,False,Course A,0.88,High,Not Completed
-S422,0.525,63.0,71.0,True,Course A,0.6,Medium,Completed
-S423,0.075,43.0,34.0,True,Course C,0.32,Low,Completed
-S424,0.9,80.0,78.0,False,Course B,0.83,High,Not Completed
-S425,0.925,88.0,96.0,False,Course A,0.89,High,Not Completed
-S426,0.35,57.0,68.0,False,Course A,0.5,Medium,Not Completed
-S427,0.775,100.0,71.0,True,Course A,0.93,High,Completed
-S428,0.3,52.0,58.0,False,Course A,0.45,Medium,Not Completed
-S429,0.475,69.0,63.0,True,Course A,0.63,Medium,Completed
-S430,0.725,59.0,57.0,False,Course C,0.63,Medium,Not Completed
-S431,0.476,100.0,43.0,True,Course C,0.84,High,Completed
-S432,0.2,47.0,37.0,True,Course C,0.39,Low,Completed
-S433,0.45,43.0,41.0,False,Course C,0.44,Medium,Not Completed
-S434,0.2,45.4,44.0,True,Course B,0.38,Low,Completed
-S435,0.025,40.0,41.0,True,Course C,0.29,Low,Completed
-S436,0.1,51.0,51.0,True,Course B,0.39,Low,Completed
-S437,0.05,43.0,37.0,True,Course B,0.32,Low,Completed
-S438,0.875,77.0,74.0,True,Course B,0.8,High,Completed
-S439,0.95,89.0,79.0,True,Course A,0.91,High,Completed
-S440,0.25,40.0,46.0,False,Course B,0.36,Low,Not Completed
-S441,0.15,47.0,46.0,True,Course B,0.37,Low,Completed
-S442,0.2,66.0,68.0,False,Course A,0.52,Medium,Not Completed
-S443,0.975,84.0,95.0,False,Course A,0.88,High,Not Completed
-S444,0.4,76.0,76.0,True,Course A,0.65,Medium,Completed
-S445,0.075,48.0,58.0,True,Course A,0.36,Low,Completed
-S446,0.85,56.0,74.0,True,Course C,0.65,Medium,Completed
-S447,0.475,58.0,56.22,True,Course B,0.55,Medium,Completed
-S448,0.975,60.0,68.0,False,Course C,0.71,High,Not Completed
-S449,0.5,52.0,59.0,False,Course C,0.51,Medium,Not Completed
-S450,0.075,24.0,29.0,False,Course C,0.19,Low,Not Completed
-S451,0.7,74.0,68.0,True,Course A,0.73,High,Completed
-S452,0.025,38.0,32.0,True,Course C,0.27,Low,Completed
-S453,0.45,45.0,57.0,True,Course C,0.45,Medium,Completed
-S454,0.125,39.0,37.0,True,Course C,0.31,Low,Completed
-S455,0.35,56.0,64.0,True,Course B,0.5,Medium,Completed
-S456,0.15,43.0,35.0,True,Course C,0.35,Low,Completed
-S457,0.475,41.0,46.0,False,Course C,0.43,Medium,Not Completed
-S458,0.575,81.0,81.0,False,Course A,0.74,High,Not Completed
-S459,0.45,49.0,52.0,True,Course B,0.48,Medium,Completed
-S460,0.65,53.0,51.37,True,Course C,0.57,Medium,Completed
-S461,0.875,75.0,91.0,True,Course A,0.79,High,Completed
-S462,0.2,68.0,65.0,False,Course A,0.54,Medium,Not Completed
-S463,0.425,43.0,41.0,False,Course C,0.43,Medium,Not Completed
-S464,0.9,84.0,67.0,False,Course B,0.86,High,Not Completed
-S465,0.65,71.0,56.0,False,Course B,0.69,Medium,Not Completed
-S466,0.5,55.0,48.0,True,Course C,0.54,Medium,Completed
-S467,0.55,69.0,61.0,False,Course B,0.65,Medium,Not Completed
-S468,0.476,47.0,33.0,True,Course B,0.47,Medium,Completed
-S469,0.175,49.0,55.0,True,Course B,0.4,Medium,Completed
-S470,0.9,74.0,77.0,False,Course B,0.79,High,Not Completed
-S471,0.775,67.0,69.0,True,Course C,0.7,High,Completed
-S472,0.95,70.0,75.0,True,Course B,0.77,High,Completed
-S473,0.525,52.0,70.0,False,Course B,0.52,Medium,Not Completed
-S474,0.75,68.0,65.0,False,Course B,0.7,High,Not Completed
-S475,0.5,47.0,51.0,False,Course C,0.48,Medium,Not Completed
-S476,0.6,75.0,72.0,False,Course A,0.7,High,Not Completed
-S477,0.5,68.0,60.0,True,Course A,0.63,Medium,Completed
-S478,0.325,50.0,44.0,False,Course C,0.45,Medium,Not Completed
-S479,0.025,51.0,41.0,True,Course B,0.36,Low,Completed
-S480,0.875,89.0,77.0,False,Course A,0.89,High,Not Completed
-S481,0.05,35.0,42.0,False,Course C,0.26,Low,Not Completed
-S482,0.475,55.0,53.31,False,Course B,0.53,Medium,Not Completed
-S483,0.15,40.0,27.0,False,Course C,0.32,Low,Not Completed
-S484,0.025,42.0,57.0,True,Course A,0.3,Low,Completed
-S485,0.6,58.0,65.0,True,Course B,0.59,Medium,Completed
-S486,0.15,46.0,44.59,True,Course B,0.37,Low,Completed
-S487,0.425,44.36,43.0,False,Course C,0.44,Medium,Not Completed
-S488,0.075,53.0,51.0,True,Course A,0.39,Low,Completed
-S489,0.05,100.0,25.0,False,Course C,0.72,High,Not Completed
-S490,0.25,59.0,57.19,True,Course A,0.49,Medium,Completed
-S491,0.2,51.0,48.0,True,Course B,0.42,Medium,Completed
-S492,0.476,68.0,55.0,True,Course C,0.62,Medium,Completed
-S493,0.575,53.0,54.0,True,Course C,0.54,Medium,Completed
-S505,0.675,51.0,47.0,True,Course C,0.56,Medium,Completed
-S495,0.75,77.0,89.0,True,Course A,0.76,High,Completed
-S496,0.475,58.0,60.0,False,Course B,0.55,Medium,Not Completed
-S497,0.975,59.0,74.0,True,Course C,0.71,High,Completed
-S498,0.65,47.0,58.0,False,Course C,0.52,Medium,Not Completed
-S499,0.025,59.0,45.0,False,Course A,0.42,Medium,Not Completed
-S500,0.025,37.0,31.0,True,Course C,0.27,Low,Completed
+StudentID,StudyHours,StudyHoursImputed,QuizParticipation,PastPerformance,CourseCompletion,Course,Engagement,PerformanceCategory,Completed
+S001,0.4905,True,69.0,61.0,False,Course A,0.63,Medium,Not Completed
+S002,0.35,False,45.0,52.0,True,Course B,0.42,Medium,Completed
+S003,0.125,False,42.0,36.0,True,Course C,0.33,Low,Completed
+S004,0.45,False,48.0,52.0,True,Course B,0.47,Medium,Completed
+S005,0.825,False,75.0,73.41,False,Course B,0.77,High,Not Completed
+S006,0.325,False,51.0,47.0,True,Course B,0.45,Medium,Completed
+S007,0.575,False,57.0,55.79,False,Course C,0.57,Medium,Not Completed
+S008,0.025,False,61.0,49.0,True,Course A,0.43,Medium,Completed
+S009,0.05,False,33.0,34.0,True,Course B,0.25,Low,Completed
+S010,0.425,False,43.0,37.0,False,Course C,0.43,Medium,Not Completed
+S011,0.325,False,69.0,55.0,False,Course A,0.58,Medium,Not Completed
+S012,0.05,False,54.0,47.0,False,Course A,0.39,Low,Not Completed
+S013,0.45,False,63.0,63.0,True,Course B,0.58,Medium,Completed
+S014,0.85,False,69.0,73.0,False,Course B,0.74,High,Not Completed
+S015,0.825,False,71.0,68.0,True,Course C,0.74,High,Completed
+S016,0.55,False,44.0,52.0,False,Course C,0.47,Medium,Not Completed
+S017,0.275,False,41.0,48.0,True,Course C,0.37,Low,Completed
+S018,0.4905,True,100.0,29.0,True,Course C,0.85,High,Completed
+S019,0.325,False,52.0,47.0,True,Course B,0.46,Medium,Completed
+S020,0.95,False,61.0,72.0,False,Course C,0.71,High,Not Completed
+S021,0.9,False,68.0,72.0,True,Course C,0.75,High,Completed
+S022,0.5,False,68.0,74.0,False,Course A,0.63,Medium,Not Completed
+S023,0.8,False,81.0,79.0,False,Course B,0.81,High,Not Completed
+S024,0.2,False,40.0,48.0,True,Course C,0.34,Low,Completed
+S025,0.775,False,66.0,65.0,True,Course B,0.69,Medium,Completed
+S026,0.725,False,75.0,74.0,False,Course B,0.74,High,Not Completed
+S027,0.275,False,50.0,48.94,False,Course C,0.43,Medium,Not Completed
+S028,0.4905,True,49.0,34.0,False,Course B,0.49,Medium,Not Completed
+S029,0.075,False,44.0,43.07,False,Course B,0.33,Low,Not Completed
+S030,0.5,False,64.0,52.0,True,Course B,0.6,Medium,Completed
+S031,0.125,False,29.0,39.0,False,Course C,0.24,Low,Not Completed
+S032,0.7,False,73.0,59.0,True,Course B,0.72,High,Completed
+S033,0.75,False,61.0,76.0,True,Course B,0.65,Medium,Completed
+S034,0.4905,True,92.0,73.0,False,Course A,0.79,High,Not Completed
+S035,0.475,False,54.0,51.0,True,Course C,0.52,Medium,Completed
+S036,0.35,False,61.0,59.71,True,Course B,0.53,Medium,Completed
+S037,0.075,False,23.0,34.0,True,Course C,0.18,Low,Completed
+S038,0.275,False,35.0,49.0,True,Course C,0.33,Low,Completed
+S039,0.15,False,46.0,47.0,True,Course A,0.37,Low,Completed
+S040,0.55,False,71.0,78.0,True,Course A,0.66,Medium,Completed
+S041,0.85,False,78.0,73.0,False,Course B,0.8,High,Not Completed
+S042,0.7,False,72.0,69.0,True,Course A,0.71,High,Completed
+S043,0.725,False,70.5,69.0,True,Course A,0.71,High,Completed
+S044,0.9,False,83.0,84.0,False,Course B,0.85,High,Not Completed
+S045,0.05,False,43.0,62.0,True,Course A,0.32,Low,Completed
+S046,0.7,False,80.0,72.0,True,Course A,0.77,High,Completed
+S047,0.3,False,58.0,57.0,True,Course B,0.5,Medium,Completed
+S048,0.6,False,81.0,79.28,True,Course A,0.75,High,Completed
+S049,0.5,False,42.0,49.0,True,Course C,0.44,Medium,Completed
+S050,0.125,False,59.0,45.0,False,Course A,0.45,Medium,Not Completed
+S051,0.7,False,69.0,67.54,False,Course A,0.69,Medium,Not Completed
+S052,0.075,False,100.0,24.0,False,Course C,0.72,High,Not Completed
+S053,0.625,False,60.0,60.0,True,Course C,0.61,Medium,Completed
+S054,0.4,False,49.0,53.0,True,Course C,0.46,Medium,Completed
+S055,0.1,False,49.0,49.0,True,Course A,0.37,Low,Completed
+S056,0.725,False,77.0,66.0,False,Course B,0.76,High,Not Completed
+S057,0.425,False,63.0,66.0,True,Course A,0.57,Medium,Completed
+S058,0.225,False,36.0,49.0,False,Course C,0.32,Low,Not Completed
+S059,0.425,False,49.0,67.0,True,Course B,0.47,Medium,Completed
+S060,0.9,False,100.0,71.0,False,Course B,0.97,High,Not Completed
+S061,0.625,False,75.0,75.0,False,Course B,0.71,High,Not Completed
+S062,0.025,False,38.0,38.0,True,Course B,0.27,Low,Completed
+S063,0.4,False,100.0,58.0,False,Course A,0.82,High,Not Completed
+S064,0.675,False,65.0,57.0,False,Course C,0.66,Medium,Not Completed
+S065,0.85,False,68.0,74.0,False,Course B,0.73,High,Not Completed
+S066,0.85,False,78.0,76.34,True,Course A,0.8,High,Completed
+S067,0.5,False,72.0,70.47,False,Course A,0.65,Medium,Not Completed
+S068,0.225,False,63.0,69.0,False,Course A,0.51,Medium,Not Completed
+S069,0.45,False,49.0,50.0,False,Course C,0.48,Medium,Not Completed
+S070,0.75,False,56.0,52.0,True,Course C,0.62,Medium,Completed
+S071,0.3,False,52.0,72.0,True,Course A,0.45,Medium,Completed
+S072,0.25,False,64.0,64.0,False,Course A,0.52,Medium,Not Completed
+S073,0.325,False,73.0,71.45,True,Course A,0.61,Medium,Completed
+S074,0.2,False,49.0,52.0,False,Course A,0.4,Medium,Not Completed
+S075,0.7,False,73.0,69.0,True,Course A,0.72,High,Completed
+S076,0.225,False,40.87,40.0,False,Course B,0.35,Low,Not Completed
+S077,0.225,False,68.0,64.0,False,Course A,0.54,Medium,Not Completed
+S078,0.075,False,37.0,40.0,False,Course C,0.28,Low,Not Completed
+S079,0.275,False,51.0,33.0,False,Course C,0.44,Medium,Not Completed
+S080,0.175,False,51.0,49.92,False,Course B,0.41,Medium,Not Completed
+S081,0.275,False,68.0,66.56,False,Course A,0.56,Medium,Not Completed
+S082,0.775,False,78.0,86.0,False,Course A,0.78,High,Not Completed
+S083,0.15,False,37.0,37.0,True,Course C,0.3,Low,Completed
+S084,0.7,False,48.0,65.0,False,Course C,0.55,Medium,Not Completed
+S085,0.6,False,71.0,70.0,False,Course B,0.68,Medium,Not Completed
+S086,0.2,False,52.0,50.9,True,Course A,0.42,Medium,Completed
+S087,0.575,False,56.0,54.0,True,Course C,0.56,Medium,Completed
+S088,0.55,False,82.0,80.0,False,Course A,0.74,High,Not Completed
+S089,0.25,False,45.0,42.0,False,Course B,0.39,Low,Not Completed
+S090,0.9,False,66.0,68.0,False,Course B,0.73,High,Not Completed
+S091,0.175,False,56.0,53.0,True,Course B,0.44,Medium,Completed
+S092,0.8,False,81.0,79.28,False,Course B,0.81,High,Not Completed
+S093,0.25,False,51.0,52.0,False,Course B,0.43,Medium,Not Completed
+S094,0.575,False,59.0,43.0,False,Course C,0.59,Medium,Not Completed
+S095,0.875,False,83.0,85.0,True,Course A,0.84,High,Completed
+S096,0.375,False,49.0,38.0,False,Course C,0.46,Medium,Not Completed
+S097,0.5,False,65.0,63.0,True,Course B,0.6,Medium,Completed
+S098,0.45,False,72.0,60.0,True,Course A,0.64,Medium,Completed
+S099,0.025,False,48.0,32.0,True,Course B,0.34,Low,Completed
+S100,0.125,False,50.06,49.0,True,Course A,0.39,Low,Completed
+S101,0.2,False,50.0,48.94,False,Course B,0.41,Medium,Not Completed
+S102,0.225,False,69.0,61.0,False,Course A,0.55,Medium,Not Completed
+S103,0.25,False,42.0,50.0,False,Course C,0.37,Low,Not Completed
+S104,0.025,False,44.0,43.07,False,Course B,0.32,Low,Not Completed
+S105,0.95,False,94.0,97.0,False,Course A,0.94,High,Not Completed
+S106,0.55,False,82.0,75.0,False,Course A,0.74,High,Not Completed
+S107,0.25,False,48.0,45.0,True,Course C,0.41,Medium,Completed
+S108,0.45,False,64.0,60.0,True,Course B,0.58,Medium,Completed
+S109,0.075,False,37.0,43.0,True,Course C,0.28,Low,Completed
+S110,0.625,False,68.0,84.0,True,Course A,0.66,Medium,Completed
+S111,0.225,False,32.0,34.0,False,Course C,0.29,Low,Not Completed
+S112,0.8,False,85.0,76.0,True,Course A,0.84,High,Completed
+S113,0.775,False,76.0,63.0,False,Course B,0.76,High,Not Completed
+S114,0.775,False,77.0,81.0,False,Course A,0.77,High,Not Completed
+S115,0.65,False,75.0,73.41,False,Course B,0.72,High,Not Completed
+S116,0.425,False,75.0,66.0,True,Course A,0.65,Medium,Completed
+S117,0.825,False,75.0,72.0,False,Course B,0.77,High,Not Completed
+S118,0.625,False,70.0,68.51,False,Course A,0.68,Medium,Not Completed
+S119,0.4905,True,73.0,71.45,False,Course B,0.66,Medium,Not Completed
+S120,0.5,False,70.0,64.0,False,Course A,0.64,Medium,Not Completed
+S121,0.025,False,39.0,24.0,True,Course C,0.28,Low,Completed
+S122,0.1,False,35.0,36.0,False,Course B,0.28,Low,Not Completed
+S123,0.775,False,55.17,54.0,True,Course C,0.62,Medium,Completed
+S124,0.3,False,68.0,57.0,True,Course A,0.57,Medium,Completed
+S125,0.95,False,97.0,85.0,False,Course A,0.96,High,Not Completed
+S126,0.025,False,45.0,43.0,True,Course A,0.32,Low,Completed
+S127,0.525,False,100.0,78.0,False,Course A,0.86,High,Not Completed
+S128,0.45,False,47.0,46.0,False,Course C,0.46,Medium,Not Completed
+S129,0.575,False,59.0,61.0,True,Course B,0.59,Medium,Completed
+S130,0.725,False,70.0,63.0,False,Course B,0.71,High,Not Completed
+S131,0.475,False,53.0,67.0,False,Course B,0.51,Medium,Not Completed
+S132,0.175,False,45.0,54.0,True,Course B,0.37,Low,Completed
+S133,0.375,False,48.0,63.0,False,Course B,0.45,Medium,Not Completed
+S134,0.65,False,63.0,61.66,False,Course C,0.64,Medium,Not Completed
+S135,0.625,False,72.0,66.0,False,Course A,0.69,Medium,Not Completed
+S136,0.325,False,57.0,57.0,True,Course B,0.5,Medium,Completed
+S137,0.1,False,57.0,51.0,False,Course A,0.43,Medium,Not Completed
+S138,0.775,False,80.0,89.0,True,Course A,0.79,High,Completed
+S139,0.8,False,82.76,81.0,False,Course A,0.82,High,Not Completed
+S140,0.05,False,37.0,40.0,True,Course C,0.27,Low,Completed
+S141,0.375,False,70.0,60.0,True,Course A,0.6,Medium,Completed
+S142,0.175,False,67.43,66.0,False,Course A,0.52,Medium,Not Completed
+S143,0.65,False,57.0,55.79,False,Course C,0.59,Medium,Not Completed
+S144,0.35,False,50.0,41.0,False,Course C,0.45,Medium,Not Completed
+S145,0.025,False,45.98,45.0,True,Course B,0.33,Low,Completed
+S501,0.425,False,41.0,57.0,False,Course C,0.41,Medium,Not Completed
+S147,0.975,False,63.0,79.0,True,Course C,0.73,High,Completed
+S148,0.275,False,58.0,49.0,True,Course B,0.49,Medium,Completed
+S149,0.925,False,80.0,81.0,False,Course B,0.84,High,Not Completed
+S150,0.425,False,77.0,75.37,False,Course A,0.67,Medium,Not Completed
+S151,0.225,False,49.0,55.0,True,Course A,0.41,Medium,Completed
+S152,0.325,False,46.0,33.0,False,Course C,0.42,Medium,Not Completed
+S153,0.05,False,42.0,43.0,False,Course B,0.31,Low,Not Completed
+S154,0.8,False,92.0,85.0,False,Course A,0.88,High,Not Completed
+S155,0.675,False,83.0,74.0,False,Course A,0.78,High,Not Completed
+S156,0.225,False,59.26,58.0,True,Course A,0.48,Medium,Completed
+S157,0.175,False,59.0,50.0,False,Course A,0.47,Medium,Not Completed
+S158,0.1,False,100.0,38.0,True,Course C,0.73,High,Completed
+S159,0.825,False,56.0,66.0,True,Course C,0.64,Medium,Completed
+S160,0.875,False,61.0,71.0,True,Course C,0.69,Medium,Completed
+S161,0.9,False,65.0,57.0,True,Course C,0.73,High,Completed
+S162,0.225,False,31.0,43.0,True,Course C,0.28,Low,Completed
+S163,0.225,False,48.0,40.0,False,Course B,0.4,Medium,Not Completed
+S164,0.125,False,41.0,37.0,False,Course B,0.32,Low,Not Completed
+S165,0.875,False,73.0,71.0,False,Course C,0.77,High,Not Completed
+S166,0.7,False,67.0,60.0,True,Course B,0.68,Medium,Completed
+S167,0.65,False,58.0,62.0,True,Course C,0.6,Medium,Completed
+S168,0.575,False,78.0,80.0,False,Course A,0.72,High,Not Completed
+S169,0.125,False,28.0,43.0,True,Course C,0.23,Low,Completed
+S170,0.35,False,100.0,48.0,False,Course B,0.8,High,Not Completed
+S171,0.45,False,100.0,68.0,True,Course B,0.84,High,Completed
+S172,0.95,False,89.0,95.0,False,Course A,0.91,High,Not Completed
+S173,0.675,False,72.0,75.0,True,Course B,0.71,High,Completed
+S174,0.85,False,69.47,68.0,True,Course C,0.74,High,Completed
+S175,0.275,False,52.0,68.0,False,Course A,0.45,Medium,Not Completed
+S176,0.675,False,80.0,85.0,True,Course A,0.76,High,Completed
+S177,0.475,False,54.0,64.0,True,Course B,0.52,Medium,Completed
+S178,0.95,False,94.0,92.0,True,Course A,0.94,High,Completed
+S179,0.375,False,46.0,52.0,True,Course B,0.43,Medium,Completed
+S180,0.275,False,47.0,33.0,True,Course C,0.41,Medium,Completed
+S181,0.175,False,34.0,33.28,False,Course C,0.29,Low,Not Completed
+S182,0.475,False,39.0,58.0,False,Course C,0.42,Medium,Not Completed
+S183,0.825,False,62.0,59.0,True,Course C,0.68,Medium,Completed
+S184,0.05,False,45.0,45.0,False,Course A,0.33,Low,Not Completed
+S185,0.3,False,36.0,35.24,True,Course C,0.34,Low,Completed
+S186,0.25,False,53.0,58.0,False,Course A,0.45,Medium,Not Completed
+S187,0.525,False,57.0,60.0,True,Course C,0.56,Medium,Completed
+S188,0.2,False,28.0,31.0,False,Course C,0.26,Low,Not Completed
+S189,0.775,False,58.0,55.0,False,Course C,0.64,Medium,Not Completed
+S190,0.125,False,58.0,56.0,False,Course A,0.44,Medium,Not Completed
+S191,0.05,False,100.0,46.0,False,Course A,0.72,High,Not Completed
+S192,0.75,False,69.0,58.0,True,Course C,0.71,High,Completed
+S193,0.775,False,61.0,70.0,False,Course B,0.66,Medium,Not Completed
+S194,0.075,False,33.0,33.0,False,Course B,0.25,Low,Not Completed
+S195,0.925,False,79.0,92.0,True,Course A,0.83,High,Completed
+S196,0.7,False,71.0,71.0,False,Course A,0.71,High,Not Completed
+S197,0.525,False,66.0,64.6,True,Course A,0.62,Medium,Completed
+S198,0.5,False,78.0,75.0,False,Course A,0.7,High,Not Completed
+S199,0.775,False,86.84,85.0,True,Course A,0.84,High,Completed
+S200,0.85,False,86.0,87.0,False,Course A,0.86,High,Not Completed
+S201,0.175,False,33.0,31.0,True,Course C,0.28,Low,Completed
+S202,0.25,False,56.0,59.0,False,Course A,0.47,Medium,Not Completed
+S203,0.9,False,65.0,65.0,False,Course C,0.73,High,Not Completed
+S204,0.9,False,91.0,96.0,False,Course A,0.91,High,Not Completed
+S205,0.825,False,87.0,74.0,True,Course A,0.86,High,Completed
+S206,0.45,False,41.0,52.0,False,Course C,0.42,Medium,Not Completed
+S207,0.7,False,72.0,71.0,False,Course B,0.71,High,Not Completed
+S208,0.4,False,63.0,73.0,True,Course A,0.56,Medium,Completed
+S209,0.925,False,74.0,68.0,False,Course B,0.8,High,Not Completed
+S210,0.5,False,50.0,67.0,True,Course B,0.5,Medium,Completed
+S211,0.6,False,55.0,56.0,False,Course B,0.56,Medium,Not Completed
+S212,0.375,False,70.5,69.0,False,Course A,0.61,Medium,Not Completed
+S213,0.925,False,79.0,92.0,True,Course A,0.83,High,Completed
+S214,0.05,False,47.0,35.0,True,Course B,0.34,Low,Completed
+S215,0.3,False,72.0,60.0,False,Course A,0.59,Medium,Not Completed
+S216,0.275,False,42.0,49.0,False,Course C,0.38,Low,Not Completed
+S217,0.1,False,55.0,46.0,False,Course A,0.42,Medium,Not Completed
+S218,0.85,False,85.0,79.0,False,Course A,0.85,High,Not Completed
+S219,0.475,False,55.0,51.0,False,Course B,0.53,Medium,Not Completed
+S220,0.175,False,49.0,48.0,False,Course B,0.4,Medium,Not Completed
+S221,0.85,False,79.0,74.0,True,Course B,0.81,High,Completed
+S222,0.775,False,75.0,66.0,True,Course B,0.76,High,Completed
+S223,0.4905,True,75.0,74.0,True,Course B,0.67,Medium,Completed
+S224,0.575,False,80.0,66.0,False,Course A,0.73,High,Not Completed
+S225,0.6,False,62.0,61.0,False,Course C,0.61,Medium,Not Completed
+S226,0.225,False,56.0,40.0,True,Course B,0.46,Medium,Completed
+S227,0.525,False,78.0,79.0,False,Course A,0.7,High,Not Completed
+S228,0.25,False,47.0,60.0,True,Course B,0.4,Medium,Completed
+S229,0.025,False,43.0,43.0,False,Course A,0.31,Low,Not Completed
+S230,0.5,False,59.0,57.0,True,Course C,0.56,Medium,Completed
+S231,0.475,False,63.0,61.66,True,Course A,0.58,Medium,Completed
+S232,0.95,False,83.0,91.0,False,Course A,0.87,High,Not Completed
+S233,0.4905,True,89.0,83.0,False,Course A,0.77,High,Not Completed
+S234,0.3,False,40.0,38.0,True,Course C,0.37,Low,Completed
+S235,0.725,False,49.0,68.0,True,Course C,0.56,Medium,Completed
+S236,0.25,False,33.0,38.0,False,Course C,0.31,Low,Not Completed
+S237,0.6,False,66.0,56.0,True,Course B,0.64,Medium,Completed
+S238,0.25,False,43.0,37.0,True,Course C,0.38,Low,Completed
+S239,0.25,False,48.0,45.0,False,Course B,0.41,Medium,Not Completed
+S240,0.05,False,42.0,26.0,False,Course C,0.31,Low,Not Completed
+S241,0.775,False,59.0,54.0,True,Course C,0.65,Medium,Completed
+S242,0.975,False,76.0,59.0,True,Course C,0.82,High,Completed
+S243,0.5,False,59.0,65.0,False,Course B,0.56,Medium,Not Completed
+S244,0.475,False,59.0,75.0,False,Course A,0.56,Medium,Not Completed
+S245,0.55,False,69.0,65.0,True,Course B,0.65,Medium,Completed
+S502,0.025,False,54.0,47.0,True,Course A,0.39,Low,Completed
+S247,0.35,False,100.0,54.0,True,Course C,0.8,High,Completed
+S248,0.575,False,77.0,80.0,False,Course A,0.71,High,Not Completed
+S249,0.125,False,28.0,25.0,False,Course C,0.23,Low,Not Completed
+S250,0.8,False,64.0,62.0,False,Course B,0.69,Medium,Not Completed
+S251,0.2,False,54.0,42.0,False,Course B,0.44,Medium,Not Completed
+S252,0.875,False,82.0,67.0,True,Course B,0.84,High,Completed
+S253,0.05,False,56.0,51.0,False,Course A,0.41,Medium,Not Completed
+S254,0.675,False,62.0,62.0,False,Course C,0.64,Medium,Not Completed
+S255,0.95,False,74.0,73.0,True,Course B,0.8,High,Completed
+S256,0.725,False,78.0,72.0,False,Course B,0.76,High,Not Completed
+S257,0.05,False,26.0,30.0,False,Course C,0.2,Low,Not Completed
+S258,0.925,False,64.0,59.0,False,Course C,0.73,High,Not Completed
+S259,0.55,False,100.0,74.0,False,Course A,0.86,High,Not Completed
+S260,0.2,False,57.21,56.0,True,Course A,0.46,Medium,Completed
+S261,0.725,False,74.0,87.0,False,Course A,0.74,High,Not Completed
+S262,0.575,False,59.0,60.0,False,Course B,0.59,Medium,Not Completed
+S263,0.925,False,95.0,88.0,False,Course A,0.94,High,Not Completed
+S264,0.275,False,45.0,33.0,True,Course C,0.4,Medium,Completed
+S265,0.75,False,88.0,74.0,True,Course A,0.84,High,Completed
+S266,0.525,False,68.0,67.0,True,Course A,0.63,Medium,Completed
+S267,0.3,False,54.0,55.0,False,Course A,0.47,Medium,Not Completed
+S268,0.4,False,56.0,72.0,False,Course A,0.51,Medium,Not Completed
+S269,0.475,False,56.0,50.0,True,Course B,0.53,Medium,Completed
+S270,0.175,False,60.0,47.0,True,Course A,0.47,Medium,Completed
+S271,0.725,False,71.0,61.0,False,Course B,0.71,High,Not Completed
+S272,0.475,False,55.0,53.83,False,Course B,0.53,Medium,Not Completed
+S273,0.525,False,53.0,55.0,True,Course B,0.53,Medium,Completed
+S274,0.725,False,65.0,50.0,True,Course C,0.67,Medium,Completed
+S275,0.4905,True,47.0,46.0,False,Course C,0.48,Medium,Not Completed
+S276,0.4905,True,79.0,82.0,True,Course B,0.7,High,Completed
+S277,0.15,False,59.0,51.0,False,Course A,0.46,Medium,Not Completed
+S278,0.9,False,59.0,63.0,False,Course C,0.68,Medium,Not Completed
+S279,0.85,False,72.0,64.0,True,Course B,0.76,High,Completed
+S280,0.425,False,66.0,72.0,False,Course A,0.59,Medium,Not Completed
+S281,0.925,False,69.0,68.0,False,Course B,0.76,High,Not Completed
+S282,0.075,False,61.0,43.0,False,Course A,0.45,Medium,Not Completed
+S283,0.225,False,51.0,62.0,False,Course A,0.42,Medium,Not Completed
+S284,0.85,False,74.0,54.0,False,Course C,0.77,High,Not Completed
+S285,0.25,False,35.0,36.0,True,Course C,0.32,Low,Completed
+S286,0.95,False,84.0,92.0,False,Course A,0.87,High,Not Completed
+S287,0.15,False,54.0,52.0,True,Course A,0.42,Medium,Completed
+S288,0.825,False,64.0,82.0,True,Course B,0.7,High,Completed
+S289,0.4,False,61.0,54.0,True,Course B,0.55,Medium,Completed
+S290,0.375,False,45.0,60.0,True,Course B,0.43,Medium,Completed
+S291,0.4905,True,64.0,59.0,False,Course B,0.6,Medium,Not Completed
+S292,0.075,False,43.0,42.09,False,Course A,0.32,Low,Not Completed
+S293,0.9,False,75.6,74.0,False,Course B,0.8,High,Not Completed
+S294,0.525,False,63.0,67.0,False,Course A,0.6,Medium,Not Completed
+S295,0.35,False,71.0,56.0,True,Course A,0.6,Medium,Completed
+S296,0.225,False,40.0,39.15,False,Course C,0.35,Low,Not Completed
+S297,0.15,False,58.0,56.0,True,Course A,0.45,Medium,Completed
+S298,0.55,False,82.0,79.0,True,Course A,0.74,High,Completed
+S299,0.925,False,80.0,96.0,True,Course A,0.84,High,Completed
+S300,0.8,False,100.0,68.0,False,Course C,0.94,High,Not Completed
+S301,0.35,False,56.0,61.0,False,Course B,0.5,Medium,Not Completed
+S302,0.95,False,88.0,81.0,False,Course B,0.9,High,Not Completed
+S303,0.6,False,65.0,55.0,True,Course B,0.64,Medium,Completed
+S304,0.75,False,62.0,65.0,False,Course B,0.66,Medium,Not Completed
+S305,0.45,False,51.0,49.92,True,Course C,0.49,Medium,Completed
+S306,0.1,False,61.0,60.0,False,Course A,0.46,Medium,Not Completed
+S307,0.325,False,58.0,69.0,True,Course A,0.5,Medium,Completed
+S308,0.65,False,60.0,55.0,False,Course C,0.62,Medium,Not Completed
+S309,0.775,False,84.0,80.0,False,Course A,0.82,High,Not Completed
+S310,0.85,False,78.0,74.0,False,Course B,0.8,High,Not Completed
+S503,0.1,False,41.0,35.0,True,Course B,0.32,Low,Completed
+S312,0.525,False,71.0,61.0,False,Course B,0.65,Medium,Not Completed
+S313,0.75,False,65.0,67.0,False,Course B,0.68,Medium,Not Completed
+S314,0.125,False,36.0,43.0,True,Course B,0.29,Low,Completed
+S315,0.975,False,74.0,81.0,False,Course B,0.81,High,Not Completed
+S504,0.85,False,57.0,55.79,False,Course C,0.65,Medium,Not Completed
+S317,0.15,False,27.0,26.43,True,Course C,0.23,Low,Completed
+S318,0.825,False,80.0,90.0,False,Course A,0.81,High,Not Completed
+S319,0.5,False,57.0,52.0,True,Course C,0.55,Medium,Completed
+S320,0.525,False,55.0,64.0,False,Course B,0.54,Medium,Not Completed
+S321,0.875,False,83.0,82.0,True,Course B,0.84,High,Completed
+S322,0.55,False,49.0,49.0,False,Course C,0.51,Medium,Not Completed
+S323,0.925,False,59.0,71.0,False,Course C,0.69,Medium,Not Completed
+S324,0.1,False,54.0,50.0,True,Course B,0.41,Medium,Completed
+S325,0.775,False,82.0,83.0,True,Course A,0.81,High,Completed
+S326,0.275,False,40.0,45.0,False,Course C,0.36,Low,Not Completed
+S327,0.3,False,51.0,48.0,False,Course B,0.45,Medium,Not Completed
+S328,0.625,False,76.0,70.0,False,Course A,0.72,High,Not Completed
+S329,0.875,False,80.0,82.0,False,Course A,0.82,High,Not Completed
+S330,0.15,False,54.0,50.0,True,Course B,0.42,Medium,Completed
+S331,0.675,False,64.0,68.0,False,Course B,0.65,Medium,Not Completed
+S332,0.55,False,63.0,80.0,False,Course A,0.61,Medium,Not Completed
+S333,0.5,False,100.0,42.0,True,Course C,0.85,High,Completed
+S334,0.475,False,60.0,55.0,True,Course B,0.56,Medium,Completed
+S335,0.575,False,100.0,55.0,False,Course B,0.87,High,Not Completed
+S336,0.05,False,50.0,54.0,False,Course A,0.36,Low,Not Completed
+S337,0.075,False,52.0,45.0,True,Course A,0.39,Low,Completed
+S338,0.45,False,73.0,71.45,True,Course A,0.65,Medium,Completed
+S339,0.75,False,89.0,78.0,True,Course A,0.85,High,Completed
+S340,0.4905,True,69.0,80.0,True,Course A,0.63,Medium,Completed
+S341,0.4905,True,65.0,65.0,True,Course B,0.6,Medium,Completed
+S342,0.15,False,36.0,45.0,False,Course B,0.3,Low,Not Completed
+S343,0.7,False,72.0,70.0,False,Course A,0.71,High,Not Completed
+S344,0.125,False,54.0,46.0,True,Course A,0.42,Medium,Completed
+S345,0.7,False,72.0,68.0,False,Course B,0.71,High,Not Completed
+S346,0.5,False,76.0,63.0,False,Course A,0.68,Medium,Not Completed
+S347,0.225,False,63.0,61.66,False,Course A,0.51,Medium,Not Completed
+S348,0.875,False,64.0,57.0,True,Course C,0.71,High,Completed
+S349,0.725,False,78.0,84.0,True,Course A,0.76,High,Completed
+S350,0.125,False,54.0,52.85,False,Course B,0.42,Medium,Not Completed
+S351,0.725,False,72.0,70.47,False,Course A,0.72,High,Not Completed
+S352,0.525,False,71.0,59.0,False,Course B,0.65,Medium,Not Completed
+S353,0.95,False,89.0,87.0,False,Course A,0.91,High,Not Completed
+S354,0.3,False,49.0,46.0,False,Course C,0.43,Medium,Not Completed
+S355,0.475,False,53.0,57.0,False,Course B,0.51,Medium,Not Completed
+S356,0.3,False,34.74,34.0,True,Course C,0.33,Low,Completed
+S357,0.2,False,50.0,52.0,True,Course A,0.41,Medium,Completed
+S358,0.55,False,55.0,56.0,False,Course B,0.55,Medium,Not Completed
+S359,0.7,False,64.0,48.0,False,Course C,0.66,Medium,Not Completed
+S360,0.025,False,37.0,50.0,True,Course B,0.27,Low,Completed
+S361,0.1,False,38.0,44.0,True,Course B,0.3,Low,Completed
+S362,0.65,False,59.0,57.0,False,Course C,0.61,Medium,Not Completed
+S363,0.725,False,74.0,83.0,False,Course A,0.74,High,Not Completed
+S364,0.5,False,71.0,77.0,False,Course A,0.65,Medium,Not Completed
+S365,0.15,False,50.0,50.0,True,Course B,0.39,Low,Completed
+S366,0.425,False,48.0,40.0,False,Course C,0.46,Medium,Not Completed
+S367,0.225,False,68.0,58.0,True,Course A,0.54,Medium,Completed
+S368,0.075,False,45.0,46.0,False,Course A,0.34,Low,Not Completed
+S369,0.025,False,58.0,50.0,True,Course A,0.41,Medium,Completed
+S370,0.525,False,57.0,67.0,True,Course B,0.56,Medium,Completed
+S371,0.95,False,70.0,64.0,False,Course C,0.77,High,Not Completed
+S372,0.275,False,59.0,57.75,False,Course A,0.5,Medium,Not Completed
+S373,0.975,False,66.41,65.0,False,Course C,0.76,High,Not Completed
+S374,0.75,False,83.0,71.0,False,Course A,0.81,High,Not Completed
+S375,0.2,False,40.0,38.0,True,Course B,0.34,Low,Completed
+S376,0.175,False,62.0,62.0,False,Course A,0.49,Medium,Not Completed
+S377,0.125,False,49.0,40.0,True,Course B,0.38,Low,Completed
+S378,0.4,False,43.0,38.0,False,Course C,0.42,Medium,Not Completed
+S379,0.575,False,71.0,61.0,True,Course B,0.67,Medium,Completed
+S380,0.75,False,57.0,70.0,False,Course C,0.62,Medium,Not Completed
+S381,0.975,False,76.0,79.0,True,Course B,0.82,High,Completed
+S382,0.6,False,56.0,74.0,False,Course B,0.57,Medium,Not Completed
+S383,0.175,False,52.0,48.0,False,Course A,0.42,Medium,Not Completed
+S384,0.6,False,65.0,68.0,False,Course B,0.64,Medium,Not Completed
+S385,0.7,False,69.0,88.0,False,Course A,0.69,Medium,Not Completed
+S386,0.275,False,55.0,55.0,False,Course A,0.47,Medium,Not Completed
+S387,0.4905,True,38.0,33.0,False,Course C,0.41,Medium,Not Completed
+S388,0.775,False,63.0,62.0,True,Course C,0.67,Medium,Completed
+S389,0.975,False,76.0,59.0,False,Course C,0.82,High,Not Completed
+S390,0.7,False,50.0,67.0,False,Course C,0.56,Medium,Not Completed
+S391,0.15,False,41.0,54.0,False,Course B,0.33,Low,Not Completed
+S392,0.3,False,46.0,49.0,False,Course C,0.41,Medium,Not Completed
+S393,0.025,False,33.0,28.0,False,Course C,0.24,Low,Not Completed
+S394,0.425,False,60.0,70.0,False,Course A,0.55,Medium,Not Completed
+S395,0.325,False,69.0,67.0,False,Course A,0.58,Medium,Not Completed
+S396,0.35,False,47.0,62.0,False,Course B,0.43,Medium,Not Completed
+S397,0.825,False,89.0,73.0,False,Course A,0.87,High,Not Completed
+S398,0.575,False,53.0,53.0,False,Course B,0.54,Medium,Not Completed
+S399,0.775,False,71.0,67.0,False,Course C,0.73,High,Not Completed
+S400,0.175,False,55.0,66.0,False,Course A,0.44,Medium,Not Completed
+S401,0.3,False,43.0,46.0,False,Course B,0.39,Low,Not Completed
+S402,0.025,False,38.0,47.0,False,Course B,0.27,Low,Not Completed
+S403,0.475,False,64.0,62.64,False,Course B,0.59,Medium,Not Completed
+S404,0.075,False,53.0,47.0,False,Course B,0.39,Low,Not Completed
+S405,0.625,False,45.0,47.0,False,Course C,0.5,Medium,Not Completed
+S406,0.05,False,52.0,41.0,False,Course B,0.38,Low,Not Completed
+S407,0.65,False,85.0,76.0,False,Course A,0.79,High,Not Completed
+S408,0.425,False,47.0,56.0,False,Course C,0.46,Medium,Not Completed
+S409,0.975,False,100.0,86.0,False,Course B,0.99,High,Not Completed
+S410,0.75,False,85.0,89.0,True,Course A,0.82,High,Completed
+S411,0.65,False,52.0,50.9,True,Course C,0.56,Medium,Completed
+S412,0.4905,True,42.0,41.11,False,Course B,0.44,Medium,Not Completed
+S413,0.85,False,67.43,66.0,False,Course B,0.73,High,Not Completed
+S414,0.95,False,69.0,73.0,True,Course B,0.77,High,Completed
+S415,0.325,False,47.0,44.0,True,Course C,0.43,Medium,Completed
+S416,0.9,False,68.0,63.0,False,Course C,0.75,High,Not Completed
+S417,0.225,False,42.0,49.0,True,Course B,0.36,Low,Completed
+S418,0.55,False,69.0,69.0,True,Course A,0.65,Medium,Completed
+S419,0.7,False,56.0,60.0,False,Course C,0.6,Medium,Not Completed
+S420,0.85,False,80.0,93.0,True,Course A,0.82,High,Completed
+S421,0.3,False,37.0,43.0,False,Course C,0.35,Low,Not Completed
+S422,0.25,False,37.8,37.0,True,Course C,0.34,Low,Completed
+S423,0.55,False,64.0,82.0,False,Course A,0.61,Medium,Not Completed
+S424,0.125,False,37.0,36.21,False,Course B,0.3,Low,Not Completed
+S425,0.85,False,80.0,83.0,False,Course A,0.82,High,Not Completed
+S426,0.575,False,67.0,55.0,True,Course B,0.64,Medium,Completed
+S427,0.775,False,55.0,63.0,True,Course C,0.62,Medium,Completed
+S428,0.075,False,38.82,38.0,True,Course B,0.29,Low,Completed
+S429,0.475,False,43.0,43.0,False,Course C,0.44,Medium,Not Completed
+S430,0.675,False,65.0,59.0,True,Course C,0.66,Medium,Completed
+S431,0.925,False,68.0,87.0,False,Course B,0.75,High,Not Completed
+S432,0.025,False,42.91,42.0,True,Course A,0.31,Low,Completed
+S433,0.8,False,79.0,85.0,False,Course A,0.79,High,Not Completed
+S434,0.825,False,85.0,84.0,False,Course A,0.84,High,Not Completed
+S435,0.4905,True,55.0,70.0,True,Course C,0.53,Medium,Completed
+S436,0.95,False,92.0,90.0,True,Course A,0.93,High,Completed
+S437,0.15,False,56.0,40.0,False,Course B,0.44,Medium,Not Completed
+S438,0.45,False,59.0,76.0,True,Course A,0.55,Medium,Completed
+S439,0.15,False,55.0,62.0,False,Course A,0.43,Medium,Not Completed
+S440,0.3,False,57.0,61.0,True,Course B,0.49,Medium,Completed
+S441,0.325,False,48.0,35.0,True,Course C,0.43,Medium,Completed
+S442,0.75,False,82.76,81.0,False,Course A,0.8,High,Not Completed
+S443,0.625,False,65.0,66.0,True,Course A,0.64,Medium,Completed
+S444,0.35,False,36.0,46.0,True,Course C,0.36,Low,Completed
+S445,0.825,False,74.58,73.0,False,Course A,0.77,High,Not Completed
+S446,0.45,False,74.0,72.43,False,Course A,0.65,Medium,Not Completed
+S447,0.525,False,78.0,69.0,False,Course A,0.7,High,Not Completed
+S448,0.6,False,69.0,68.0,True,Course A,0.66,Medium,Completed
+S449,0.875,False,90.0,86.0,False,Course A,0.89,High,Not Completed
+S450,0.975,False,66.0,79.0,True,Course C,0.75,High,Completed
+S451,0.525,False,47.0,57.0,True,Course C,0.49,Medium,Completed
+S452,0.175,False,35.0,41.0,True,Course C,0.3,Low,Completed
+S453,0.125,False,38.0,46.0,True,Course B,0.3,Low,Completed
+S454,0.375,False,55.0,68.0,False,Course A,0.5,Medium,Not Completed
+S455,0.725,False,50.0,51.0,False,Course C,0.57,Medium,Not Completed
+S456,0.475,False,49.0,58.0,False,Course C,0.49,Medium,Not Completed
+S457,0.7,False,57.0,64.0,False,Course C,0.61,Medium,Not Completed
+S458,0.8,False,72.0,88.0,False,Course A,0.74,High,Not Completed
+S459,0.95,False,71.0,72.0,False,Course C,0.78,High,Not Completed
+S460,0.4,False,49.0,54.0,True,Course B,0.46,Medium,Completed
+S461,0.8,False,88.0,89.0,False,Course A,0.86,High,Not Completed
+S462,0.725,False,70.0,60.0,False,Course B,0.71,High,Not Completed
+S463,0.95,False,65.0,62.0,True,Course C,0.74,High,Completed
+S464,0.125,False,45.0,35.0,False,Course C,0.35,Low,Not Completed
+S465,0.8,False,69.0,61.0,False,Course C,0.72,High,Not Completed
+S466,0.025,False,29.0,22.0,False,Course C,0.21,Low,Not Completed
+S467,0.5,False,72.0,78.0,False,Course A,0.65,Medium,Not Completed
+S468,0.3,False,57.0,58.0,True,Course A,0.49,Medium,Completed
+S469,0.5,False,53.0,49.0,False,Course C,0.52,Medium,Not Completed
+S470,0.475,False,41.0,39.0,False,Course C,0.43,Medium,Not Completed
+S471,0.25,False,67.0,62.0,False,Course A,0.54,Medium,Not Completed
+S472,0.65,False,57.0,59.0,True,Course B,0.59,Medium,Completed
+S473,0.6,False,59.0,69.0,True,Course B,0.59,Medium,Completed
+S474,0.225,False,47.0,46.0,True,Course B,0.4,Medium,Completed
+S475,0.1,False,62.0,55.0,True,Course A,0.46,Medium,Completed
+S476,0.475,False,60.0,61.0,True,Course B,0.56,Medium,Completed
+S477,0.6,False,60.0,62.0,False,Course B,0.6,Medium,Not Completed
+S478,0.325,False,69.0,66.0,True,Course A,0.58,Medium,Completed
+S479,0.75,False,68.0,66.0,False,Course B,0.7,High,Not Completed
+S480,0.375,False,61.3,60.0,False,Course B,0.54,Medium,Not Completed
+S481,0.425,False,68.0,76.0,False,Course A,0.6,Medium,Not Completed
+S482,0.3,False,50.0,41.0,False,Course C,0.44,Medium,Not Completed
+S483,0.4,False,64.0,52.0,True,Course B,0.57,Medium,Completed
+S484,0.425,False,51.0,55.0,False,Course B,0.48,Medium,Not Completed
+S485,0.1,False,39.0,38.17,False,Course C,0.3,Low,Not Completed
+S486,0.775,False,74.0,77.0,True,Course B,0.75,High,Completed
+S487,0.8,False,72.0,56.0,False,Course C,0.74,High,Not Completed
+S488,0.975,False,78.0,89.0,False,Course B,0.84,High,Not Completed
+S489,0.725,False,72.0,62.0,True,Course B,0.72,High,Completed
+S490,0.25,False,59.26,58.0,True,Course B,0.49,Medium,Completed
+S491,0.125,False,55.0,47.0,False,Course A,0.42,Medium,Not Completed
+S492,0.275,False,62.0,60.0,False,Course A,0.52,Medium,Not Completed
+S493,0.9,False,66.0,66.0,True,Course B,0.73,High,Completed
+S494,0.1,False,30.0,37.0,False,Course C,0.24,Low,Not Completed
+S495,0.95,False,68.0,73.0,False,Course C,0.76,High,Not Completed
+S496,0.65,False,73.0,72.0,False,Course B,0.71,High,Not Completed
+S497,0.675,False,83.0,75.0,False,Course A,0.78,High,Not Completed
+S505,0.7,False,73.0,74.0,True,Course B,0.72,High,Completed
+S499,0.575,False,47.0,46.0,True,Course C,0.5,Medium,Completed
+S500,0.75,False,56.0,50.0,True,Course C,0.62,Medium,Completed

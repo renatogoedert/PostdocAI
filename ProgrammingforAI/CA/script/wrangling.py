@@ -220,6 +220,7 @@ def _solve_missing(df):
 
         missing_index = df[df['StudyHours'].isnull()].index
         df.loc[missing_index, 'StudyHours'] = round(df['StudyHours'].mean(), 2)
+        df.loc[missing_index,'StudyHoursImputed'] = True
     else:
         print("--- No Missing Value Found! ---")
 

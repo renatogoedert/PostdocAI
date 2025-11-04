@@ -21,6 +21,7 @@ def _run_create_dataset():
     data = {
         'StudentID': [],
         'StudyHours': [],
+        'StudyHoursImputed': [],
         'QuizParticipation': [],
         'PastPerformance': [],
         'CourseCompletion': [],
@@ -41,6 +42,7 @@ def _run_create_dataset():
 
         data['StudentID'].append(f'S{str(i).zfill(3)}'),
         data['StudyHours'].append(study_hours),
+        data['StudyHoursImputed'].append(False),
         data['QuizParticipation'].append(np.random.randint(0, 21) + coef * 5 + study_hours),
         data['PastPerformance'].append(np.random.randint(0, 21) + coef * 5 + study_hours),
         data['CourseCompletion'].append(np.random.choice([True, False])),

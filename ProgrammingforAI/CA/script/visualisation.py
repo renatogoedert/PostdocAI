@@ -8,12 +8,15 @@ from colorama import Fore
 from . import util
 
 def _make_scatter_graph(df):
+    # Filter to only the rows where StudyHoursImputed is False
+    df_no_impute = df[df['StudyHoursImputed'] == False]
+    
     # Make a Scatter Plot (Study Hours vs Past Performance)
     print(f"{Fore.YELLOW}--- Generating Scatter Plot (Study Hours vs Past Performance) ---")
 
     plt.figure(figsize=(10, 6))
     scatter_graph = sns.scatterplot(
-        data=df,
+        data=df_no_impute,
         x='StudyHours',
         y='PastPerformance',
         hue='Completed',  # Color-codes points based on course completion 
@@ -102,12 +105,15 @@ def _make_pie_graph(df):
     util.save_plot('pie_chart_performance_category.png')
 
 def _make_2_scatter_graph(df):
+    # Filter to only the rows where StudyHoursImputed is False
+    df_no_impute = df[df['StudyHoursImputed'] == False]
+
     # Make a 2nd Scatter Plot (Study Hours vs Past Performance)
     print(f"{Fore.YELLOW}--- Generating 2 Scatter Plot (Study Hours vs Past Performance) ---")
 
     plt.figure(figsize=(10, 6))
     scatter_graph = sns.scatterplot(
-        data=df,
+        data=df_no_impute,
         x='StudyHours',
         y='PastPerformance',
         hue='Course',  # Color-codes points based on course  

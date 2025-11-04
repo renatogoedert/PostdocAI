@@ -21,6 +21,14 @@ This report focus on the Reflection and reporting part, where is descreptive sho
 - colorama
 - time
 
+# Full Run
+
+![1](./images/full_run/1.png)
+![2](./images/full_run/2.png)
+![3](./images/full_run/3.png)
+![4](./images/full_run/4.png)
+![5](./images/full_run/5.png)
+![6](./images/full_run/6.png)
 
 # Project Structure
 
@@ -55,9 +63,6 @@ Following the designed architecture, there are the core modules that cover each 
 
 
 ![main() function example](./images/main%20func.png)
-
-
-# Data Generation
 
 # Data Wrangling
 
@@ -119,7 +124,7 @@ From the grouping operation in the previous step, the bar chart displays the ave
 
 ![Bar plot](./bar_chart_avg_engagement.png)
 
-There is one extra fied created, the Course field, and for this field two visualisations where prepared, these visualisations show that doesnt matter the course, they spread evenlly in the Study hours axis, but on the Past Performance, Course A has a slitly better score per hour of study, Course B is on second and course C on the bottom. The bar chart confirms this diference on the medium values showing that the dificulty on the courses was probably in diferent levels, but student effort was similar.
+Finally, there is one extra field created, the Course field, and for this field, two visualizations were prepared. These visualizations show that no matter the course, they spread evenly on the Study Hours axis, but for Past Performance, Course A has a slightly better score per hour of study, Course B is second, and Course C is on the bottom. The bar chart confirms this difference in the medium values. This visualization allows to infer that the difficulty of the courses was, probably, at different levels, but student effort was similar.
 
 <table style="width:100%">
   <tr>
