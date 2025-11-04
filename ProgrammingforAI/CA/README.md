@@ -119,6 +119,21 @@ From the grouping operation in the previous step, the bar chart displays the ave
 
 ![Bar plot](./bar_chart_avg_engagement.png)
 
+There is one extra fied created, the Course field, and for this field two visualisations where prepared, these visualisations show that doesnt matter the course, they spread evenlly in the Study hours axis, but on the Past Performance, Course A has a slitly better score per hour of study, Course B is on second and course C on the bottom. The bar chart confirms this diference on the medium values showing that the dificulty on the courses was probably in diferent levels, but student effort was similar.
+
+<table style="width:100%">
+  <tr>
+    <td style="width:50%; text-align:center;">
+      <img src="./bar_course_chart_avg_engagement" alt="Histogram of Quiz Participation" style="max-width:100%; height:auto;">
+      <p>Figure 1: Histogram of Quiz Participation</p>
+    </td>
+    <td style="width:50%; text-align:center;">
+      <img src="./scatter_course_performance_hours.png" alt="Pie Chart of Performance Categories" style="max-width:100%; height:auto;">
+      <p>Figure 2: Pie Chart of Performance Category Distribution</p>
+    </td>
+  </tr>
+</table>
+
 # Reflection
 
 During the development of this continuous assessment, several challenges were encountered and solved with creativity and knowledge, showing how important these characteristics are for the scientists and their academic/working life. One such challenge arose on the first iteration of the scatter plot graph, an interaction that arranged the points in a very dispersed way, displaying no clear pattern of correlation
