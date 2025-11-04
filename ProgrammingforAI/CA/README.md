@@ -80,6 +80,10 @@ Continuing on the script, it moves to the missing-value handling function. First
 
 ![Solving Missing StudyID](./images/solve_studyid_missing.png)
 
+In order to solve the missing hours rows, it was considered that using the medium value would keep most of the calculations in order, without sacrificing entries if not needed to, but the field Study Hours Inputted was turned into True, in that way, any calculation or visualization that didn't aim to use the imputed value could validate the values and drop them.
+
+![Solving Missing StudyHours](./images/solve_studyhours_missing.png)
+
 The most elaborate solution was implemented for the missing quiz participation and past performance. First, there is an if statement that checks if the row is missing both past performance and quiz performance; in that case, the row is dropped. If only one is missing, a smart calculation is used: the function computes the mean of the differences between quiz participation and past performance for the whole group, then uses that average value to estimate the missing value. This method is based on the premise that the student performance follows the class average trend (e.g., if the course difficulty changes, the student would move along with the class). This approach, of course, has its limitations, but it provides a better solution than simply inserting the overall mean value.
 
 ![Solving Missing Performancce](./images/solve_performance_missing.png)
@@ -90,11 +94,11 @@ After the data wrangling stage, the new CSV file, containing the clean and prepa
 
 ![Descriptive Statistics](./images/statistics%20for%20Study%20Hours%20and%20Quiz%20participation.png)
 
-The results for study hours, shown on the image above, clearly exhibit that the mean value is almost the same as the exact midpoint of the available range (0.5). Moreover, the fact that the median and mean are very similar also means that the distribution of study hours is highly symmetrical. Besides, the standard deviation value of 0.2792 expresses that the study hours values are not clustering around the average but are widespread across the range.
+The results for study hours, shown on the image above, clearly exhibit that the mean value is almost the same as the exact midpoint of the available range (0.5). Moreover, the fact that the median and mean are very similar also means that the distribution of study hours is highly symmetrical. Besides, the standard deviation value of 0.2787 expresses that the study hours values are not clustering around the average but are widespread across the range.
 
-Switching to quiz participation, the mean achieves a result of 61.25, which is slightly above the midpoint of the range (0-100), where most of the values are considered in the good category. As previously seen in study hours, the median closely matches the mean, suggesting another symmetrical distribution. In conclusion, these results are expected when the data is randomly generated
+Switching to quiz participation, the mean achieves a result of 61.53, which is slightly above the midpoint of the range (0-100), where most of the values are considered in the good category. As previously seen in study hours, the median closely matches the mean, suggesting another symmetrical distribution. In conclusion, these results are expected when the data is randomly generated
 
-A grouped analysis was also run in the dataset, this second step divided the students according to their course completion status and displayed the average engagement of the group. Interestingly, this showed an inverse relationship, where the students who did not complete the course have a higher average engagement score (0.597) than the students who did complete the course (0.569), although the difference of values is about 1.8%, small enough to be negligible. 
+A grouped analysis was also run in the dataset, this second step divided the students according to their course completion status and displayed the average engagement of the group. Interestingly, this showed an inverse relationship, where the students who did not complete the course have a higher average engagement score (0.592) than the students who did complete the course (0.558), although the difference of values is about 1%, small enough to be negligible. 
 
 ![Grouping Statistics](./images/statistics%20for%20grouping.png)
 
@@ -129,12 +133,12 @@ Finally, there is one extra field created, the Course field, and for this field,
 <table style="width:100%">
   <tr>
     <td style="width:50%; text-align:center;">
-      <img src="./bar_course_chart_avg_engagement.png" alt="Histogram of Quiz Participation" style="max-width:100%; height:auto;">
-      <p>Figure 1: Histogram of Quiz Participation</p>
+      <img src="./scatter_course_performance_hours.png" alt="Pie Chart of Performance Categories" style="max-width:100%; height:auto;">
+      <p>Figure 1: Scatter Plot for Course</p>
     </td>
     <td style="width:50%; text-align:center;">
-      <img src="./scatter_course_performance_hours.png" alt="Pie Chart of Performance Categories" style="max-width:100%; height:auto;">
-      <p>Figure 2: Pie Chart of Performance Category Distribution</p>
+      <img src="./bar_course_chart_avg_engagement.png" alt="Histogram of Quiz Participation" style="max-width:100%; height:auto;">
+      <p>Figure 2: Bar char Engagment x Course</p>
     </td>
   </tr>
 </table>
@@ -145,7 +149,7 @@ During the development of this continuous assessment, several challenges were en
 
 ![First Scatter Plot](./first%20graphs/scatter_performance_hours.png)
 
-The main reason for such dispersion was the use of purely random values in the generation. In order to provide a meaningful underlying pattern for analysis, this code was revised: instead of generating completely random values, a stochastic process was used that also imposed a minimum value of 20, and made "Past Performance" and "Quiz Participation" variables correlated with "Study Hours". Thus, a meaningful pattern was introduced into the data
+The main reason for such dispersion was the use of purely random values in the generation. In order to provide a meaningful underlying pattern for analysis, this code was revised: instead of generating completely random values, a stochastic process was used that also imposed a minimum value of 20, and made "Past Performance" and "Quiz Participation" variables correlated with "Study Hours", moreover, a course field and correlation for past performance and quiz participatin. Thus, a meaningful pattern was introduced into the data
 
 ![Code for Random data](./images/random_results_code.png)
 
