@@ -8,7 +8,6 @@ Despite these initiatives, most households still use their high-consumption elec
 
 Moreover, according to the EirGrid Smart Grid Dashboard (2024), CO₂ intensity varies by more than 50% between day and night, especially because during the peak hours, there is lower wind generation, making the provider rely on gas-fired plants; by contrast, during night hours, winds are stronger, creating a higher sustainable energy source. Thus, developing a strategy to transfer the load of electricity consumption could reduce residential carbon footprint without requiring a decrease in energy consumption.
 
-
 ## Oportunitty
 
 Based on the previous section, proposing an intelligent scheduling system to balance the electricity load of a household would represent a significant opportunity for both the residential consumers and the electricity providers as for the Ireland carbon-reduction targets.
@@ -25,32 +24,39 @@ There are several Artificial Intelligence (AI) methods that can be applied to so
 
 ## Search Based optimisation
 
-This approach can be formulated as a state-space search problem, where each state would represent a partial assignment of appliance start times within a 24-hour period. According to Tussell & Norvig (2021), the search-based optimization shines in small to medium-sized problems with stable variable structures and following an explicit objective, in this case, a weighted combination of electricity consumption, carbon emissions, and user comfort penalties. 
+This approach can be formulated as a state-space search problem, where each state would represent a partial assignment of appliance start times within a 24-hour period. According to Russell & Norvig (2021), the search-based optimization shines in small to medium-sized problems with stable variable structures and following an explicit objective, in this case, a weighted combination of electricity consumption, carbon emissions, and user comfort penalties. 
 
 Each node in the search tree corresponds to a scheduling decision (assigning a start time to one appliance), and each new step in the task has to respect some constraints, such as time windows, mutual exclusivity, and load limits. These cost constraints should be explicit and auditable, to improve the overall system explainability and transparency.
 
 However, state-space architectures can grow combinatorially with the number of appliances, available time, and constraints in a household. Algorithms like the Uniform-Cost/A* offer optimal solutions but may require substantial memory and computational time as the system grows; of course, adding heuristics (lower bounds from cheapest remaining hours) and decomposition (per-device windows) may mitigate this. 
 
-Another alternative is Greedy Best-First Search, which, because of its focus only on the immediate heuristic, offers faster decisions. Although it does not guarantee the optional schedule, which is particularly problematic for our domain, where the decision can be delayed, but efficiency is critical. Therefore, Greedy is less effective than USC or A*.
+Another alternative is Greedy Best-First Search, which, because of its focus only on the immediate heuristic, offers faster decisions. Although it does not guarantee the optional schedule, which is particularly problematic for our domain, where the decision can be delayed, but efficiency is critical. Therefore, Greedy is less effective than USC or A*.(Russell & Norvig, 2021)
 
-Minimax and any other related game-tree algorithms are not applicable in this context, as the task doesn't involve adversarial decision-making. This is a single-point optimization task where the environment (tariffs and grid intensity) is dynamic but not oppositional; hence, classical search algorithm methods are more appropriate. 
+Following what Russell & Norvig (2021) declares, minimax and any other related game-tree algorithms are not applicable in this context, as the task doesn't involve adversarial decision-making. This is a single-point optimization task where the environment (tariffs and grid intensity) is dynamic but not oppositional; hence, classical search algorithm methods are more appropriate. 
 
-Conversely, local search algorithms would offer an efficient and scalable solution by their iteration principle. Starting from an initial schedule and interacting with its neighbors, it would be able to reduce the objective function, which may include electricity cost, CO₂ emissions, and user penalties.Beyond that,  techniques such as hill climbing or simulated annealing can be applied to guide the process. Although local search is more suited to large search spaces with soft constraints, in addition, they do not guarantee optimality and may require random restarts or hybridization with rule-based filters to ensure feasibility.
+Conversely, local search algorithms would offer an efficient and scalable solution by their iteration principle. Starting from an initial schedule and interacting with its neighbors, it would be able to reduce the objective function, which may include electricity cost, CO₂ emissions, and user penalties.Beyond that,  techniques such as hill climbing or simulated annealing can be applied to guide the process. Although local search is more suited to large search spaces with soft constraints, in addition, they do not guarantee optimality and may require random restarts or hybridization with rule-based filters to ensure feasibility. (Poole & Mackworth, 2017)
 
 ## Bayesian networks
 
-A Bayesian network make uses of a graph structure that can capture casual/contional relationships, and do a probabilistc calculation to predict high-cost or hiugh-emmisions periods and suports scheduling decisions under uncertanty. Furthermore it handles uncertainty naturally (missing and noisy data) and its archtecture can learn and adapt to new parameters, thought a higher complexity. (Koller & Friedman, 2009)
+A Bayesian network makes use of a graph structure that can capture causal/conditional relationships and do probabilistic calculations to predict high-cost or high-emission periods and supports scheduling decisions under uncertainty. Furthermore, it handles uncertainty naturally (missing and noisy data), and its architecture can learn and adapt to new parameters, though with a higher complexity. (Koller & Friedman, 2009)
 
-A Bayesian Network aims to predict conditions and whereas a probabilistic approach like Bayesian would shine in a system where there is a need to forecast in uncertainty, like Probality of high price or change of CO2 intervals, it does not directly optimise actions, there is no need for such probabilistic calculations.
+A Bayesian network aims to predict conditions, and whereas a probabilistic approach like Bayesian would shine in a system where there is a need to forecast in uncertainty, like the probability of a high price or a change of CO₂ intervals, it does not directly optimize actions; there is no need for such probabilistic calculations.
 
-## Logic-based
+## Reinforcement Learning
 
-Logic based approachs offer near-perfect audataibility, with human-readable contrains thta allow easy inspect/approve rules, on the other hand, 
+The most adaptable of all approaches among the ones considered, it particularly shines within dynamic environments and changing variables, plus it is capable of learning trade-offs that are almost impossible to hand-code. However, the training of any RL model demands a large dataset and a considerate computational resource for hyperparameter tuning. Despite that, the resulting model is highly efficient on inference. 
+
+Once trained, algorithms like Q-learning or a Deep Q-Network (DQN) can make decisions just with one lookup in a compact neural network. Moreover, these models learn how to maximise cumulative reward by reducing cost and emissions while satisfying user comfort constraints. (Sutton & Barto, 2018) 
+
+## Selected solution
+
 
 
 # References
 
 Commission for Regulation of Utilities (CRU). Smart Metering Programme: Time-of-Use Tariffs and Consumer Information. Dublin: CRU, 2023.
+
+ESB Networks. Guide to Smart Meter Tariff Time Bands. Dublin: ESB Networks, 2024.
 
 EirGrid. Smart Grid Dashboard: Carbon Intensity and System Demand. EirGrid plc, 2024.
 
@@ -61,3 +67,5 @@ Koller, D., & Friedman, N. Probabilistic Graphical Models: Principles and Techni
 Goodfellow, I., Bengio, Y., & Courville, A. Deep Learning. MIT Press, 2016.
 
 Sutton, R. S., & Barto, A. G. Reinforcement Learning: An Introduction (2nd ed.). MIT Pres
+
+Poole, D. & Mackworth, A., 2017. Artificial Intelligence: Foundations of Computational Agents. 2nd ed. Cambridge University Press.
