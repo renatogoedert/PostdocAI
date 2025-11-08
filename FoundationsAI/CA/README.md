@@ -78,22 +78,21 @@ The reward weights (α, β, γ, and δ) should be predefined for training but al
 
 ## Algorithms
 
-One of the main expectations for this sistem would be a fast inference capability, even when applyed to a computational-constrained hardware, and among the algorithms researched, the ones who use the Q-value, Q-learning, and Deep Q-Network, were selected to a more in depth analysis, due to their efficiency and simplicity.
+One of the main expectations for this system would be a fast inference capability, even when applied to computationally constrained hardware. Therefore, among the algorithms researched, the ones that use the Q-value, Q-learning and Deep Q-Network, were selected for a more in-depth analysis due to their efficiency and simplicity.
 
-The foundation of both of these algorithms is the Q-value function, which calculates the expected cumulative reward of a agent, considering it starting on a satas s, taking an actios a and following one particular policity afterwards. (Sutton and Barto, 2018)
+The foundation of both of these algorithms is the Q-value function, which calculates the expected cumulative reward of an agent, considering starting in a state s, taking an action a, and following one particular policy afterwards. (Sutton and Barto, 2018)
 
-- Q-learning: This Algorithms creta a Q-table, that stores the values of each pair (state and action). During inference the model performs a simple lookup to find, in the table, the highest Q value, and select the related actions. This is a lightweight and effective solution for low dimensional states problems
+- Q-learning: This algorithm creates a Q-table that stores the values of each pair (state and action). During inference the model performs a simple lookup to find, in the table, the highest Q value and select the related actions. This is a lightweight and effective solution for low-dimensional states problems
 
-- Deep Q-Network (DQN): DQN relaces the Q-table, wich a small neural networds that aproximates the q-values making use of deep learning techniques. this paradigm change permits the algorithm to handle larger state spaces where a simple table is impratical, because of that, DQNs are suited to systems with more state variable where still focusing on simplocity.
+- Deep Q-Network (DQN): DQN replaces the Q-table with a small neural network that approximates the q-values using deep learning techniques. This paradigm change permits the algorithm to handle larger state spaces where a simple table is impractical; because of that, DQNs are suited to systems with more state variables while still focusing on simplicity.
 
 ## Data Sources
 
-The AI system would need a good amount of data for trainig, luckly a lot of the data sources were already collected and public for training, not just thta, bust companies like energy supliers, grid operators and appliance builder already offer high structured high precision data, not demaing a heavy data wragling process, the data source for the system would be:
+As this own report arises, RL AI systems demand a substantial amount of data for training. Fortunately, much of the data sources were already collected and publicly available for training. Not just that, but companies like energy suppliers, grid operators, and appliance builders usually offer high-structured, high-precision data, removing from the solution development: a heavy data wrangling process. The data source for the system would be
 
-- Tariff data: ESB Networks and Eletric Ireland documentation on Time-of-Use tariffs
-- Carbon intensity: EirGird Smart Grid Dashboard and published COs, emmision datasets.
-- Appliance usage patterns: Derived from demand-side managment literature and residential enerygy surveys
-
+- Tariff data: ESB Networks and Electric Ireland documentation on Time-of-Use tariffs
+- Carbon intensity: EirGrid Smart Grid Dashboard and published CO₂ emission datasets.
+- Appliance usage patterns: Derived from demand-side management literature and residential energy surveys
 
 
 # References
