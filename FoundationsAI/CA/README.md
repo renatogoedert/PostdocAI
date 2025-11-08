@@ -71,7 +71,6 @@ On this, the agent would learn a policy π(a∣s) that maximizes the expected cu
 
 However, Lapan (2020) brings to attention that the rewarding and penalizing should be well designed, as if the AI gets a sequence of punishments, it could get stuck, as it would learn that no matter what it does, it would get punished. So techniques like giving rewards per progress and offering relative rewards would be beneficial to a proper learning phase. With that in mind, the proposed reward function is
 
- 
 Reward=−α⋅Cost−β⋅Emissions−γ⋅Penaltycomfort​+δ⋅ApplianceBonus
 
 The reward weights (α, β, γ, and δ) should be predefined for training but also may be adjusted during iterations of the training phase to allow improvement of the policy.
@@ -98,11 +97,32 @@ As this own report arises, RL AI systems demand a substantial amount of data for
 
 The report would consissts on only the impementation of the Ai system, all extra hardware is not be going to be taken into consideration. For this implementation would be considered both technical and human resourses, It also would focus on the development on the MVP for proving the capability of the AI as a early comersalisation and to develop the estrategies with the elecirity supliers and grid operadors companies
 
- 
-| Role       | Description                                                                             | Estimated Time|
-|------------|-----------------------------------------------------------------------------------------|---------------|
-| AI Engineer| Develop and train the Ai models, as handles data preprocessing and hyperparameter tuning| 120hours      |
-| Data Analist| Develop and train the Ai models, as handles data preprocessing and hyperparameter tuning| 120hours      |
+Human Resources:
+
+| Role           | Description                                                                             | Estimated Time|
+|----------------|-----------------------------------------------------------------------------------------|---------------|
+| AI Engineer    | Develop and train the Ai models, as handles data preprocessing and hyperparameter tuning| 210hours      |
+| Data Analist   | Curates and validates training datasets from public sources                             |  40hours      |
+| FS Developer   | Build the interface and Integrate the model into a usable software                      | 140hours      |
+| Project Manager| Oversees progress, documentation and ethical compliance                                 |  40hours      |
+
+For calculate the Technical resources, most of the tools and data for the traning and developing are open source, inferring no costs, the deployment in a big cloud provider is cents per day, so we are going to consider 100 euros to keep it running for months without no issue. For the traning of the algorithm we will consider:
+
+- Input: time, tarif band, carbon intensity, appliance status - 128 features 
+- Output: time slots - 48
+- Hidden Layers: 3-4 layers
+- Neurons per Layer: 128-256 neurons
+
+
+
+
+Technical resources 
+| Role                | Description                                                                        | Estimated Cost|
+|----------------------|-----------------------------------------------------------------------------------|---------------|
+| Computational Infra  | Access to a GPU instance(Google Colab Pro or AWS) for model training and testing  | 210hours      |
+| Software and tools   | Python, TensorFlows/Pytorch, Hugging Face, OpenAI Gym                             |  Free         |
+| Data Sources         | EirGrid Dashboard, ESb networks tarrif data, and apliances power comsuption       |  Free         |
+| Prototype Hosting    | Optional cloud hosting of the MVP (Aws, Azure or Google Cloud)                    |  €100         |
 
 
 # References
