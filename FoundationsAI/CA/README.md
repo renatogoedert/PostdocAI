@@ -48,7 +48,45 @@ The most adaptable of all approaches among the ones considered, it particularly 
 
 Once trained, algorithms like Q-learning or a Deep Q-Network (DQN) can make decisions just with one lookup in a compact neural network. Moreover, these models learn how to maximise cumulative reward by reducing cost and emissions while satisfying user comfort constraints. (Sutton & Barto, 2018) 
 
-## Selected solution
+# Selected solution
+
+After toughyly consideration of all models the two most applicable to the problem was A* and the reinforcment learining, as the system aims to be applyed in multiple houses, the computation resource needed to train a model would be divided by multiple users, making it more viable, and combining with the probability of a expansion with energy supliers and grid providers to create a data-drive system, the Reinforcment learning was choseen, as its adaptative paradigm would make it perfect to recive and adpt to the data of the grid.
+
+## Archtecture
+
+The system would be design as a Markov Decision Process(MDP), a mathematichal framework for sequential decision-making problems in enviroments where outcomes a part under control of the agent and part random, they are divided in: (Sutton and Barto, 2018)
+
+S – a finite set of states, representing all possible configurations the environment can be in.
+
+A – a finite set of actions available to the agent in each state.
+
+P(s′|s, a) – a transition probability function, which defines the probability of moving to state s′ given that the agent took action a in state s.
+
+R(s, a) – a reward function, specifying the immediate numerical reward received after taking action a in state s.
+
+γ – a discount factor, 0 ≤ 𝛾 ≤ 1, which determines how much the agent values future rewards compared to immediate ones.
+
+In this project the agent would learn a policy π(a∣s), that maximises the expected cumulative reward over time. ON this state would include time, apliance status, tariff band and carbon intensity, the actions would be selecting an appliance start time and the reward penalises costs, emmisions and comfort violations.
+
+For rewarding, having just negative values can create a well know issue, that it may condlude that, nomather what i do, i get punished, so i will do nothing, or also not learning what is relative better, so techniques like giving extra points completing a appliance task and having some relative rewrads, like positive for cost eficient and negative for peak-time schedule, also (Lapan, 2020)
+
+## Algorithms
+
+One of the main expectations for this sistem would be a fast inference capability, even when applyed to a computational-constrained hardware, and among the algorithms researched, the ones who use the Q-value, Q-learning, and Deep Q-Network, were selected to a more in depth analysis, due to their efficiency and simplicity.
+
+The foundation of both of these algorithms is the Q-value function, which calculates the expected cumulative reward of a agent, considering it starting on a satas s, taking an actios a and following one particular policity afterwards. (Sutton and Barto, 2018)
+
+- Q-learning: This Algorithms creta a Q-table, that stores the values of each pair (state and action). During inference the model performs a simple lookup to find, in the table, the highest Q value, and select the related actions. This is a lightweight and effective solution for low dimensional states problems
+
+- Deep Q-Network (DQN): DQN relaces the Q-table, wich a small neural networds that aproximates the q-values making use of deep learning techniques. this paradigm change permits the algorithm to handle larger state spaces where a simple table is impratical, because of that, DQNs are suited to systems with more state variable where still focusing on simplocity.
+
+## Data Sources
+
+The AI system would need a good amount of data for trainig, luckly a lot of the data sources were already collected and public for training, not just thta, bust companies like energy supliers, grid operators and appliance builder already offer high structured high precision data, not demaing a heavy data wragling process, the data source for the system would be:
+
+- Tariff data: ESB Networks and Eletric Ireland documentation on Time-of-Use tariffs
+- Carbon intensity: EirGird Smart Grid Dashboard and published COs, emmision datasets.
+- Appliance usage patterns: Derived from demand-side managment literature and residential enerygy surveys
 
 
 
@@ -66,6 +104,8 @@ Koller, D., & Friedman, N. Probabilistic Graphical Models: Principles and Techni
 
 Goodfellow, I., Bengio, Y., & Courville, A. Deep Learning. MIT Press, 2016.
 
-Sutton, R. S., & Barto, A. G. Reinforcement Learning: An Introduction (2nd ed.). MIT Pres
+Sutton, R.S. and Barto, A.G., 2018. Reinforcement Learning: An Introduction. 2nd ed. Cambridge, MA: MIT Press.
 
 Poole, D. & Mackworth, A., 2017. Artificial Intelligence: Foundations of Computational Agents. 2nd ed. Cambridge University Press.
+
+Lapan, M., 2020. Deep Reinforcement Learning Hands-On. 2nd ed. Birmingham: Packt Publishing.
