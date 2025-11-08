@@ -22,7 +22,7 @@ Overall the solution for this problem would bring economic gains to both househo
 
 There are several Artificial Intelligence (AI) methods that can be applied to solve our problem and optimize household electricity consumption under the variables set, ToU, and grid carbon intensity. Each one of the approaches below offers advantages and challenges in interpretability, adaptability and computational power
 
-## Search Based optimisation
+## Search Based Optimisation
 
 This approach can be formulated as a state-space search problem, where each state would represent a partial assignment of appliance start times within a 24-hour period. According to Russell & Norvig (2021), the search-based optimization shines in small to medium-sized problems with stable variable structures and following an explicit objective, in this case, a weighted combination of electricity consumption, carbon emissions, and user comfort penalties. 
 
@@ -36,11 +36,21 @@ Following what Russell & Norvig (2021) declares, minimax and any other related g
 
 Conversely, local search algorithms would offer an efficient and scalable solution by their iteration principle. Starting from an initial schedule and interacting with its neighbors, it would be able to reduce the objective function, which may include electricity cost, CO₂ emissions, and user penalties.Beyond that,  techniques such as hill climbing or simulated annealing can be applied to guide the process. Although local search is more suited to large search spaces with soft constraints, in addition, they do not guarantee optimality and may require random restarts or hybridization with rule-based filters to ensure feasibility. (Poole & Mackworth, 2017)
 
+## Logic Based Reasoning
+
+Logic-based reasoning systems, as described by Russell and Norvig (2021), allow decisions to be derived from explicit rules and symbolic inference, providing high levels of transparency and interpretability in decision-making, as every decision taken by the system can be traced back to its own rules. However, when dealing with quantitative trade-offs, such as the ones presented in this system, this model demonstrates substantive limitations. In addition, logic-based reasoning systems also struggle to adapt to dynamic and uncertain environments, as they work with a fixed set of rules that would demand a constant manual update to remain effective.
+
 ## Bayesian networks
 
 A Bayesian network makes use of a graph structure that can capture causal/conditional relationships and do probabilistic calculations to predict high-cost or high-emission periods and supports scheduling decisions under uncertainty. Furthermore, it handles uncertainty naturally (missing and noisy data), and its architecture can learn and adapt to new parameters, though with a higher complexity. (Koller & Friedman, 2009)
 
 A Bayesian network aims to predict conditions, and whereas a probabilistic approach like Bayesian would shine in a system where there is a need to forecast in uncertainty, like the probability of a high price or a change of CO₂ intervals, it does not directly optimize actions; there is no need for such probabilistic calculations.
+
+## Deep Learning (Feed-Foward Neural Networks)
+
+Deep learning was developed having complex relationships between the input and variables, with the use of multiple layers of nodes. That approach offers a high capability of learning any nonlinear patterns from data, a fact that makes them suitable for prediction, like forecasting energy demand, electricity tariffs, or carbon intensity. (Goodfellow, Bengio and Courville, 2016)
+
+Nevertheless, while the feedforward networks excel at discovering data correlations, they require large amounts of labeled data, increasing their development costs, and don't focus on decision-making or dynamic feedback. For this solution, deep learning, as Bayesian networks, could be used to forecast the external variable but not for optimization tasks. Hence, deep learning could be used as a complement for the system, but it's not the most suitable for adaptive control and decision-making.
 
 ## Reinforcement Learning
 
@@ -50,8 +60,7 @@ Once trained, algorithms like Q-learning or a Deep Q-Network (DQN) can make deci
 
 # Selected solution
 
-After thorough consideration of all algorithms stated before, the two most
-applicable to the problem were Search (A*) and Reinforcement Learning. As the system aims to be applied in multiple houses, the computation resource needed to train a model would be divided by multiple users, making it more viable, and, combined with the probability of an expansion with energy suppliers and grid providers to create a data-driven system, reinforcement learning was chosen as the most suitable one, as its adaptive paradigm would make it perfect to receive and adapt to the data of the grid in an eventual demand-side flexibility system.
+After thorough consideration of all algorithms stated before, the two most applicable to the problem were Search (A*) and Reinforcement Learning. As the system aims to be applied in multiple houses, the computation resource needed to train a model would be divided by multiple users, making it more viable, and, combined with the probability of an expansion with energy suppliers and grid providers to create a data-driven system, reinforcement learning was chosen as the most suitable one, as its adaptive paradigm would make it perfect to receive and adapt to the data of the grid in an eventual demand-side flexibility system.
 
 ## Archtecture
 
