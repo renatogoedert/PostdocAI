@@ -50,11 +50,12 @@ Once trained, algorithms like Q-learning or a Deep Q-Network (DQN) can make deci
 
 # Selected solution
 
-After toughyly consideration of all models the two most applicable to the problem was A* and the reinforcment learining, as the system aims to be applyed in multiple houses, the computation resource needed to train a model would be divided by multiple users, making it more viable, and combining with the probability of a expansion with energy supliers and grid providers to create a data-drive system, the Reinforcment learning was choseen, as its adaptative paradigm would make it perfect to recive and adpt to the data of the grid.
+After thorough consideration of all algorithms stated before, the two most
+applicable to the problem were Search (A*) and Reinforcement Learning. As the system aims to be applied in multiple houses, the computation resource needed to train a model would be divided by multiple users, making it more viable, and, combined with the probability of an expansion with energy suppliers and grid providers to create a data-driven system, reinforcement learning was chosen as the most suitable one, as its adaptive paradigm would make it perfect to receive and adapt to the data of the grid in an eventual demand-side flexibility system.
 
 ## Archtecture
 
-The system would be design as a Markov Decision Process(MDP), a mathematichal framework for sequential decision-making problems in enviroments where outcomes a part under control of the agent and part random, they are divided in: (Sutton and Barto, 2018)
+The system would be designed as a Markov Decision Process (MDP). Sutton and Barto (2018) explain this system as a mathematical framework for sequential decision-making problems in environments where outcomes are partly under control and partly random. They are divided into:
 
 S – a finite set of states, representing all possible configurations the environment can be in.
 
@@ -66,9 +67,14 @@ R(s, a) – a reward function, specifying the immediate numerical reward receive
 
 γ – a discount factor, 0 ≤ 𝛾 ≤ 1, which determines how much the agent values future rewards compared to immediate ones.
 
-In this project the agent would learn a policy π(a∣s), that maximises the expected cumulative reward over time. ON this state would include time, apliance status, tariff band and carbon intensity, the actions would be selecting an appliance start time and the reward penalises costs, emmisions and comfort violations.
+On this, the agent would learn a policy π(a∣s) that maximizes the expected cumulative reward over time; the state would include time, appliance status, tariff band, and carbon intensity; the actions would be selecting an appliance start time,; finally the reward would penalize/reward costs, emissions, and comfort violations.
 
-For rewarding, having just negative values can create a well know issue, that it may condlude that, nomather what i do, i get punished, so i will do nothing, or also not learning what is relative better, so techniques like giving extra points completing a appliance task and having some relative rewrads, like positive for cost eficient and negative for peak-time schedule, also (Lapan, 2020)
+However, Lapan (2020) brings to attention that the rewarding and penalizing should be well designed, as if the AI gets a sequence of punishments, it could get stuck, as it would learn that no matter what it does, it would get punished. So techniques like giving rewards per progress and offering relative rewards would be beneficial to a proper learning phase. With that in mind, the proposed reward function is
+
+ 
+Reward=−α⋅Cost−β⋅Emissions−γ⋅Penaltycomfort​+δ⋅ApplianceBonus
+
+The reward weights (α, β, γ, and δ) should be predefined for training but also may be adjusted during iterations of the training phase to allow improvement of the policy.
 
 ## Algorithms
 
