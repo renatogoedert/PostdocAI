@@ -96,6 +96,15 @@ As this own report arises, RL AI systems demand a substantial amount of data for
 
 # Implemetation
 
+The report would consissts on only the impementation of the Ai system, all extra hardware is not be going to be taken into consideration. For this implementation would be considered both technical and human resourses, It also would focus on the development on the MVP for proving the capability of the AI as a early comersalisation and to develop the estrategies with the elecirity supliers and grid operadors companies
+
+ 
+| Role       | Description                                                                             | Estimated Time|
+|------------|-----------------------------------------------------------------------------------------|---------------|
+| AI Engineer| Develop and train the Ai models, as handles data preprocessing and hyperparameter tuning| 120hours      |
+| Data Analist| Develop and train the Ai models, as handles data preprocessing and hyperparameter tuning| 120hours      |
+
+
 # References
 
 Commission for Regulation of Utilities (CRU). Smart Metering Programme: Time-of-Use Tariffs and Consumer Information. Dublin: CRU, 2023.
