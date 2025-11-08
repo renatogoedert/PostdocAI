@@ -94,6 +94,7 @@ As this own report arises, RL AI systems demand a substantial amount of data for
 - Carbon intensity: EirGrid Smart Grid Dashboard and published CO₂ emission datasets.
 - Appliance usage patterns: Derived from demand-side management literature and residential energy surveys
 
+# Implemetation
 
 # References
 
