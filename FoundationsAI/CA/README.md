@@ -38,7 +38,7 @@ Conversely, local search algorithms would offer an efficient and scalable soluti
 
 ## Logic Based Reasoning
 
-Logic-based reasoning systems, as described by Russell and Norvig (2021), allow decisions to be derived from explicit rules and symbolic inference, providing high levels of transparency and interpretability in decision-making, as every decision taken by the system can be traced back to its own rules. However, when dealing with quantitative trade-offs, such as the ones presented in this system, this model demonstrates substantive limitations. In addition, logic-based reasoning systems also struggle to adapt to dynamic and uncertain environments, as they work with a fixed set of rules that would demand a constant manual update to remain effective.
+The foundation of logic-based reasoning systems, as described by Russell and Norvig (2021), is a series of explicit rules defining the relationships in a specific environment. With these rules the system can take actions, providing high levels of transparency and interpretability in decision-making, as every decision taken by the system can be traced back to its own rules. However, when dealing with quantitative trade-offs, such as the ones presented in this system, this model demonstrates substantive limitations. In addition, logic-based reasoning systems also struggle to adapt to dynamic and uncertain environments, as they work with a fixed set of rules that would demand a constant manual update to remain effective.
 
 ## Bayesian networks
 
@@ -48,9 +48,9 @@ A Bayesian network aims to predict conditions, and whereas a probabilistic appro
 
 ## Deep Learning (Feed-Foward Neural Networks)
 
-Deep learning was developed having complex relationships between the input and variables, with the use of multiple layers of nodes. That approach offers a high capability of learning any nonlinear patterns from data, a fact that makes them suitable for prediction, like forecasting energy demand, electricity tariffs, or carbon intensity. (Goodfellow, Bengio and Courville, 2016)
+Deep learning was developed to solve complex relationships between the input and variables with the use of multiple layers of nodes. That approach offers a high capability of learning any nonlinear patterns from data, a fact that makes them suitable for prediction, like forecasting energy demand, electricity tariffs, or carbon intensity. (Goodfellow, Bengio and Courville, 2016)
 
-Nevertheless, while the feedforward networks excel at discovering data correlations, they require large amounts of labeled data, increasing their development costs, and don't focus on decision-making or dynamic feedback. For this solution, deep learning, as Bayesian networks, could be used to forecast the external variable but not for optimization tasks. Hence, deep learning could be used as a complement for the system, but it's not the most suitable for adaptive control and decision-making.
+Nevertheless, while the feedforward networks excel at discovering data correlations, they require large amounts of labeled data, increasing their development costs, and don't possess a focus on decision-making or dynamic feedback. For this solution, deep learning, as Bayesian networks, could be used to forecast the external variable but not for optimization tasks. Hence, deep learning should be left as a possible complement, but not as a main algorithm for adaptive control and decision-making.
 
 ## Reinforcement Learning
 
@@ -80,7 +80,7 @@ On this, the agent would learn a policy π(a∣s) that maximizes the expected cu
 
 However, Lapan (2020) brings to attention that the rewarding and penalizing should be well designed, as if the AI gets a sequence of punishments, it could get stuck, as it would learn that no matter what it does, it would get punished. So techniques like giving rewards per progress and offering relative rewards would be beneficial to a proper learning phase. With that in mind, the proposed reward function is
 
-Reward=−α⋅Cost−β⋅Emissions−γ⋅Penaltycomfort​+δ⋅ApplianceBonus
+Reward = −α x Cost −β x Emissions −γ x Penaltycomfort ​+δ x ApplianceBonus
 
 The reward weights (α, β, γ, and δ) should be predefined for training but also may be adjusted during iterations of the training phase to allow improvement of the policy.
 
@@ -102,37 +102,39 @@ As this own report arises, RL AI systems demand a substantial amount of data for
 - Carbon intensity: EirGrid Smart Grid Dashboard and published CO₂ emission datasets.
 - Appliance usage patterns: Derived from demand-side management literature and residential energy surveys
 
-# Implemetation
+# Implementation
 
-The report would consissts on only the impementation of the Ai system, all extra hardware is not be going to be taken into consideration. For this implementation would be considered both technical and human resourses, It also would focus on the development on the MVP for proving the capability of the AI as a early comersalisation and to develop the estrategies with the elecirity supliers and grid operadors companies
+The report would consist of only the implementation of the AI system; all extra hardware is not going to be taken into consideration. The development of the MVP for the smart scheduling system based on the Q-learning algorithm would require minimal technical infrastructure, as all experiments can be conducted using a standard laptop and open-source tools. Therefore, the resources for this solution are human only and time.
 
 Human Resources:
 
-| Role           | Description                                                                             | Estimated Time|
-|----------------|-----------------------------------------------------------------------------------------|---------------|
-| AI Engineer    | Develop and train the Ai models, as handles data preprocessing and hyperparameter tuning| 210hours      |
-| Data Analist   | Curates and validates training datasets from public sources                             |  40hours      |
-| FS Developer   | Build the interface and Integrate the model into a usable software                      | 140hours      |
-| Project Manager| Oversees progress, documentation and ethical compliance                                 |  40hours      |
-
-For calculate the Technical resources, most of the tools and data for the traning and developing are open source, inferring no costs, the deployment in a big cloud provider is cents per day, so we are going to consider 100 euros to keep it running for months without no issue. For the traning of the algorithm we will consider:
-
-- Input: time, tarif band, carbon intensity, appliance status - 128 features 
-- Output: time slots - 48
-- Hidden Layers: 3-4 layers
-- Neurons per Layer: 128-256 neurons
+| Role           | Description                                                                             | Estimated Time|  Estimated Cost  |
+|----------------|-----------------------------------------------------------------------------------------|---------------|------------------|
+| AI Engineer    | Design and implement the Q-learning algorithm, define the state, actions and rewards    | 160 hours     | €30/hour = €4800 |
+| Data Analist   | Curates and validates training datasets from public sources                             |  40 hours     | €25/hour = €1000 |
+| Project Lead   | Oversees progress, documentation and ethical compliance                                 |  60 hours     | €30/hour = €1800 |
 
 
+| Phase                          | Activity                                                                        | Duration|
+|--------------------------------|---------------------------------------------------------------------------------|---------|
+| Research and Design            | Review leterature, define variables, states, and weights for the reward function|  1 week |
+| Environment Setup              | Simulate environment with tariff and carbon data, define appliance models       |  1 week |
+| Q-Learning Agent Development   | IMplement Algorithm, integrate environment, tune the reward weights             |  2 weeks|
+| Testing and Evaluation         | Run multiple times, measure convergence, cost reduction, and emission savings   |  1 week |
+| Reporting and Documentation    | Analyze results, write a technical report                                       |  1 week |
+
+## Financial benefits
+
+Proceeding to calculate the Return on Investment (ROI), the data provided by both EirGrid (2024) and ESB Network (2024) states that smart scheduling can save from 8-15% on energy costs. Bearing that in mind, and combining a conservative 10% saving with the average Irish household's electrical bill of 1,800/year (CRU, 2024), results in an expected savings of 180 per year per household. 
+
+As the total development costs rest around €7600, and considering the system would be sold with a value offering a profit of half year of expected savings (€90), a total of approximately 86 households would be needed to recover the initial investments, offering a very feasible break-even point for any small company to invest and innovate. The potential of financial gain increases exponentially due to its lower initial cost, for example, if just 1% of households (20 000) adopt the system the expected gross revenue would be €1 800 000.00, a staggering 23.685%
+
+Beyond the direct revenue, companies like grid operators and energy suppliers would benifit from this energy load-balancing system, which could foster a subsidy or partnership model to strengthen the economic benefits
 
 
-Technical resources 
-| Role                | Description                                                                        | Estimated Cost|
-|----------------------|-----------------------------------------------------------------------------------|---------------|
-| Computational Infra  | Access to a GPU instance(Google Colab Pro or AWS) for model training and testing  | 210hours      |
-| Software and tools   | Python, TensorFlows/Pytorch, Hugging Face, OpenAI Gym                             |  Free         |
-| Data Sources         | EirGrid Dashboard, ESb networks tarrif data, and apliances power comsuption       |  Free         |
-| Prototype Hosting    | Optional cloud hosting of the MVP (Aws, Azure or Google Cloud)                    |  €100         |
+## Non-Financial benefits
 
+Beyond the financial domain, this solution would contribute to the carbon emission reduction by load-shifting the energy consumption to high renewable generation periods, supporting the Ireland 2030 Climate Action Plan and the UN Sustainable Development Goals. Additionally, this system has the ability to foster a much-delayed technological innovation in both the smart home and energy management sectors, advancing the implementation of the demand-side flexibility objective. Altogether, these aspects align with national sustainability targets and European digitalization policies.
 
 # References
 
