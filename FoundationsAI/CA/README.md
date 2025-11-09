@@ -1,4 +1,4 @@
-# Background
+# Summary
 
 ## Problem
 
@@ -136,6 +136,45 @@ Beyond the direct revenue, companies like grid operators and energy suppliers wo
 
 Beyond the financial domain, this solution would contribute to the carbon emission reduction by load-shifting the energy consumption to high renewable generation periods, supporting the Ireland 2030 Climate Action Plan and the UN Sustainable Development Goals. Additionally, this system has the ability to foster a much-delayed technological innovation in both the smart home and energy management sectors, advancing the implementation of the demand-side flexibility objective. Altogether, these aspects align with national sustainability targets and European digitalization policies.
 
+# Risk and Ethics
+
+## Privacy and Data Protection
+
+The main data to feed the solution would consist of Time-of-Use data and appliance energy consumption, which are public and do not imply any risk to personal data. However, while this data is not directly sensitive, the user preferences and detailed consumption data could be used to reveal user routines and behavior patterns. In view of that, the system would be designed taking into consideration a privacy-by-design architecture, where all personal and household data are stored and processed locally on the user's smart HUD or device. Only anonymized or aggregated summaries are shared externally for analytics or system updates.
+
+Retaining the data locally would allow the users to have full data ownership; this, allied with transparent access and an easy opt-out choice, would increase users' assurance that no data would be used without their consent. Furthermore, all data could possibly go through another layer of encryption and protection within device-level security, furthering General Data Protection Regulation (GDPR) principles of data minimization and user control.
+
+## Transparency and Explainability
+
+Since Q-learning algorithms operate via explicit reward functions, the system could employ a high level of transparency and explainability through a simple interface that communicates and explains why a specific scheduling decision was made; for example, "The washing machine was scheduled for 23:00 to minimize cost and emissions where the sleep time is set to 00:00." The meaning of this step is to enhance the user's understanding and trust, while it facilitates the user's understanding and changing of comfort rules to adjust to users' routines. Thus, this simple step fully aligns the system with the EU Intelligence Act (2024) transparency and traceability for AI systems mandate.
+
+## Fairness and Accessibility
+
+Even tought the algorith offers close to minimal risk of bias on its decision-making, still remains the possiblity of favouing one manufacturers device over another. Nevertheless, the simplicity and transparency of Q-learning, which rely manly on the reward function and the Q-table rather than the hidden layers of neural networkd, significantly reduce the likehood of bias. Additionally, the inclusion of the confort rusles further contrains the model behaviour, minimiszing any decision based on AI bias.
+
+One of the main pillars of the system would be an accessible design for the overall system. Although it doesn't affect the AI method in itself, making it easier to use in lower-literacy households is essential to widespread adoption of the model by a higher number of households across all social groups, hence maximizing its financial, social and environmental benefits. As mentioned before, a subsidised partnership could be realized. with governments/companies to offer an affordable price and spread equitably to all social groups.
+
+## Risk Assesment
+
+| **Risk**                   | **Description**                                                                     | **Likelihood** | **Impact** | **Mitigation Strategy**                                                                             |
+| -------------------------- | ----------------------------------------------------------------------------------- | -------------- | ---------- | --------------------------------------------------------------------------------------------------- |
+| **Data breach**            | Unauthorized access to consumption data revealing private behavior                  | Low         | High       | Use local storage, strong encryption, anonymization, and GDPR compliance                           |
+| **Algorithmic bias**       | The model may optimize unfairly for certain user patterns or appliance types        | Low         | Low     | Regularly review training data and test for representativeness across demographics                  |
+| **Model misbehavior**      | Inaccurate or unsafe scheduling (e.g., running high-load appliances simultaneously) | Low            | Medium     | Introduce rule-based constraints (e.g., load limits, user safety overrides)                         |
+| **Transparency failure**   | Users may not understand or trust AI decisions                                      | Medium         | Medium     | Implement explainability dashboard and clear user communication                                     |
+| **Technology exclusion**   | Non-smart homes or elderly users unable to participate                              | Medium         | Medium     | Design lightweight, user-friendly interfaces; offer manual scheduling options                       |
+| **Environmental backfire** | Shifting load at scale could create new mini-peaks                                  | Low            | High     | Coordinate with grid operators; use adaptive reinforcement updates to prevent synchronized behavior |
+
+## Regulatory Alignment
+
+As stated during his report, the proposed system not just fully aligns but also helps with the development of major European and national regulations like
+
+- Ireland’s Climate Action Plan (2023–2030): Plan to reduce carbon emissions and incentivize sustainable energy usage.
+
+- EU Artificial Intelligence Act (2024): Act to provide transparency, explainability, and accountability for AI systems users.
+
+- General Data Protection Regulation (GDPR, 2016): EU regulation to provide to indicidual users data privacy.
+
 # References
 
 Commission for Regulation of Utilities (CRU). Smart Metering Programme: Time-of-Use Tariffs and Consumer Information. Dublin: CRU, 2023.
@@ -155,3 +194,5 @@ Sutton, R.S. and Barto, A.G., 2018. Reinforcement Learning: An Introduction. 2nd
 Poole, D. & Mackworth, A., 2017. Artificial Intelligence: Foundations of Computational Agents. 2nd ed. Cambridge University Press.
 
 Lapan, M., 2020. Deep Reinforcement Learning Hands-On. 2nd ed. Birmingham: Packt Publishing.
+
+European Parliament & Council. (2024). Regulation (EU) 2024/1689 on artificial intelligence. Official Journal of the European Union, L 1689, 12 July 2024.
