@@ -1,4 +1,18 @@
-# Summary
+# Executive Summary
+
+
+
+
+This business case proposes an intelligent, AI-based household electricity scheduling system designed to reduce energy costs and carbon emissions in Ireland through automated load shifting. The system leverages **reinforcement learning (RL)** — specifically a **Q-learning agent** — to optimize appliance operation times according to **Time-of-Use (ToU)** tariffs and **grid carbon intensity**.
+
+The Irish government’s rollout of smart meters and ToU tariffs offers both opportunities and challenges for consumers: while savings are possible, manual scheduling is cumbersome and underused. The proposed RL scheduler learns user comfort preferences and adapts automatically, removing this friction.
+
+Expected benefits include an **average 10% reduction in household electricity bills**, a **lower carbon footprint**, and **support for Ireland’s Climate Action Plan (2030)**. Development costs are projected at **€7,600**, with a **break-even point after 86 households**. Non-financial benefits include consumer empowerment, increased data literacy, and contribution to the **EU Digitalisation and Sustainable Energy goals**.
+
+The project is technically feasible, scalable, and ethically aligned with the **GDPR (2016)** and **EU AI Act (2024)**, ensuring user privacy and transparency. It thus represents a financially and socially viable innovation in Ireland’s transition toward a smart, low-carbon energy network.
+
+--
+
 
 ## Problem
 
@@ -177,22 +191,22 @@ As stated during his report, the proposed system not just fully aligns but also 
 
 # References
 
-Commission for Regulation of Utilities (CRU). Smart Metering Programme: Time-of-Use Tariffs and Consumer Information. Dublin: CRU, 2023.
+Commission for Regulation of Utilities (CRU). *Smart Metering Programme: Time-of-Use Tariffs and Consumer Information.* Dublin: CRU, 2023.  
 
-ESB Networks. Guide to Smart Meter Tariff Time Bands. Dublin: ESB Networks, 2024.
+ESB Networks. *Guide to Smart Meter Tariff Time Bands.* Dublin: ESB Networks, 2024.  
 
-EirGrid. Smart Grid Dashboard: Carbon Intensity and System Demand. EirGrid plc, 2024.
+EirGrid. *Smart Grid Dashboard: Carbon Intensity and System Demand.* Dublin: EirGrid plc, 2024.  
 
-Russell, S., & Norvig, P. Artificial Intelligence: A Modern Approach (4th ed.). Pearson, 2021.
+Russell, S. & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson.  
 
-Koller, D., & Friedman, N. Probabilistic Graphical Models: Principles and Techniques. MIT Press, 2009.
+Poole, D. & Mackworth, A. (2017). *Artificial Intelligence: Foundations of Computational Agents* (2nd ed.). Cambridge University Press.  
 
-Goodfellow, I., Bengio, Y., & Courville, A. Deep Learning. MIT Press, 2016.
+Goodfellow, I., Bengio, Y. & Courville, A. (2016). *Deep Learning.* MIT Press.  
 
-Sutton, R.S. and Barto, A.G., 2018. Reinforcement Learning: An Introduction. 2nd ed. Cambridge, MA: MIT Press.
+Koller, D. & Friedman, N. (2009). *Probabilistic Graphical Models: Principles and Techniques.* MIT Press.  
 
-Poole, D. & Mackworth, A., 2017. Artificial Intelligence: Foundations of Computational Agents. 2nd ed. Cambridge University Press.
+Sutton, R.S. & Barto, A.G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press.  
 
-Lapan, M., 2020. Deep Reinforcement Learning Hands-On. 2nd ed. Birmingham: Packt Publishing.
+Lapan, M. (2020). *Deep Reinforcement Learning Hands-On* (2nd ed.). Packt Publishing.  
 
-European Parliament & Council. (2024). Regulation (EU) 2024/1689 on artificial intelligence. Official Journal of the European Union, L 1689, 12 July 2024.
+European Parliament & Council. (2024). *Regulation (EU) 2024/1689 on Artificial Intelligence.* *Official Journal of the European Union*, L 1689, 12 July 2024.
