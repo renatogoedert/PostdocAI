@@ -127,12 +127,11 @@ Human Resources:
 
 ## Financial benefits
 
-Proceeding to calculate the Return on Investment (ROI), the data provided by both EirGrid (2024) and ESB Network (2024) states that smart scheduling can save from 8-15% on energy costs. Regarding that, and combining a conservative 10% saving with the average Irish household's electrical bill of €1,800 per year (CRU, 2024), results in an expected savings of €180 per year per household. 
+Proceeding to calculate the Return on Investment (ROI), the data provided by both EirGrid (2024) and ESB Network (2024) states that smart scheduling can save from 8-15% on energy costs. Regarding that, and combining a conservative 10% saving with the average Irish household's electrical bill of €1,800 per year (CRU, 2024) results in an expected savings of €180 per year per household. 
 
-As the total development costs rest around €7600, and considering the system would be sold with a value that offers a profit of half year of expected savings (€90), a total of approximately 86 households would be needed to recover the initial investments (€90 x 86 = 7740), offering a very feasible break-even point for any small company to invest and innovate. The potential of financial gain increases exponentially due to its lower initial cost, for example, ESB states that over 2 million smart metter are installed all over Ireland, if just 1% of these (20,000) adopt the system the expected gross revenue would be €1,800,000.00(€90 * 20000), calculating ROI of this, ((*€1,800,000 – €7,600) / 7,600) * 100 a staggering 23,585% Of profit over investmet
+As the total development costs rest around €7600, and considering the system would be sold with a value that offers a profit of half a year of expected savings (€90), a total of approximately 86 households would be needed to recover the initial investments (€90 x 86 = 7740), offering a very feasible break-even point for any small company to invest and innovate. The potential of financial gain increases exponentially due to its lower initial cost; for example, ESB states that over 2 million smart meters are installed all over Ireland. if just 1% of these (20,000) adopt the system, the expected gross revenue would be €1,800,000.00 (€90 * 20,000). calculating ROI of this, ((*€1,800,000 – €7,600) / 7,600) * 100, a staggering 23,585% Of profit over investment.
 
-Beyond the direct revenue, companies like grid operators and energy suppliers would benifit from this energy load-balancing system, which could foster a subsidy or partnership model to strengthen the economic benefits
-
+Beyond the direct revenue, companies like grid operators and energy suppliers would benefit from this energy load-balancing system, which could foster a subsidy or partnership model to strengthen the economic benefits
 
 ## Non-Financial benefits
 
