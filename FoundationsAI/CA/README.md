@@ -1,8 +1,8 @@
 # Executive Summary
 
-This business case is part of continuous assessment for Fondations of Artificial Intelligence, it focus on reducing the current problem of energy costs and carbon emissions in Ireland, trought a automated AI driven loadbalacing system, leveraging the Irish governament initiatives like smart meters and Time-of-Use tarifs, while preserving users confortability.
+This business case is part of continuous assessment for Foundations of Artificial Intelligence; it focuses on reducing the current problem of energy costs and carbon emissions in Ireland through an automated AI-driven load-balancing system, leveraging the Irish government initiatives like smart meters and time-of-use tariffs, while preserving users' comfort.
 
-Following governament statistcs, the system aims to reduce on avarege 10% on household eletricity bills, lower carbon footprint and Ireland Climante Action Plan(2023) advancament. With a lower development costs, and following GDPR best pratices, the system pormotes itself as beign a techniccal feasible, scalabe and ethical project.
+Following government statistics, the system aims to reduce on average 10% on household electricity bills, lower carbon footprint and Ireland's Climate Action Plan (2023). With lower development costs and following GDPR best practices, the system promotes itself as being a technically feasible, scalabe and ethical project.
 
 ## Problem
 
