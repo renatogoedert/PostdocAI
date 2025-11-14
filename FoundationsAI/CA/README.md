@@ -127,13 +127,9 @@ Human Resources:
 
 ## Financial benefits
 
-Proceeding to calculate the Return on Investment (ROI), the data provided by both EirGrid (2024) and ESB Network (2024) states that smart scheduling can save from 8-15% on energy costs. Bearing that in mind, and combining a conservative 10% saving with the average Irish household's electrical bill of 1,800/year (CRU, 2024), results in an expected savings of 180 per year per household. 
+Proceeding to calculate the Return on Investment (ROI), the data provided by both EirGrid (2024) and ESB Network (2024) states that smart scheduling can save from 8-15% on energy costs. Regarding that, and combining a conservative 10% saving with the average Irish household's electrical bill of €1,800 per year (CRU, 2024), results in an expected savings of €180 per year per household. 
 
-As the total development costs rest around €7600, and considering the system would be sold with a value offering a profit of half year of expected savings (€90), a total of approximately 86 households would be needed to recover the initial investments, offering a very feasible break-even point for any small company to invest and innovate. 
-
-
-https://www.esbnetworks.ie/services/manage-my-meter/about-smart-meters
-The potential of financial gain increases exponentially due to its lower initial cost, for example, if just 1% of households (20 000) adopt the system the expected gross revenue would be €1 800 000.00, a staggering 23.685%
+As the total development costs rest around €7600, and considering the system would be sold with a value that offers a profit of half year of expected savings (€90), a total of approximately 86 households would be needed to recover the initial investments (€90 x 86 = 7740), offering a very feasible break-even point for any small company to invest and innovate. The potential of financial gain increases exponentially due to its lower initial cost, for example, ESB states that over 2 million smart metter are installed all over Ireland, if just 1% of these (20,000) adopt the system the expected gross revenue would be €1,800,000.00(€90 * 20000), calculating ROI of this, ((*€1,800,000 – €7,600) / 7,600) * 100 a staggering 23,585% Of profit over investmet
 
 Beyond the direct revenue, companies like grid operators and energy suppliers would benifit from this energy load-balancing system, which could foster a subsidy or partnership model to strengthen the economic benefits
 
@@ -183,24 +179,28 @@ As stated during this report, the proposed system not just fully aligns but also
 
 # References
 
-Commission for Regulation of Utilities (CRU). *Smart Metering Programme: Time-of-Use Tariffs and Consumer Information.* Dublin: CRU, 2023.  
+Commission for Regulation of Utilities (CRU) (2023) Smart Metering Programme: Time-of-Use Tariffs and Consumer Information. Dublin: CRU.
 
-ESB Networks. *Guide to Smart Meter Tariff Time Bands.* Dublin: ESB Networks, 2024.  
+EirGrid (2024) Smart Grid Dashboard: Carbon Intensity and System Demand. Dublin: EirGrid plc.
+
+ESB Networks (2024) Guide to Smart Meter Tariff Time Bands. Dublin: ESB Networks.
 
 ESB Networks (n.d.) About Smart Meters. Available at: https://www.esbnetworks.ie/services/manage-my-meter/about-smart-meters (Accessed: 14 November 2025).
 
-EirGrid. *Smart Grid Dashboard: Carbon Intensity and System Demand.* Dublin: EirGrid plc, 2024.  
+European Parliament and Council of the European Union (2016) Regulation (EU) 2016/679: General Data Protection Regulation (GDPR). Official Journal of the European Union, L 119, 4 May.
 
-Russell, S. & Norvig, P. (2021). *Artificial Intelligence: A Modern Approach* (4th ed.). Pearson.  
+European Parliament and Council of the European Union (2024) Regulation (EU) 2024/1689 on Artificial Intelligence. Official Journal of the European Union, L 1689, 12 July.
 
-Poole, D. & Mackworth, A. (2017). *Artificial Intelligence: Foundations of Computational Agents* (2nd ed.). Cambridge University Press.  
+Goodfellow, I., Bengio, Y. and Courville, A. (2016) Deep Learning. MIT Press.
 
-Goodfellow, I., Bengio, Y. & Courville, A. (2016). *Deep Learning.* MIT Press.  
+Government of Ireland (2023) Climate Action Plan 2023–2025. Dublin: Department of the Environment, Climate and Communications.
 
-Koller, D. & Friedman, N. (2009). *Probabilistic Graphical Models: Principles and Techniques.* MIT Press.  
+Koller, D. and Friedman, N. (2009) Probabilistic Graphical Models: Principles and Techniques. MIT Press.
 
-Sutton, R.S. & Barto, A.G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press.  
+Lapan, M. (2020) Deep Reinforcement Learning Hands-On. 2nd ed. Packt Publishing.
 
-Lapan, M. (2020). *Deep Reinforcement Learning Hands-On* (2nd ed.). Packt Publishing.  
+Poole, D. and Mackworth, A. (2017) Artificial Intelligence: Foundations of Computational Agents. 2nd ed. Cambridge University Press.
 
-European Parliament & Council. (2024). *Regulation (EU) 2024/1689 on Artificial Intelligence.* *Official Journal of the European Union*, L 1689, 12 July 2024.
+Russell, S. and Norvig, P. (2021) Artificial Intelligence: A Modern Approach. 4th ed. Pearson.
+
+Sutton, R.S. and Barto, A.G. (2018) Reinforcement Learning: An Introduction. 2nd ed. MIT Press.
