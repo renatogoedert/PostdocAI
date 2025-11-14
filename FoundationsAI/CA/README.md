@@ -1,18 +1,8 @@
 # Executive Summary
 
+This business case is part of continuous assessment for Fondations of Artificial Intelligence, it focus on reducing the current problem of energy costs and carbon emissions in Ireland, trought a automated AI driven loadbalacing system, leveraging the Irish governament initiatives like smart meters and Time-of-Use tarifs, while preserving users confortability.
 
-
-
-This business case proposes an intelligent, AI-based household electricity scheduling system designed to reduce energy costs and carbon emissions in Ireland through automated load shifting. The system leverages **reinforcement learning (RL)** — specifically a **Q-learning agent** — to optimize appliance operation times according to **Time-of-Use (ToU)** tariffs and **grid carbon intensity**.
-
-The Irish government’s rollout of smart meters and ToU tariffs offers both opportunities and challenges for consumers: while savings are possible, manual scheduling is cumbersome and underused. The proposed RL scheduler learns user comfort preferences and adapts automatically, removing this friction.
-
-Expected benefits include an **average 10% reduction in household electricity bills**, a **lower carbon footprint**, and **support for Ireland’s Climate Action Plan (2030)**. Development costs are projected at **€7,600**, with a **break-even point after 86 households**. Non-financial benefits include consumer empowerment, increased data literacy, and contribution to the **EU Digitalisation and Sustainable Energy goals**.
-
-The project is technically feasible, scalable, and ethically aligned with the **GDPR (2016)** and **EU AI Act (2024)**, ensuring user privacy and transparency. It thus represents a financially and socially viable innovation in Ireland’s transition toward a smart, low-carbon energy network.
-
---
-
+Following governament statistcs, the system aims to reduce on avarege 10% on household eletricity bills, lower carbon footprint and Ireland Climante Action Plan(2023) advancament. With a lower development costs, and following GDPR best pratices, the system pormotes itself as beign a techniccal feasible, scalabe and ethical project.
 
 ## Problem
 
@@ -70,7 +60,7 @@ Nevertheless, while the feedforward networks excel at discovering data correlati
 
 The most adaptable of all approaches among the ones considered, it particularly shines within dynamic environments and changing variables, plus it is capable of learning trade-offs that are almost impossible to hand-code. However, the training of any RL model demands a large dataset and a considerate computational resource for hyperparameter tuning. Despite that, the resulting model is highly efficient on inference. 
 
-Once trained, algorithms like Q-learning or a Deep Q-Network (DQN) can make decisions just with one lookup in a compact neural network. Moreover, these models learn how to maximise cumulative reward by reducing cost and emissions while satisfying user comfort constraints. (Sutton & Barto, 2018) 
+Once trained, algorithms like Q-learning can make decisions just with one lookup in a compact neural network. Moreover, these models learn how to maximise cumulative reward by reducing cost and emissions while satisfying user comfort constraints. (Sutton & Barto, 2018) 
 
 # Selected solution
 
@@ -100,13 +90,11 @@ The reward weights (α, β, γ, and δ) should be predefined for training but al
 
 ## Algorithms
 
-One of the main expectations for this system would be a fast inference capability, even when applied to computationally constrained hardware. Therefore, among the algorithms researched, the ones that use the Q-value, Q-learning and Deep Q-Network, were selected for a more in-depth analysis due to their efficiency and simplicity.
+One of the main expectations for this system would be a fast inference capability, even when applied to computationally constrained hardware. Therefore, among the algorithms researched, the ones that use the Q-value or Q-learning , were selected due to their efficiency and simplicity.
 
-The foundation of both of these algorithms is the Q-value function, which calculates the expected cumulative reward of an agent, considering starting in a state s, taking an action a, and following one particular policy afterwards. (Sutton and Barto, 2018)
+The foundation of these algorithms is the Q-value function, which calculates the expected cumulative reward of an agent, considering starting in a state s, taking an action a, and following one particular policy afterwards. (Sutton and Barto, 2018)
 
 - Q-learning: This algorithm creates a Q-table that stores the values of each pair (state and action). During inference the model performs a simple lookup to find, in the table, the highest Q value and select the related actions. This is a lightweight and effective solution for low-dimensional states problems
-
-- Deep Q-Network (DQN): DQN replaces the Q-table with a small neural network that approximates the q-values using deep learning techniques. This paradigm change permits the algorithm to handle larger state spaces where a simple table is impractical; because of that, DQNs are suited to systems with more state variables while still focusing on simplicity.
 
 ## Data Sources
 
@@ -164,7 +152,7 @@ Since Q-learning algorithms operate via explicit reward functions, the system co
 
 ## Fairness and Accessibility
 
-Even tought the algorith offers close to minimal risk of bias on its decision-making, still remains the possiblity of favouing one manufacturers device over another. Nevertheless, the simplicity and transparency of Q-learning, which rely manly on the reward function and the Q-table rather than the hidden layers of neural networkd, significantly reduce the likehood of bias. Additionally, the inclusion of the confort rusles further contrains the model behaviour, minimiszing any decision based on AI bias.
+Even tought the algorith offers close to minimal risk of bias on its decision-making, still remains the possiblity of favouing one manufacturers device over another. Nevertheless, the simplicity and transparency of Q-learning, which rely manly on the reward function and the Q-table rather than the hidden layers of neural networkd, significantly reduce the likehood of bias. Additionally, the inclusion of the confort rules further contrains the model behaviour, minimiszing any decision based on AI bias.
 
 One of the main pillars of the system would be an accessible design for the overall system. Although it doesn't affect the AI method in itself, making it easier to use in lower-literacy households is essential to widespread adoption of the model by a higher number of households across all social groups, hence maximizing its financial, social and environmental benefits. As mentioned before, a subsidised partnership could be realized. with governments/companies to offer an affordable price and spread equitably to all social groups.
 
@@ -181,7 +169,7 @@ One of the main pillars of the system would be an accessible design for the over
 
 ## Regulatory Alignment
 
-As stated during his report, the proposed system not just fully aligns but also helps with the development of major European and national regulations like
+As stated during this report, the proposed system not just fully aligns but also helps with the development of major European and national regulations like
 
 - Ireland’s Climate Action Plan (2023–2030): Plan to reduce carbon emissions and incentivize sustainable energy usage.
 
