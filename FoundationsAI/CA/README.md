@@ -129,14 +129,18 @@ Human Resources:
 
 Proceeding to calculate the Return on Investment (ROI), the data provided by both EirGrid (2024) and ESB Network (2024) states that smart scheduling can save from 8-15% on energy costs. Bearing that in mind, and combining a conservative 10% saving with the average Irish household's electrical bill of 1,800/year (CRU, 2024), results in an expected savings of 180 per year per household. 
 
-As the total development costs rest around €7600, and considering the system would be sold with a value offering a profit of half year of expected savings (€90), a total of approximately 86 households would be needed to recover the initial investments, offering a very feasible break-even point for any small company to invest and innovate. The potential of financial gain increases exponentially due to its lower initial cost, for example, if just 1% of households (20 000) adopt the system the expected gross revenue would be €1 800 000.00, a staggering 23.685%
+As the total development costs rest around €7600, and considering the system would be sold with a value offering a profit of half year of expected savings (€90), a total of approximately 86 households would be needed to recover the initial investments, offering a very feasible break-even point for any small company to invest and innovate. 
+
+
+https://www.esbnetworks.ie/services/manage-my-meter/about-smart-meters
+The potential of financial gain increases exponentially due to its lower initial cost, for example, if just 1% of households (20 000) adopt the system the expected gross revenue would be €1 800 000.00, a staggering 23.685%
 
 Beyond the direct revenue, companies like grid operators and energy suppliers would benifit from this energy load-balancing system, which could foster a subsidy or partnership model to strengthen the economic benefits
 
 
 ## Non-Financial benefits
 
-Beyond the financial domain, this solution would contribute to the carbon emission reduction by load-shifting the energy consumption to high renewable generation periods, supporting the Ireland 2030 Climate Action Plan and the UN Sustainable Development Goals. Additionally, this system has the ability to foster a much-delayed technological innovation in both the smart home and energy management sectors, advancing the implementation of the demand-side flexibility objective. Altogether, these aspects align with national sustainability targets and European digitalization policies.
+Beyond the financial domain, this solution would contribute to the carbon emission reduction by load-shifting the energy consumption to high renewable generation periods, supporting the Ireland 2030 Climate Action Plan and the UN Sustainable Development Goals. Additionally, this system has the ability to foster a much-delayed technological innovation in both the smart home and energy management sectors, advancing the implementation of the demand-side flexibility objective. Utterly, these aspects align with national sustainability targets and European digitalization policies.
 
 # Risk and Ethics
 
@@ -154,7 +158,7 @@ Since Q-learning algorithms operate via explicit reward functions, the system co
 
 Even tought the algorith offers close to minimal risk of bias on its decision-making, still remains the possiblity of favouing one manufacturers device over another. Nevertheless, the simplicity and transparency of Q-learning, which rely manly on the reward function and the Q-table rather than the hidden layers of neural networkd, significantly reduce the likehood of bias. Additionally, the inclusion of the confort rules further contrains the model behaviour, minimiszing any decision based on AI bias.
 
-One of the main pillars of the system would be an accessible design for the overall system. Although it doesn't affect the AI method in itself, making it easier to use in lower-literacy households is essential to widespread adoption of the model by a higher number of households across all social groups, hence maximizing its financial, social and environmental benefits. As mentioned before, a subsidised partnership could be realized. with governments/companies to offer an affordable price and spread equitably to all social groups.
+One of the main pillars of the system would be an accessible design for the overall system. Although it doesn't affect the AI method in itself, making it easier to use in lower-literacy households is essential to widespread adoption of the model by a higher number of households across all social groups, hence maximizing its financial, social and environmental benefits. As mentioned before, a subsidised partnership could be realized with governments/companies to offer an affordable price and spread equitably to all social groups.
 
 ## Risk Assesment
 
@@ -182,6 +186,8 @@ As stated during this report, the proposed system not just fully aligns but also
 Commission for Regulation of Utilities (CRU). *Smart Metering Programme: Time-of-Use Tariffs and Consumer Information.* Dublin: CRU, 2023.  
 
 ESB Networks. *Guide to Smart Meter Tariff Time Bands.* Dublin: ESB Networks, 2024.  
+
+ESB Networks (n.d.) About Smart Meters. Available at: https://www.esbnetworks.ie/services/manage-my-meter/about-smart-meters (Accessed: 14 November 2025).
 
 EirGrid. *Smart Grid Dashboard: Carbon Intensity and System Demand.* Dublin: EirGrid plc, 2024.  
 
